@@ -1,0 +1,3957 @@
+From: <Saved by Windows Internet Explorer 7>
+Subject: CodeProject: Outlook Bar for WTL (with XP support!!). Free source code and programming help
+Date: Fri, 22 Feb 2008 14:49:12 +0200
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0151_01C87562.16AB9ED0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3198
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.codeproject.com/KB/wtl/wtloutbar.aspx?display=PrintAll
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>CodeProject: Outlook Bar for WTL (with XP support!!). =
+Free source code and programming help</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<META=20
+content=3D"A themed Outlook Bar for WTL (works even without themes); =
+Author: xanatos; Section: WTL; Chapter: Platforms, Frameworks &amp; =
+Libraries"=20
+name=3DDescription>
+<META=20
+content=3D"C++, Windows, Visual Studio, WTL, Dev, =
+Intermediate,WTL,Platforms, Frameworks &amp; Libraries,Free source code, =
+tutorials"=20
+name=3DKeywords>
+<META content=3D"The Code Project" name=3DAuthor>
+<META content=3DGeneral name=3DRating>
+<META content=3D"index, follow" name=3DRobots>
+<META content=3D"1 days" name=3DRevisit-After><LINK=20
+title=3D"CodeProject Lounge Postings"=20
+href=3D"http://www.codeproject.com/webservices/LoungeRSS.aspx"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - All topics"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D1"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - MFC / C++"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D2"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - C#"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D3"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - ASP.NET"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D4"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - .NET"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D5"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - VB.NET"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D6"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK title=3DCodeProject=20
+href=3D"http://www.codeproject.com/info/OpenSearch.xml"=20
+type=3Dapplication/opensearchdescription+xml rel=3Dsearch><LINK=20
+href=3D"http://www.codeproject.com/App_Themes/NetCommunity/CodeProject.cs=
+s"=20
+type=3Dtext/css rel=3Dstylesheet><LINK=20
+href=3D"http://www.codeproject.com/App_Themes/NetCommunity/ForumClassic.c=
+ss"=20
+type=3Dtext/css rel=3Dstylesheet>
+<SCRIPT type=3Dtext/javascript>
+  var gaJsHost =3D (("https:" =3D=3D document.location.protocol) ? =
+"https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src=3D'" + gaJsHost + =
+"google-analytics.com/ga.js' =
+type=3D'text/javascript'%3E%3C/script%3E"));
+</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>
+   var pageTracker =3D _gat._getTracker("UA-1735123-1");
+   pageTracker._setDomainName("codeproject.com");
+   pageTracker._setSessionTimeout("1200"); // 20 mins
+   pageTracker._initData();
+   pageTracker._trackPageview();
+</SCRIPT>
+
+<SCRIPT language=3DJavascript =
+src=3D"http://www.codeproject.com/Script/JS/oncopy.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavascript type=3Dtext/javascript><!--=0A=
+function ToggleMenu(itemName)=0A=
+{=0A=
+	var elm =3D document.getElementById(itemName);=0A=
+	var i,others =3D document.getElementById('SectionMenu');=0A=
+	for(i=3D0; i < others.childNodes.length; i++)=0A=
+	{=0A=
+		var other =3D others.childNodes[i];=0A=
+		if ((other.className =3D=3D 'MenuSectionBlock') && (other !=3D elm))=0A=
+			other.style.display=3D'none';=0A=
+	}=0A=
+	if (elm.style.display =3D=3D 'block') elm.style.display=3D'none';=0A=
+	else elm.style.display=3D'block';=0A=
+	return false;=0A=
+}=0A=
+=0A=
+--></SCRIPT>
+
+<SCRIPT language=3DJavascript type=3Dtext/javascript><!--=0A=
+function MsgVoteForm(MemberID, MsgID) {=0A=
+ document.write("Rate this message: ");=0A=
+ document.write(unescape("%3Ca href=3D\"#xx" + MsgID.toString() + "xx\" =
+onclick=3D\"RateMsg(" + MemberID.toString() + ", " + MsgID.toString() + =
+",1)\"%3E"));=0A=
+ document.write(unescape("%3Cimg height=3D\"14\" width=3D\"14\" =
+src=3D\"/script/Forums/Images/thumbs_down.gif\" alt=3D\"vote 1\" =
+border=3D\"0\" align=3D\"absmiddle\" /%3E%3C/a%3E "));=0A=
+ for (var i=3D1; i<=3D5;i++)=0A=
+  document.write(unescape("%3Ca class=3D\"Frm_MHL\" href=3D\"#xx" + =
+MsgID.toString() + "xx\" title=3D\"give this message a vote of " + =
+i.toString() + "\" onclick=3D\"RateMsg(" + MemberID.toString() + ", " + =
+MsgID.toString() + ", " + i.toString() + ")\"%3E%3Cb%3E" + i.toString() =
++ "%3C/b%3E%3C/a%3E "));=0A=
+ document.write(unescape("%3Ca href=3D\"#xx" + MsgID.toString() + "xx\" =
+onclick=3D\"RateMsg(" + MemberID.toString() + ", " + MsgID.toString() + =
+",5)\"%3E"));=0A=
+ document.write(unescape("%3Cimg height=3D\"14\" width=3D\"14\" =
+src=3D\"/script/Forums/Images/thumbs_up.gif\" alt=3D\"vote 5\" =
+border=3D\"0\" align=3D\"absmiddle\" /%3E%3C/a%3E "));=0A=
+}=0A=
+=0A=
+function ReportMsg(userid, msgid, score) {=0A=
+ if (confirm("Are you sure you want to report this message?") =3D=3D =
+true)=0A=
+  return RateMsg(userid, msgid, score);=0A=
+ else return false;=0A=
+}=0A=
+function RateMsg(memberid, msgid, score) {=0A=
+ var req =3D new ActiveXObject("MSXML2.XMLHTTP");=0A=
+ req.onreadystatechange =3D function() {=0A=
+  if (req.readyState =3D=3D 4) {=0A=
+   if ( req.status =3D=3D 200 ) {=0A=
+    var respText =3D req.responseText;=0A=
+    var re =3D new RegExp(unescape("\%3Cdiv\%3E([^\%3C]*)\%3C/div\%3E"), =
+"g");=0A=
+    var match =3D re.exec(respText);=0A=
+    voteStatus.innerHTML =3D unescape("%3Cb%3E") + (match)?match[1]:"An =
+error occured" + unescape("%3C/b%3E");=0A=
+   }=0A=
+   else=0A=
+   {=0A=
+    voteStatus.innerHTML =3D unescape("%3Cb =
+style=3D'color:red'%3EFailed!") + req.statusText + unescape("%3C/b%3E");=0A=
+   }=0A=
+  }=0A=
+ }=0A=
+ var voteStatus =3D document.getElementById("MVF" + msgid);=0A=
+ if (!voteStatus) return;=0A=
+ voteStatus.innerHTML =3D unescape("%3Cb =
+style=3D'color:green'%3EVoting...%3C/b%3E");=0A=
+ var strAction =3D =
+"/script/Forums/Vote.aspx?js=3D1&fmid=3D"+memberid.toString()+"&select=3D=
+"+msgid.toString()+"&score=3D"+score.toString();=0A=
+ req.open("GET", strAction, true);=0A=
+ req.send(null);=0A=
+  return false;=0A=
+}=0A=
+--></SCRIPT>
+<LINK href=3D"/favicon.ico" type=3Dimage/ico rel=3Dicon><LINK =
+href=3D"/favicon.ico"=20
+type=3Dimage/ico rel=3D"shortcut icon">
+<SCRIPT type=3Dtext/javascript>
+	function SetAsAvailable() {
+	   var aid =3D document.getElementById("ArticleId");
+	   if(aid)
+		   window.location.href =3D =
+"/script/Articles/UpdateArticleStatus.aspx?aid=3D" + articleId.value + =
+"&rp=3D" + location.href;
+	}
+	</SCRIPT>
+
+<META content=3D"MSHTML 6.00.6000.16587" name=3DGENERATOR></HEAD>
+<BODY>
+<TABLE id=3Dctl00_AT cellSpacing=3D0 cellPadding=3D0 border=3D0>
+  <TBODY>
+  <TR vAlign=3Dtop>
+    <TD colSpan=3D2>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3DHeaderLogo><A =
+href=3D"http://www.codeproject.com/"><IMG=20
+            height=3D90 alt=3DHome=20
+            =
+src=3D"http://www.codeproject.com/Images/Standard/codeproject225x90.gif" =
+
+            width=3D225 border=3D0></A></TD>
+          <TD class=3DHeaderBanner align=3Dright =
+width=3D"100%"></TD></TR>
+        <TR>
+          <TD colSpan=3D2></TD></TR>
+        <TR>
+          <TD colSpan=3D2></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD vAlign=3Dtop colSpan=3D2><A name=3D_top></A>
+      <TABLE class=3DArticleUneditedHeader =
+id=3Dctl00_ArticleTopHeader_HeaderTable=20
+      cellSpacing=3D0 cellPadding=3D3 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD class=3DSmallText><A =
+id=3Dctl00_ArticleTopHeader_ChapterLink=20
+            =
+href=3D"http://www.codeproject.com/script/Content/Chapter.aspx?chptId=3D8=
+">Platforms,=20
+            Frameworks &amp; Libraries</A> =C2=BB <A=20
+            id=3Dctl00_ArticleTopHeader_SectionLink=20
+            href=3D"http://www.codeproject.com/KB/wtl/">WTL</A> =C2=BB =
+<A=20
+            id=3Dctl00_ArticleTopHeader_SubsectionLink=20
+            href=3D"http://www.codeproject.com/KB/wtl/index.aspx?#WTL - =
+General">General</A>=20
+            <SPAN class=3DArticleIntermediate=20
+            id=3Dctl00_ArticleTopHeader_SkillLevel>&nbsp;&nbsp;&nbsp;=20
+            Intermediate</SPAN> <SPAN class=3DSmallText=20
+            id=3Dctl00_ArticleTopHeader_LicenceTerms=20
+            style=3D"MARGIN-LEFT: 40px">License: <A=20
+            =
+href=3D"http://www.opensource.org/licenses/mit-license.php">The MIT=20
+            License</A></SPAN> <BR><BR>
+            <H1><SPAN class=3DArticleTopTitle=20
+            id=3Dctl00_ArticleTopHeader_ArticleTitle>Outlook Bar for WTL =
+(with XP=20
+            support!!)</SPAN></H1><B>By <A=20
+            =
+href=3D"http://www.codeproject.com/script/Articles/MemberArticles.aspx?am=
+id=3D62387">xanatos</A></B><BR><BR><SPAN=20
+            class=3DArticleTopDescr =
+id=3Dctl00_ArticleTopHeader_ArticleDescr>A=20
+            themed Outlook Bar for WTL (works even without =
+themes)</SPAN> </TD>
+          <TD class=3DSmallText style=3D"WIDTH: 210px"><SPAN=20
+            id=3Dctl00_ArticleTopHeader_ArticleAttributes>C++, Windows, =
+Visual=20
+            Studio, WTL, Dev</SPAN><BR><BR><SPAN=20
+            style=3D"PADDING-RIGHT: 2ex">Posted</SPAN>: <B>25 May=20
+            2006</B><BR><SPAN style=3D"PADDING-RIGHT: =
+0.5ex">Updated</SPAN>: <B>7=20
+            Nov 2007</B> <BR><SPAN style=3D"PADDING-RIGHT: =
+3.2ex">Views</SPAN>:=20
+            <B>18,241</B><BR></TD></TR>
+        <TR>
+          <TD colSpan=3D2>
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD>
+                  <DIV id=3Dctl00_ArticleTopHeader_UneditedDiv><B>Note: =
+<A=20
+                  id=3Dctl00_ArticleTopHeader_UneditedLnk=20
+                  =
+href=3D"http://www.codeproject.com/script/Articles/Unedited.aspx">This=20
+                  is an unedited reader contribution</A></B> </DIV></TD>
+                <TD class=3DSmallText style=3D"WHITE-SPACE: nowrap"=20
+              =
+align=3Dright></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></=
+TR>
+  <TR vAlign=3Dtop>
+    <TD class=3DArticlePane vAlign=3Dtop><SPAN =
+id=3Dctl00_ResultMessage></SPAN>
+      <DIV id=3Dctl00_ArtDiv>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD vAlign=3Dtop>
+            <TABLE>
+              <TBODY></TBODY></TABLE></TD>
+          <TD align=3Dright>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD class=3DSmallText style=3D"WHITE-SPACE: nowrap"=20
+                  align=3Dright><SPAN =
+id=3Dctl00_ArticleRating_VoteLabel>16 votes=20
+                  for this Article.</SPAN> </TD>
+                <TD>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D1>
+                    <TBODY>
+                    <TR>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD noWrap width=3D20 bgColor=3Dwhite =
+height=3D5><IMG height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D13 =
+border=3D0></TD></TR></TBODY></TABLE></TD></TR>
+              <TR id=3Dctl00_ArticleRating_PopularityRow>
+                <TD class=3DSmallText align=3Dright colSpan=3D2><A=20
+                  id=3Dctl00_ArticleRating_PopularityLnk=20
+                  title=3D"Calculated as rating x Log10(# votes)"=20
+                  =
+href=3D"http://www.codeproject.com/script/Articles/TopArticles.aspx?ta_so=
+=3D1">Popularity:=20
+                  5.60</A><SPAN =
+id=3Dctl00_ArticleRating_PopularityLbl></SPAN>=20
+                  Rating: <B>4.65</B> out of 5=20
+      </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <DIV class=3DSmallText id=3Dctl00_UneditedRow=20
+      style=3D"PADDING-RIGHT: 5px; BORDER-TOP: #ff9900 1px dashed; =
+PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 5px; PADDING-TOP: 5px; =
+BORDER-BOTTOM: #ff9900 1px dashed"><B>Note:</B>=20
+      This is an unedited contribution. If this article is =
+inappropriate, needs=20
+      attention or copies someone else's work without reference then =
+please <A=20
+      id=3Dctl00_ReportProblem=20
+      =
+href=3D"http://www.codeproject.com/script/Articles/Report.aspx?aid=3D1423=
+4">Report=20
+      This Article</A> </DIV><SPAN id=3DintelliTXT>
+      <DIV id=3Dcontentdiv><!-- Main Page Contents Start --><!-- Article =
+Starts -->
+      <UL class=3Ddownload>
+        <LI><A=20
+        =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar/wtloutbar_src.zip">Do=
+wnload=20
+        source files - 297 Kb</A>=20
+        <LI><A=20
+        =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar/wtloutbar_demo.zip">D=
+ownload=20
+        demo project - 231 Kb</A> </LI></UL>
+      <P><IMG height=3D446 alt=3D"Sample Image - wtloutbar.gif"=20
+      src=3D"http://www.codeproject.com/KB/wtl/wtloutbar/wtloutbar.gif"=20
+      width=3D530></P>
+      <H2>Remember</H2>
+      <P>English/U.S. English is NOT my first language. I'm Italian. =
+Explaining=20
+      things to others is not my profession, I'm a cryptic programmer =
+:-) ... I=20
+      live in a dark dungeon all alone, and I throw poo at anyone that =
+comes=20
+      near me :-) I'm a little ironic, but then, I'm a mad programmer =
+:-).</P>
+      <H2>Introduction</H2>
+      <P>I love the Outlook-style controls... I love them very much... =
+My=20
+      problem is that it's very difficult to find a XP-themed one. So a =
+day=20
+      (around one year ago) I decided to build one... I fought against =
+the poor=20
+      Themes documentation and, in the end, I won. This is the result of =
+my=20
+      victory... </P>
+      <H2>The BAD things: </H2>It doesn't support: small icons, ellipsis =
+on the=20
+      buttons, drag &amp; drop, in-place-editing of items, sorting of =
+items,=20
+      moving items, a good and easily expandable event model, ownerdraw =
+items,=20
+      not-pushable icons (now the pushed icon remembers it was pushed =
+and is=20
+      drawed in a different style... Normally this is an extended style =
+of an=20
+      OutBar, not the default style), disabling the themed part (the =
+OutBar WILL=20
+      work on W95/W98/NT etc). I'm not even sure it will draw correctly =
+with=20
+      non-default themes (I've tried it with all the default XP themes, =
+but I=20
+      don't have StarDock or similar programs).=20
+      <H2>The GOOD things: </H2>It's quick to redraw (it uses double =
+buffering=20
+      techniques), it has a dual interface: message based =
+(<CODE>OBM_*</CODE>)=20
+      and method based (you know, a thin wrapper around the messages, =
+like the=20
+      ATL and the WTL do with Windows, with many methods that are =
+composed of a=20
+      single line: <CODE>SendMessage(m_hWnd, OBM_something, lParam,=20
+      wParam)</CODE> ), it has a find method (technically two, one for =
+the=20
+      Folders and one for the Items), it's fancy-drawed with owner draw=20
+      scrollbars (try stretching it in width and length) and an owner =
+draw=20
+      ListIcon (built from scratch... The first version used a ListView, =
+but I=20
+      fought a losing battle against it's scrolling, because I wanted =
+the icons=20
+      to be horizontally centered, so I decided to create it from zero), =
+it=20
+      fully supports keyboard and mouse (arrows, =
+pgup/pgdown/home/end/wheel),=20
+      the hot item is drawed differently (only when you use Themes), =
+it's=20
+      UNICODE and W64 ready, it compiles under W4 warnings.=20
+      <H2>The SO 'N' SO things: </H2>It's licensed under the MIT license =
+(a=20
+      simplified BSD license), it uses many windows controls (one for =
+itself,=20
+      one for each folder and one for the icons). (the last is in the SO =
+'N' SO=20
+      category because I consider a good thing that each part of the =
+OutBar can=20
+      be controlled separately (and the program can=20
+      <CODE>GetFocus()</CODE>/<CODE>SetFocus()</CODE> correctly) and =
+that the=20
+      user can Tab/Shift-Tab between parts of the OutBar, while it's bad =
+that it=20
+      consumes many controls).=20
+      <H2>How can I use it? </H2>Remember: this code is tested with VC++ =
+8.0/WTL=20
+      7.5!! I don't want to write three pages to tell you things that =
+you can=20
+      discover yourself simply by opening the wtlOutBarDemo project =
+(hint: all=20
+      the "important" lines are marked with // WTLOUTBAR so you can =
+easily=20
+      search for them). If you know how to work with a=20
+      <CODE>CListViewCtrl</CODE> then you know how to work with a=20
+      <CODE>CWtlOutBarImpl</CODE> (yes, I "borrowed" the interface of =
+the=20
+      ListView). In the end the most difficult thing to do is probably =
+to create=20
+      the ImageList that will contain the icons. There are two ways of =
+doing it:=20
+      you can have all the icons in separate .ico files and the=20
+      <CODE>LoadIcon</CODE>/<CODE>AddIcon</CODE> one at a time OR you =
+can play=20
+      the little mad scientist and fuse all the icons in a single bitmap =
+and=20
+      then <CODE>CreateFromImage</CODE> . Small note: the =
+wtlOutBarMDIDemo is a=20
+      demo of the OutBar and NOT of the Split+MDI thing. I hope it do =
+work, but=20
+      I'm not very sure. Splitter windows and MDI frame windows are =
+complex=20
+      arguments, and they are like the "undiscovered land" of WTL.=20
+      <H2>What are all the classes? </H2>
+      <UL>
+        <LI><CODE>CWtlOutBarT<SPAN =
+class=3Dcode-keyword>&lt;</SPAN>Tbase<SPAN=20
+        class=3Dcode-keyword>&gt;</SPAN></CODE> where 99% of the times =
+<CODE>TBase=20
+        =3D CWindow</CODE>, a thin wrapper around the OutBar. It's =
+composed of=20
+        many one line methods that simply call the right message. Unless =
+you=20
+        want to do strange things you don't need to directly use this =
+class.=20
+        <LI><CODE>CWtlOutBarImplT<SPAN =
+class=3Dcode-keyword>&lt;</SPAN>TBase<SPAN=20
+        class=3Dcode-keyword>&gt;</SPAN></CODE> where 99% of the times =
+<CODE>TBase=20
+        =3D CWtlOutBarT<SPAN =
+class=3Dcode-keyword>&lt;</SPAN>CWindow<SPAN=20
+        class=3Dcode-keyword>&gt;</SPAN></CODE>. The "meat" class. You =
+will=20
+        probably declare it somewhere in your mainfrm and it'll sit =
+there. If=20
+        you derive it from <CODE>CWtlOutBarT<SPAN=20
+        class=3Dcode-keyword>&lt;</SPAN>CWindow<SPAN=20
+        class=3Dcode-keyword>&gt;</SPAN></CODE> you can easily use it =
+with the=20
+        methods (so you can <CODE>AddFolder</CODE>, =
+<CODE>AddItem</CODE>,=20
+        <CODE>GetSelectedFolder</CODE>, <CODE>GetSelectedItem</CODE> =
+etc.)=20
+        <LI><CODE>CMemoryStripDC</CODE> This is an utility class. I =
+needed a=20
+        reusable <CODE>CMemoryDC</CODE>, so I created one (the OutBar is =
+drawed=20
+        in "strips". Each icon with its description is a strip). =
+</LI></UL>
+      <H2>Is there something strange, something magical in your =
+OutBar?</H2>
+      <P>Mmmh... Yes... The class supports two styles (they are "basic" =
+styles,=20
+      not-extended).</P>
+      <UL>
+        <LI><CODE>OBS_SHAREIMAGELISTS</CODE> (that is identical to=20
+        <CODE>LVS_SHAREIMAGELISTS</CODE> so I WON'T explain it here... =
+Ok...=20
+        I'll explain it. If you don't use the style the OutBar considers =
+to have=20
+        the ownership of the ImageList, so it will destroy it when the =
+OutBar is=20
+        destroyed. If you use the style the OutBar won't destroy the =
+ImageList=20
+        at the end of its life).=20
+        <LI><CODE>OBS_FORCESELECT</CODE> If you set this style the =
+OutBar will=20
+        ALWAYS have a selected item (unless there are no items). If you =
+delete=20
+        the selected item another item will be selected (in an =
+intelligent=20
+        way... It'll first try to go down and then try to go up from the =
+old=20
+        selected item). </LI></UL>
+      <P>There are three notifications that the class will throw:=20
+      <BR><CODE>OBN_FOLDEROPEN</CODE>, <CODE>OBN_ITEMSELECT</CODE>,=20
+      <CODE>OBN_ITEMSELECTAUTO</CODE>. </P>
+      <UL>
+        <LI><CODE>OBN_FOLDEROPEN</CODE> is quite clear: it's triggered =
+when the=20
+        user opens a folder. <CODE>OBN_ITEMSELECT</CODE> is triggered =
+when the=20
+        USER selects an item (by clicking on it or using the keyboard).=20
+        <LI><CODE>OBN_ITEMSELECTAUTO</CODE> is triggered when the =
+PROGRAM=20
+        selects an item (by using SetSelectedItem or by triggering the=20
+        OBS_FORCESELECT effects for example). </LI></UL>
+      <H2>Hey, but I want some documentation</H2>
+      <P>You are lucky, you are VERY lucky. I decided to learn how to =
+use=20
+      doxygen, so I commented all the "user" part of the source (you =
+know, the=20
+      not-internal part). You can read it in HTML format or in CHM =
+format (the=20
+      Windows HTML Help format)... and you can read it when you look at =
+the=20
+      source (because the comments are in the source, the doxygen simply =
+extract=20
+      them and creates an easy-to-read file)... So, before leaving you a =
+little=20
+      baffled, I'll teach you a single thing (a thing I discovered AFTER =
+writing=20
+      the OutBar).</P>
+      <P><PRE>m_wtlOutbar.GetHWNDHandle(-<SPAN =
+class=3Dcode-digit>1</SPAN>).ModifyStyleEx(<SPAN =
+class=3Dcode-digit>0</SPAN>, WS_EX_STATICEDGE);</PRE>
+      <P>where m_wtlOutbar is the name of the OutBar. This will give the =
+
+      ListView part of the OutBar a static edge (a more 3d-like aspect). =
+</P>
+      <H2>Hey, but I'm a little lazy and I really want some =
+examples</H2>
+      <P>Ok=E2=80=A6 I'll explain the wtlOutBarDemo example=E2=80=A6 =
+Create a Dialog based WTL=20
+      project. Copy wtloutbar.h and stringcex.h in the folder of the =
+project and=20
+      add them to the project. <BR>Add some icons to the project and =
+give them=20
+      ID like <CODE>IDI_ICON1</CODE>=E2=80=A6 <CODE>IDI_ICONx =
+</CODE><BR>In the stdafx.h=20
+      add this line near the <CODE><SPAN =
+class=3Dcode-preprocessor>#define</SPAN>=20
+      WINVER</CODE> line </P>
+      <P><PRE><SPAN class=3Dcode-preprocessor>#define</SPAN> =
+_WIN32_WINNT 0x0501</PRE>
+      <P>It's required for the Theme support. </P>
+      <P>After the <CODE><SPAN =
+class=3Dcode-preprocessor>#include</SPAN><SPAN=20
+      class=3Dcode-preprocessor> <SPAN =
+class=3Dcode-keyword>&lt;</SPAN><SPAN=20
+      class=3Dcode-leadattribute>atlwin.h</SPAN><SPAN=20
+      class=3Dcode-keyword>&gt;</SPAN></SPAN></CODE> add </P>
+      <P><PRE><SPAN class=3Dcode-preprocessor>#include</SPAN><SPAN =
+class=3Dcode-preprocessor> <SPAN class=3Dcode-keyword>&lt;</SPAN><SPAN =
+class=3Dcode-leadattribute>atlcoll.h</SPAN><SPAN =
+class=3Dcode-keyword>&gt;</SPAN> </SPAN>
+<SPAN class=3Dcode-preprocessor>#include</SPAN><SPAN =
+class=3Dcode-preprocessor> <SPAN class=3Dcode-keyword>&lt;</SPAN><SPAN =
+class=3Dcode-leadattribute>atltheme.h</SPAN><SPAN =
+class=3Dcode-keyword>&gt;</SPAN></SPAN>
+<SPAN class=3Dcode-preprocessor>#include</SPAN><SPAN =
+class=3Dcode-preprocessor> <SPAN class=3Dcode-keyword>&lt;</SPAN><SPAN =
+class=3Dcode-leadattribute>tmschema.h</SPAN><SPAN =
+class=3Dcode-keyword>&gt;</SPAN></SPAN>
+<SPAN class=3Dcode-preprocessor>#include</SPAN><SPAN =
+class=3Dcode-preprocessor> <SPAN class=3Dcode-string>"</SPAN><SPAN =
+class=3Dcode-string>wtloutbar.h"</SPAN></SPAN></PRE>
+      <P>The first (atlcoll.h) is because I use ATL collections. The =
+second=20
+      (atltheme.h) is for the themes. The third (tmschema.h) is because=20
+      Microsoft decided that it was a good thing to split the base =
+header for=20
+      the themes and the header that contains all the "codes" necessary =
+to write=20
+      theme based apps. The fourth (wtloutbar.h) is the OutBar library =
+(it will=20
+      auto-include the stringcex.h) . </P>
+      <P>Now you should go to the properties of your project and in the=20
+      Linker-&gt;Input page add delayimp.lib to Additional Dependencies =
+and=20
+      uxtheme.dll to Delay Loaded DLLs. In this way your program will be =
+
+      compatible with pre XP systems that don't have the ComCtl32.dll v6 =
+library=20
+      (the library used for the Themes... Yes... I know, it isn't =
+exactly=20
+      correct what I've written... It's an oversimplification... So =
+shoot me :-)=20
+      ) </P>
+      <P>Now go to the mainfrm.h file and after the #pragma once line =
+add </P>
+      <P><PRE><SPAN class=3Dcode-preprocessor>#define</SPAN> IDC_OUTBAR =
+<SPAN class=3Dcode-digit>10000</SPAN></PRE>
+      <P>This will be the ID of the control (yes, 10000 is a random =
+number. It=20
+      shouldn't be used by anyone and then, IDs are local, so it won't =
+be a=20
+      problem, but if you don't like it CHANGE IT!) And under the =
+public: line=20
+      add </P>
+      <P><PRE>CWtlOutBarImpl m_wtlOutbar;</PRE>
+      <P>This is the control. Very simple. Now go in the=20
+      <CODE>OnInitDialog(=E2=80=A6)</CODE> just before the <CODE>Return =
+TRUE</CODE> add:=20
+      </P>
+      <P><PRE>CImageList il;=20
+il.Create(<SPAN class=3Dcode-digit>32</SPAN>, <SPAN =
+class=3Dcode-digit>32</SPAN>, ILC_COLOR8|ILC_MASK, <SPAN =
+class=3Dcode-digit>6</SPAN>, <SPAN class=3Dcode-digit>1</SPAN>);=20
+
+CIconHandle ico;=20
+ATLVERIFY(ico.LoadIcon(IDI_ICON1));=20
+ATLVERIFY(il.AddIcon(ico) !=3D -<SPAN class=3Dcode-digit>1</SPAN>);=20
+ATLVERIFY(ico.Detach());=20
+
+ATLVERIFY(ico.LoadIcon(IDI_ICON2));=20
+ATLVERIFY(il.AddIcon(ico) !=3D -<SPAN class=3Dcode-digit>1</SPAN>);=20
+ATLVERIFY(ico.Detach());</PRE>
+      <P>This will create an ImageList with base space for 6 icons (you =
+can use=20
+      different values) and that will grow one icon at a time. Then =
+it'll begin=20
+      to load the icons and add them to the ImageList. We are loading =
+the icons=20
+      from the .exe file, so you don't have to truly "free" them after =
+adding=20
+      them to the ImageList (so the use of the <CODE>ico.Detach()</CODE> =
+) You=20
+      can add more icons=E2=80=A6 Simply repeat the last three lines. =
+</P>
+      <P><PRE>RECT rect;=20
+GetClientRect(&amp;rect);=20
+rect.right /=3D <SPAN class=3Dcode-digit>3</SPAN>;=20
+</PRE>
+      <P>This will calc the area of the client Rect (one third of the =
+width of=20
+      the window) </P>
+      <P><PRE>ATLVERIFY(m_wtlOutbar.Create(m_hWnd, &amp;rect, NULL, =
+WS_CHILD|WS_VISIBLE|OBS_FORCESELECT, <SPAN class=3Dcode-digit>0</SPAN>, =
+IDC_OUTBAR));</PRE>
+      <P>This will create the OutBar. We are using the=20
+      <CODE>OBS_FORCESELECT</CODE> style. </P>
+      <P><PRE>m_wtlOutbar.SetImageList(il, OBSIL_NORMAL);</PRE>
+      <P>We set the ImageList of the OutBar. Note that =
+<CODE>OBSIL_NORMAL</CODE>=20
+      is the only imagelist style supported. Note that we are creating =
+"locally"=20
+      the ImageList (the scope of the ImageList is the OnInitDialog =
+method).=20
+      It's OK, because the OutBar will take the ownership of the =
+ImageList (we=20
+      haven't used the <CODE>OBS_SHAREIMAGELIST</CODE> style) </P>
+      <P><PRE>ATLVERIFY(m_wtlOutbar.SetFolderCount(<SPAN =
+class=3Dcode-digit>10</SPAN>));</PRE>
+      <P>We prepare the memory for 10 folders (we won't use them). </P>
+      <P><PRE>ATLVERIFY(m_wtlOutbar.AddFolder(OBFF_TEXT|OBFF_PARAM, =
+_T(<SPAN class=3Dcode-string>"</SPAN><SPAN =
+class=3Dcode-string>[2]"</SPAN>), <SPAN class=3Dcode-digit>3</SPAN>) =
+!=3D -<SPAN class=3Dcode-digit>1</SPAN>);=20
+ATLVERIFY(m_wtlOutbar.InsertFolder(<SPAN class=3Dcode-digit>0</SPAN>, =
+OBFF_TEXT|OBFF_PARAM, _T(<SPAN class=3Dcode-string>"</SPAN><SPAN =
+class=3Dcode-string>[1]"</SPAN>), <SPAN class=3Dcode-digit>5</SPAN>) =
+!=3D -<SPAN class=3Dcode-digit>1</SPAN>);</PRE>
+      <P>We add two folders (technically we Add a Folder and then we =
+Insert=20
+      another Folder before the just added Folder). We set the caption =
+and the=20
+      PARAM of the folders (the 3 and 5 are the PARAMS. The 0 of the=20
+      InsertFolder is the location where the folder will be inserted) =
+</P>
+      <P><PRE>m_wtlOutbar.AddItem(<SPAN class=3Dcode-digit>0</SPAN>, =
+OBIF_TEXT|OBIF_IMAGE|OBIF_PARAM, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>[1-1]"</SPAN>), =
+<SPAN class=3Dcode-digit>1</SPAN>, <SPAN class=3Dcode-digit>10</SPAN>);=20
+m_wtlOutbar.AddItem(<SPAN class=3Dcode-digit>1</SPAN>, =
+OBIF_TEXT|OBIF_IMAGE|OBIF_PARAM, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>[2-2]"</SPAN>), =
+<SPAN class=3Dcode-digit>2</SPAN>, <SPAN class=3Dcode-digit>20</SPAN>);=20
+m_wtlOutbar.InsertItem(<SPAN class=3Dcode-digit>0</SPAN>, <SPAN =
+class=3Dcode-digit>1</SPAN>, OBIF_TEXT|OBIF_IMAGE|OBIF_PARAM, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>[1-2]"</SPAN>), =
+<SPAN class=3Dcode-digit>3</SPAN>, <SPAN class=3Dcode-digit>30</SPAN>);=20
+m_wtlOutbar.InsertItem(<SPAN class=3Dcode-digit>0</SPAN>, <SPAN =
+class=3Dcode-digit>2</SPAN>, OBIF_TEXT|OBIF_IMAGE|OBIF_PARAM, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>[1-3]"</SPAN>), =
+<SPAN class=3Dcode-digit>4</SPAN>, <SPAN =
+class=3Dcode-digit>40</SPAN>);</PRE>
+      <P>We add two Items (one for each Folder) and then we Insert =
+another two=20
+      (technically we use the Insert as an Add (technically-level-2 the =
+Add is=20
+      just a shortcut to the Insert)). We set the Text, the Image (the =
+1, 2, 3=20
+      and 4 are the Icon numbers, zero based) and the PARAM (10, 20, 30 =
+and 40).=20
+      The first number (0, 1, 0, 0) is the number of the Folder where =
+the Items=20
+      will be added. The second number used by the InsertItem method is =
+the=20
+      location where the Item will be inserted. </P>
+      <P><STRONG><EM>FINISHED!!</EM></STRONG> </P>
+      <P>Now you have created the OutBar... You can try to compile, then =
+open=20
+      the dictionary and look for some new bad words (because surely =
+some small=20
+      errors creeped in the program), correct everything and retry :-) =
+</P>
+      <P>In the example I even used this in an OnSize event handler </P>
+      <P><PRE>m_wtlOutbar.SetWindowPos(NULL, <SPAN =
+class=3Dcode-digit>0</SPAN>, <SPAN class=3Dcode-digit>0</SPAN>, =
+LOWORD(lParam) / <SPAN class=3Dcode-digit>3</SPAN>, HIWORD(lParam), =
+SWP_NOMOVE|SWP_NOZORDER);</PRE>
+      <P>(where lParam is the new width of the window). In this way the =
+OutBar=20
+      is always proportional to the window. Now you could add the Notify =
+
+      handlers... Add these to the <CODE>BEGIN_MSG_MAP()</CODE> </P>
+      <P><PRE>NOTIFY_HANDLER(IDC_OUTBAR, OBN_FOLDEROPEN, OnFolderOpen)=20
+NOTIFY_HANDLER(IDC_OUTBAR, OBN_ITEMSELECT, OnItemSelect)=20
+NOTIFY_HANDLER(IDC_OUTBAR, OBN_ITEMSELECTAUTO, OnItemSelectAuto)</PRE>
+      <P>Then create three Notify handlers. <BR>To discover what is the =
+new=20
+      Folder Open use </P>
+      <P><PRE><SPAN class=3Dcode-keyword>int</SPAN> iFolder =3D =
+m_wtlOutbar.GetOpenFolder();</PRE>
+      <P>to discover which item is selected use </P>
+      <P><PRE><SPAN class=3Dcode-keyword>int</SPAN> iFolder =3D =
+m_wtlOutbar.GetSelectedFolder()=20
+<SPAN class=3Dcode-keyword>int</SPAN> iItem =3D =
+m_wtlOutbar.GetSelectedItem()</PRE>
+      <P><EM><STRONG>TRULY FINISHED!! :-)</STRONG></EM> </P>
+      <H2>History</H2>
+      <UL>
+        <LI>wtloutbar.h 1.0 May 2005 Initial Release (not published)=20
+        <LI>wtloutbar.h 1.1 May 2006 Small improvements, added comments=20
+        <LI>wtloutbar.h 1.11 May 2006 Bugfix in the =
+WM_DESTROY/WM_NCDESTROY=20
+        handler. Put CMemoryStripDC in another header=20
+        <LI>wtloutbar.h 1.12 Jun 2006 Corrected small memory leak (the =
+HRGN=20
+        wasn't deallocated). Changed the way the memory is freed during=20
+        destruction=20
+        <LI>wtloutbar.h 1.12R2 Nov 2007 Fixed the MDI Demo. Finally it =
+seems to=20
+        work correctly. Thanks to Nenad for the good idea on how to do =
+it.=20
+      </LI></UL>
+      <H2>License</H2>
+      <P>I'm a BSD guy, so I'll license this library under the MIT =
+license (a=20
+      simplified BSD license). </P>
+      <P>Copyright (c) 2005, 2006 Massimiliano Alberti =
+xanatos(at)geocities.com=20
+      </P>
+      <P>Permission is hereby granted, free of charge, to any person =
+obtaining a=20
+      copy of this software and associated documentation files (the =
+"Software"),=20
+      to deal in the Software without restriction, including without =
+limitation=20
+      the rights to use, copy, modify, merge, publish, distribute, =
+sublicense,=20
+      and/or sell copies of the Software, and to permit persons to whom =
+the=20
+      Software is furnished to do so, subject to the following =
+conditions: </P>
+      <P>The above copyright notice and this permission notice shall be =
+included=20
+      in all copies or substantial portions of the Software. </P>
+      <P>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, =
+EXPRESS=20
+      OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF=20
+      MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND =
+NONINFRINGEMENT. IN=20
+      NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY =
+CLAIM,=20
+      DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT =
+OR=20
+      OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE =
+OR THE=20
+      USE OR OTHER DEALINGS IN THE SOFTWARE. </P><!-- Article Ends =
+--><!-- Main Page Contents End --></DIV></SPAN>
+      <H2>License</H2>
+      <P>This article, along with any associated source code and files, =
+is=20
+      licensed under <A=20
+      href=3D"http://www.opensource.org/licenses/mit-license.php">The =
+MIT=20
+      License</A></P>
+      <H2>About the Author</H2>
+      <TABLE cellSpacing=3D5 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberPhotoTable=20
+          style=3D"WIDTH: 155px" vAlign=3Dtop><B><A=20
+            =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberProfileLink=20
+            =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+62387">xanatos</A></B><BR><BR>
+            <CENTER><IMG =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberPhoto=20
+            style=3D"BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; =
+BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px"=20
+            =
+src=3D"http://www.codeproject.com/script/Membership/ProfileImages/%7BC12D=
+BEB3-F761-42C4-B8DA-542A6754DE83%7D.jpg"></CENTER><BR><SPAN=20
+            class=3DSmallText=20
+            =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberType></SPAN></TD>
+          <TD><BR>
+            <TABLE>
+              <TBODY>
+              <TR =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_jobTitleRow>
+                <TD class=3DSmallText noWrap>Occupation: </TD>
+                <TD width=3D"100%"><SPAN class=3DSmallText=20
+                  =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberJobTitle>Software=20
+                  Developer (Senior)</SPAN></TD></TR>
+              <TR =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_locationRow>
+                <TD class=3DSmallText>Location: </TD>
+                <TD width=3D"100%"><SPAN class=3DSmallText=20
+                  =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberLocation><IMG=20
+                  height=3D11 alt=3DItaly=20
+                  =
+src=3D"http://www.codeproject.com/script/Geo/Images/IT.gif"=20
+                  width=3D16>=20
+      =
+Italy</SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+      <DIV=20
+      style=3D"PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: =
+10px; OVERFLOW: hidden; PADDING-TOP: 10px; WHITE-SPACE: nowrap; =
+TEXT-ALIGN: center"></DIV><A=20
+      name=3D_comments></A><!-- Forum Start -->
+      <TABLE class=3DFrm_MainTable id=3DForumTable cellSpacing=3D0 =
+cellPadding=3D0>
+        <TBODY>
+        <TR>
+          <TD><A name=3Dxx0xx></A>
+            <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR class=3DFrm_NavigationBar>
+                <TD>&nbsp;</TD>
+                <TD>Msgs 1 to 8 of 8 (Total in Forum: 8) (<A=20
+                  =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar.aspx?display=3DPrintA=
+ll&amp;fid=3D309882">Refresh</A>)</TD>
+                <TD style=3D"WHITE-SPACE: nowrap; TEXT-ALIGN: =
+right"><SPAN=20
+                  class=3DFrm_HL>First</SPAN><SPAN =
+class=3DFrm_HL>Prev</SPAN><SPAN=20
+                  =
+class=3DFrm_HL>Next</SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD><!-- Column Headers -->
+            <TABLE class=3DFrm_MsgTable cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+            border=3D0>
+              <TBODY>
+              <TR class=3DFrm_ColumnHeaders>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%" =
+border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD>Subject&nbsp;</TD>
+                      <TD class=3DFrm_MsgAuthor>&nbsp;Author&nbsp;</TD>
+                      <TD=20
+              =
+class=3DFrm_MsgDate>Date&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD><IMG height=3D5=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx2307253xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_question.gif" =
+
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>crash!</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+14818">free2000fly</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">15:41 6=20
+                        Nov '07 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>hi, I like your greate =
+work, but=20
+                                in mdi sample, when i "new" 10 child =
+frame, your=20
+                                app will crash, why?<BR><BR><BR>
+                                <DIV class=3DForumSig>Work=20
+                                =
+hunting</DIV><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD=
+></TR></TBODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx2307990xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_answer.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar.aspx?display=3DPrintA=
+ll&amp;fid=3D309882&amp;select=3D2307990#xx2307990xx"=20
+                        name=3D2307990>Re: crash!</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+62387">xanatos</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">2:32 7=20
+                        Nov '07 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>The easy answer is that =
+this=20
+                                article isn't about MDI+Split (it's =
+clearly=20
+                                written somewhere). <BR>The =
+hard-'n'-difficult=20
+                                answer is that the CSplitter window =
+classes and=20
+                                the MDI window classes aren't meant to =
+be used=20
+                                together. The WTL MDI implementation is =
+based on=20
+                                the concept that the parent of the =
+m_hWndClient=20
+                                (the "gray" area where the MDI client =
+windows=20
+                                go) is the main frame window. This is =
+wrong if=20
+                                there is a Split window in the middle. =
+The error=20
+                                is generated when the Window menu is =
+updated for=20
+                                the 10th time (the 10th time is =
+"special",=20
+                                because it's handled in a different way. =
+You can=20
+                                only have 9 "direct links" to windows in =
+the=20
+                                Window menu. The tenth one opens a new =
+dialog=20
+                                box where you can select where you want =
+to go).=20
+                                If you take away the Window menu there =
+won't be=20
+                                problems (the program in the article I=20
+                                referenced for the MDI+Split doesn't =
+update the=20
+                                Window menu)<BR><BR>There are some =
+suggestions=20
+                                in the WTL yahoo group on how to mix WTL =
+and=20
+                                Split.<BR><BR>--- bye=20
+                              =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D52><A=20
+                        name=3Dxx2308518xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar.aspx?display=3DPrintA=
+ll&amp;fid=3D309882&amp;select=3D2308518#xx2308518xx"=20
+                        name=3D2308518>Re: crash!</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+62387">xanatos</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">7:22 7=20
+                        Nov '07 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+52px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Found a solution... It's =
+quite=20
+                                simple and it seems to work... Perhaps =
+I'll=20
+                                write an article on how to do it. I'll =
+post the=20
+                                new demo in a day or two. If you want to =
+read it=20
+                                you can look in the WTL yahoo group (I'd =
+prefer=20
+                                to wait some days to see if my solution =
+has any=20
+                                problem before reposting a newer demo)=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D70><A=20
+                        name=3Dxx2309381xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar.aspx?display=3DPrintA=
+ll&amp;fid=3D309882&amp;select=3D2309381#xx2309381xx"=20
+                        name=3D2309381>Re: crash!</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+62387">xanatos</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">16:50 7=20
+                        Nov '07 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+70px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Posted a fixed version =
+of the MDI=20
+                                demo. Tested on a XP SP2 with and =
+without=20
+                                themes. If anyone can test it on W98, ME =
+and NT4=20
+                                I would be very happy.<BR><BR>--- bye=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx1676015xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>How can I add this to =
+my MFC=20
+                        application.</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+2297650">nkajale</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">14:36=20
+                        19 Sep '06 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>I am new to WTL. I am =
+trying to=20
+                                add outlook style tabs to my MFC =
+application. I=20
+                                came across your demo and found it very =
+cool.=20
+                                But I could not use your WTL outlook bar =
+in my=20
+                                MFC application.<BR>I tried the help =
+provided by=20
+                                the article on the topic( using WTL in =
+MFC apps)=20
+                                but still get a lot of errors. Can you =
+help=20
+                                please ?=20
+                          =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx1677282xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar.aspx?display=3DPrintA=
+ll&amp;fid=3D309882&amp;select=3D1677282#xx1677282xx"=20
+                        name=3D1677282>Re: How can I add this to my MFC=20
+                        application.</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+62387">xanatos</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">7:28 20=20
+                        Sep '06 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Ehm... If you don't tell =
+me WHAT=20
+                                EXACTLY you are trying doing I can't try =
+to fix=20
+                                it. So what do you want to =
+obtain?<BR><BR>---=20
+                                bye=20
+                        =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx1506746xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>error C2065: =
+'CIconHandle' :=20
+                        undeclared identifier [modified] for =
+wtlOutBarDemo Demo=20
+                        project.</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+558076">michael.=20
+                        zhao</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">7:38 28=20
+                        May '06 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Can you help with the =
+error? I am=20
+                                using WTL71. Thanks!<BR><BR>-- modified =
+at 10:39=20
+                                Sunday 28th May,=20
+                            =
+2006<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></T=
+BODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd LoVote HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx1506750xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtloutbar.aspx?display=3DPrintA=
+ll&amp;fid=3D309882&amp;select=3D1506750#xx1506750xx"=20
+                        name=3D1506750>Re: error C2065: 'CIconHandle' : =
+undeclared=20
+                        identifier [modified] for wtlOutBarDemo Demo=20
+                      project.</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+62387">xanatos</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">7:58 28=20
+                        May '06 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>It was added to WTL 7.5. =
+You know=20
+                                that WTL 7.1 is quite old (it's dated =
+2003 the=20
+                                original version), right?<BR>If you NEED =
+to use=20
+                                WTL 7.1 then you have 2 =
+possibilities:<BR><BR>A)=20
+                                you can decompress a newer WTL 7.5, open =
+
+                                atluser.h and extract from circa line =
+670 to=20
+                                line 878 (class CIconT, typedef CIcon, =
+typedef=20
+                                CIconHandle) <BR>OR<BR>B) you can =
+replace the=20
+                                CIconHandle with something =
+like<BR><BR>HICON=20
+                                ico;<BR><BR>ATLVERIFY((ico =3D=20
+                                =
+::LoadIcon(ATL::_AtlBaseModule.GetResourceInstance(),=20
+                                MAKEINTRESOURCE(IDI_ICON1))) !=3D=20
+                                0);<BR>ATLVERIFY(il.AddIcon(ico) !=3D=20
+                                -1);<BR><BR>clearly repeat the two lines =
+for=20
+                                each icon.<BR><BR>You can remove the=20
+                                ico.detach() (all of them)<BR><BR>Please =
+tell me=20
+                                if it works with WTL 7.1!<BR><BR>-- =
+modified at=20
+                                11:03 Sunday 28th May,=20
+                              =
+2006<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></T=
+BODY></TABLE></TD></TR>
+              <TR>
+                <TD><IMG height=3D5=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 =
+border=3D0></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%">
+              <TBODY>
+              <TR class=3DFrm_Footer>
+                <TD>Last Visit: Friday, February 22, 2008 1:16 AM &nbsp; =
+
+                  &nbsp; Page last updated: Friday, February 22, 2008 =
+4:47 AM</TD>
+                <TD=20
+              style=3D"WHITE-SPACE: nowrap; TEXT-ALIGN: =
+right"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <P class=3DSmallText><IMG height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+      width=3D16 align=3DabsMiddle> General &nbsp;&nbsp; <IMG =
+height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_news.gif"=20
+      width=3D16 align=3DabsMiddle> News &nbsp;&nbsp; <IMG height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_question.gif" =
+
+      width=3D16 align=3DabsMiddle> Question &nbsp;&nbsp; <IMG =
+height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_answer.gif"=20
+      width=3D16 align=3DabsMiddle> Answer &nbsp;&nbsp; <IMG height=3D16 =
+
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_joke.gif"=20
+      width=3D16 align=3DabsMiddle> Joke &nbsp;&nbsp; <IMG height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_admin.gif"=20
+      width=3D16 align=3DabsMiddle> Admin &nbsp;&nbsp; </P><!-- Forum =
+End --></DIV>
+      <TABLE width=3D"100%">
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD class=3DTinyText align=3Dleft><A id=3Dctl00_PermaLink=20
+            =
+href=3D"http://www.codeproject.com/script/Articles/Article.aspx?aid=3D142=
+34">PermaLink</A>=20
+            | <A id=3Dctl00_PrivacyLink=20
+            =
+href=3D"http://www.codeproject.com/info/privacy.aspx">Privacy </A>| <A=20
+            id=3Dctl00_TermsOfUseLink=20
+            =
+href=3D"http://www.codeproject.com/info/TermsOfUse.aspx">Terms of=20
+            Use</A> <BR>Last Updated: 7 Nov 2007<BR>Editor: <A=20
+            id=3Dctl00_ArticleEditor></A><BR></TD>
+          <TD class=3DTinyText vAlign=3Dtop align=3Dright>Copyright 2006 =
+by=20
+            xanatos<BR>Everything else Copyright =C2=A9 <A=20
+            href=3D"mailto:webmaster@codeproject.com">CodeProject</A>,=20
+            1999-2008<BR>Web20 | <A id=3Dctl00_AdvertiseLink=20
+            =
+href=3D"http://www.codeproject.com/info/MediaKit.aspx">Advertise on=20
+            the Code Project </A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD align=3Dmiddle colSpan=3D2></TD></TR></TBODY></TABLE>
+<SCRIPT language=3DJavascript type=3Dtext/javascript><!--=0A=
+if (document.all) try {window.attachEvent("oncopy",copyCode);}catch(e){};=0A=
+--></SCRIPT>
+</BODY></HTML>
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/Images/Standard/codeproject225x90.gif
+
+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
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Ratings/Images/red.gif
+
+R0lGODlhAQABALMAAP8zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACwAAAAAAQABAAAEAhBEADs=
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/KB/wtl/wtloutbar/wtloutbar.gif
+
+R0lGODlhEgK+AYcAAAAAAAAzAAAzMzMzACQkJAAAZgAOfQA7czMAZjMzZgBmAABmMzNmADNmMxZN
+fjNmZmYzM2YAZmYzZmZmM3BuZAAAgAIUiQAVkwAdoAAzmQMmqAAouAoxrAY6uTMAmTMzmQAmyAAq
+1QA1xQI52wA64zMzzAlCvxZIuwBmmSVXgzNmmTtxvgFDzgFF0gdV3BNP3xdU3wBK4gBI8QBV5gBZ
+8xhc5xhZ8wBmzABj6wFm+gNy/hZp7Rhs9Rd2+ihWwyhe3zBcxSNc4TNmzChi5Cho8yd29jRn4DNq
+9Tp19WYAmWYzmUtmiVV9omZmmW52tkd69VB+9mVmzGZm/wCZMzOZADOZMzOZZjPMZmaZAGaZM2aZ
+ZmbMAGbMM2bMZgCZzBqC/zOZzCOJ/yuQ/zGM/z2V/wDM/zPMzDPM/2aZmXGPpUuA9laE9mmG2WaZ
+zHyf0mKN92aT6GiV9nua4XOa+H2g1Gih+n6k6Xyn9mbMmWbMzGbM/4AAAJkzAKsmA6w1F7EqBbEw
+DrAzEplmAJlmM7VEKLZLMJlmZtM2CswzM/8AAOI7BNhDGs5GJNNKJt5SLtpTMsxmM+ZKFuFNJORU
+KOJZN+ZiOuRfQOVmR+ZuUudzWeh8YpkAmZkzmZkAzJlmmZlmzJlm/8wzzMxmzICAAJGOcpnMM5n/
+M5nMZpn/ZsyZM8yZZumDauuLcuySe/+ZZszMM8z/M//MM///AMzMZsz/Zv/MZoCAgIGIv52orKun
+mL27r5GYzpmZ/5er04qs54mq+I2195Cv+Zm06Ji296uv1KK207a62qq86pnMmb/AvJnMzJnL/pn/
+/7zJ1LLL9syZmcG/r8C+te6ch++hje+jkPCpl/S5psyZzMyZ//+Z/8zMmdHNu8z/mf/MmfTBtMXF
+wsDI3cDcwMzV29LNwtrXxtzb0sjL5MzM/8vW68bX+9Ta69Hc98z/zMzs/8z//9/i4dTi++DcyuHe
+1frMx//M/+Phzevp2PDs3f//zO3s4+Tr+u/w6urw+vDu4/Hx6/j59yH5BAAAAP8ALAAAAAASAr4B
+AAj/ANn0G9iiYMEYBWe4mIGDIY6GDxnOmEFjIkWLFSdmvKgRo8eOIDmK3Ejy40iTJUOmPKkSpcuW
+MFmerEjzYs2bNnPi3KmzJ8+fPoMCHSq0KNGjFpMqXcq0qdOnUKNKnUq1qtWmGVPKmBEjBlevMrqK
+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
+Sc3dQgKm+1Cl8flJYiqm8ZhkY4bJX0ImITHmZMpKZVr/piAJZmaCmVxy5jxh5md6yWOKplbdY2ni
+22aiZg5RpdRFneSdpmvCjWeCyb1B3caRm8ntprxpic2BZhPWZk3WZa/k5r+pXM/9HW0S516pZqxc
+3MxlSclt289dnG7GZqw0p3OWDGxOp2+GJ3j65riVZ8qJ55UE56S0Zne+z21+iXT+5nn63G+W58PZ
+Z8ppp6RwZ3sOzHf6nMkt53jKXHUOKMbZGXv2Z2RCp7bJJ30+aHo6qHk6aHgeaLAlqIISz39WKICi
+XM+ZZ2za533qp6LwZ4Z2y3sK3GpyiYmeKK7Apm6uaFm0qIvaimTKaDzV6GgaJ46u3nDqaGcS5Rhm
+nXo6/9wvhiaQuiePQluRBt3k/WiSUhODIluTAueRQmmU4tAs0px1btxyXmeHVifUgenNYWiWmkyK
+zqeX1ifAUeiEril9fil5limSnqmGLmmbTGiAcmhuzimBuumc+qg52ukNjZ6emlt9mtufximgCqh1
+mSmh+iee5qmEiud9+mmiQiic7uaHbiekRmpwCakgyia9tel4ymeXPmhvoirQdaqn0CiolglpWulx
+ziOWxuqCluUITk2VUmeMXumg4qpOTWqPHl+dCqvTpGmxOuanIquNEuuySluzOmum3CiOwiq11sis
+RmuOZutiiqpZcqunHqu3SqoYFp64Siu5lmuo6mpGtv/dEUTBEWTjurIrikJr26lAF9ACLZwCBQiB
+B9arvb4ouO4q20XBKfCrwnKDFiQkVIrlwHonvmYdwiosv3IDO+ADPqCBwwJrVEasxLpr26lKxVos
+N3CDPWis6MRMWIJs5myrn6DBK8QCH7zCwmKsxhrhOMgjxN2qyxKMsiJMMWrBA6gAGqRCKggCJFzs
+yaqshVAIPhStx0Lsz7YrZ4Vr50TBvirsKXCBIKTCLNDCyXKD0/LDiODDyfbP1FZt3FgrT0RBLoQD
+LnRBKSzsKWSB2HKDPOADi4TEyfLrKYBlgE0r2zoJzGJJFKCCwtpDOGhB3nKDNlRBKaRsGv6Dxv6t
+wgr/bukJbOEWStB6CjL0KxcoLi2wQxZwQz3gAzuEQwNsATKJCHlwg8XSQilwgeY+Kud27qAc7pXQ
+AhdMgRZUQRUkLC1YgcriQzhQARYgE9rObinU7gTcrrH6rO4SrMiuFy0sQC7gwjeIQxdwAb9qQQKi
+gfJiLuDWbhZMgD8+abBW772eK9aGTCk0gOjArhYk7Ckgw4jYQwMwAN7yKyo8bxZkQQPwYcu6L8l8
+rqScQhWwXwq2QxXQgilkQUiorhYwAAOUQgCXwgA3wHNVJAKb69Ua7MqcwgIgA4u0A95mQRfYw98q
+AAZzcBZUgQfbavuG8LNe7yt1QRVQgNmSCB6cwik0/4Ds8msDBAADNAABf7ANfywOn8zEIkwU0LCJ
++MMVwEIDbC0tNMAABEAAeLD00in1PrGlKLCiCIEJ62+JaAEqzDC/crAXRxdQjjEZe24UIwwa0DAG
+sl/tBkAAM3AAMHFc0nEd7+6UKo8QBC83wC77hQMXnIIAoC8YIybhFjJ78C6WqEADVIE9+INn/EMu
+gG8AVEEHhzFr5q4lz4gZe4oKKAAXaMM4jI4W7Oso968AmHLP3nAqF9gdr0wCKEAV6O84LEDdIjED
+3LLeYesuw88hr1cCBIAC4MEUgC8XKEADIHMyV/Iynwcmb0kCCMAXZwEXeLAgH542b/OhFOy7yo9J
+Hf8m4ykzOvdaL6dr2J1zPNuG264oPN9zWxBe/NLzeqIyP69HPq/mPg+0WvgzCQN0QBMyQs9NMzN0
+stnzQ1eGQq+zRHfJQVd0s+lwRpcoRXO0pggpuioPicLnr66cQIt0o0U0r/LmzKX0qZ6yQ7M0glw0
+sCFnpTrp2to0lBR0fM50hB6wTxsuSf+zxYFnnxopURc1mXm0wim1gYoohdK0Ljt1guA0z5Vqqtbc
+w2I1mri0uDUqbn41WGvrPGOLnO4pT7OvE581qEG1SSddT8M1RIecb2A0tsn0ufG1cF61XaNHQZfm
+Rgd2GKX1R4tMSBv2Ugz2ZxY2Y1fEUS90YrPoYkf/tg6JdWVT5kpjto0g9mZbTk179vFodmgrdmeT
+drFNtl6ftmgDtmpjhmNnJmTH9sHBL2W7tpXUtm0Xkmnr9mu/dW9bNGsDd7Zc9nBT3G8bN28n90B0
+87Uit3ODHF2MqnEDjHRP90No9XVz9mhrN1vM9mQ293RDt4ySt3OL95U03/NF3/T93z+mNnjnSnF/
+HfehovflIHwH7HfPd1qo906gn/qxXxHyzQbut1n7t2yDNvNBX/5hCP8tYiPSa38reEdXN1LbjQEq
+oBFyuIE3YBNTrYWHd31DWwUOOAaOSBa+H8+6tYiPeEIv9/aZIAqmOAqyIH/DNoz/d4kfWyHaYIrg
+/yD4tXguC/eOX5CM/4sZEmHloggSKiEIH3lkcDewTWENWqGNw677bSEuI6h8Szl1FyWyLTmFOHCW
+7x8bdvmFfjmYb3eP/xod3uKT42GJ6OEWGnBTt/lny/UrEWL3YSIiBrqBC5YjJrie7/mUZPjKGGOF
+ANGlbeIuhmSeH/pq8/krkeIZnuIhquIunkMr5riRUzp943VJ/1otJuOT6+Ix9iKov7ioF4V6S2M1
+zvoytvqr9/Obe2NBzrpgwd/6YkvSII3RJE1wu/qtg1uSr0w+vuOsjyPCqI1k/UPb7N2x8zipK3rn
+QKRgGSQ8ErmnWAQ/wEM6jLszlLu5O4M+HFO3Vv87kls6sOUjO+7jO/ZjyEgRPOgDPOT7OqzDuJO7
+M/yDOKw7u3d0oud2n3P7QXbsv1hEOuQ7PPD7uJ9DOjjDxP8DOAj8wCsFgPMERErkRK4Mw+d7v5P7
+OThDyf+DMWB8xmf2tRu8/GxkR36kpC/8P4w7xJP8uaO8yq/8qGO4yyNySq4kKLTkS8Lls9d8OqzD
+EpD7xC+Byf97Mew8zxMFlWMdTuokT/qkmneJRTiD0i/BEpS8M4C9059g1FP71Ftbsk/NUSblUjal
+0dM8xacD2Z8D2Zv7P5w9eid31UebVWKlVnKlV259TP3D3NM92Ts93ut9duv5xgd4Wq5lW74l4W//
+SddL/Ljffc4zPpvzfN9H213upV7u5dR0/eHTPcVvvtSnfVA8PscPmmHGPcJIUblL/Nyfe7nn/eqz
+vnLjdmv3qOk//cTjPtTvPu/LxdqvqBTpA/HjPjzoPNofP7L7/mb3gzlE+zHExt4Pt+tDWz7wwzH0
+Ah2MvxuU//iPvzAMhvFLv5tTf3d7t46zv0J0P+ltf2/DaK9S52w2fpsToE6XKkDYEygQQMGC9gAM
+JKiQYUKGDyFGlMjw372BuSjY0riRY0ePH0GGFDmSZEmTJ1GmVLmSZUuXL2HGlDlTZr9/MkZgsBBi
+h4tcE4EqdDjw4EKjQokGVbqU6cCKFzPSlDqV/2pVq1exZtW6lastmzh1juj5s2nEoQiPJm1I1KDR
+tmrfsj1bFuJTgRi75tW7l29fv38Bg/yac+dYuhDPOpw79+jQhI8Ro41okfFhgXbt4Q28mXNnz59B
+cx0cduw9i6btoVZ9mnXq0wBUw74nOzXt1bRxz55tm/Lu1bUN/hbeerg9zJpDJ1e+nHlzzqMLu/g3
+nXp169exZ9e+nXt379+vW7wb1Xl58+fRpz/5lQRpF/bq1Ys3Xz79+fHq47+fn/9+//YB1I8+cggs
+0MADEUxQwQUNBLAehpBTT8IJKazwuZsI48mF+NJI4YAPQQxRxBFJLNHEE1FMUcUUHUjjQYUitP9Q
+xhlprDEm9tyLJw0mzAHPxx+BDBJIdZhIA0LybExSySWZ9ApDnTSsJwVwhKzSyiuDBCeFI5vs0ssv
+0cPRArFciOcALNFMU03rDhBvPDDhjFPOzaCL8sw18cwTyHzahBHJOQENVNCpxCTTTD0RTVQ7f/js
+x89BIY1UUpXq7KmeM/2ZLtN/Nu1U0085BdXTUEkd1aBPOz2V1FJZbXXUV0XVlNE+oZrU1ltx1ajQ
+ng4NNdNffQ0W2GGFLZZYAIItaFhkiQXW2GebhXZWNzP7M9drsQWz0g0PiNZbaMGNFoBlmQ11XGnD
+TTfafPikNsZs4Y3Xxl3LxFTde79dltNMmWX/lt998Q24WX/82eedAxytVd6FGbZw20v3/VVigAmm
+eOKKMb5Y43MJPpdjfz62WOSMR9ZY5H3YpfXNhllu2Tx6zZSY4Jlprtnmm3G+edyZd96545yBDlro
+mQ1G+FGXkU4atIe7Hdrpp3nm2SBlf4ba6qDzsUflapXu2uu/YG766rF1jtpskMlOm+Z8Dk545a/h
+jjsrptWuG+2q8fbZbqtRlsdoheUOXPCZwiZ4n4IP30fxxRlv3PHHIV983MQhnxzxyDHPHPKC2d76
+3cFBD90kpjUv3fTHDbqc8dRPb730fPx2m2vRaa9dpLDZzV333Xnv3fffgQ9e+OGJf0eecv5+/9v2
+5Zd/2IFm5Ile+umpr97667HPXvvtuee+nGQckP1z5skXnN560lgCF3LGYd/99uF/X/746Z/f/vrH
+gV9/9vfPn////RfA/g0QgPobhy6WkAZ/HK18DRzctgTSoRVNkIIVtOAFQ9SifiwQcA70INzolRqM
+CYyE+VLUj5zFpQ+u0GsQjM9/BBTD/gRohjKEIX8YlEMd7rBADlIhC4HosvOhz0MYNOIRkUjBFr2o
+g0F0orwetqMenZCKeiKSkRj4RC1mC2ZTquIX86SlH26RjLjaVq/AmMY0ec5aZXTjoKBjqDupkY5V
+alcW35jHQInJTnX0I5BmJb426pGQX4ojr//uBCtXxWqRjeRXQYqlqk2xSpGVZCSsUMbGQm4yTkwr
+4Sf19UhI/qpc0QJlulLmrkFykpU1OmS9TmnCfHGMlubKlyxBmUlVtpKXS+KjpboVy0/6q1y1HCEu
+kSmtTAqyl8105ZPGhMiIlYyaJLOmyX7GqalJLGTXrCY2wbmvfWhtl840Z4XoFrG9Qc1n7TzbOvnW
+Njyek54vg6Yc4Tk2d+Ytn1fLmibrGVB7yqA90blUP622z7stFKFD6xwzBRpR5rwyZg11WjtT906L
+5qxvyZudREG6NGjayXCuM2nlCqa61aX0pC1VHOcOVs6QzvRCYIlmvVyaU8kpy3Gs06lLYef/0fHR
+lKh5YRrxkJpUpS6VqbszHvIgWlSp7oWiz+veVbGaVa1ulXrfC988pxpWrERRffczK/7Omlb6EVCA
+BXRrW+HKVgMiUIFgFetdCXXPnkSwiEn061//qkEOKg+vhZXKtkyzQWEm81t/tE4K7WpYybbklfCp
+4WVvmFkaahY/PPTsZxskICYSdrKlZcnDiAhY1a72gksco2lhmxKKStGxtd3OFV8bW92S5GFetO1v
+sSPGyO6WuByh6ByBm1zqALS4zf2IJ5Ub3Ts20bnVPW50lRvI4VZXt9d15CXB+11zQTKS5LWkeM/7
+qmltl7uwDRslF5uuUv5jauYCV3wHNl3S/7aXuNe9GH7BxTH6RvKWAAZWKtnL38n618DqIibF9uWv
+BnvLcPKkroK7q9d6hdObHeYwN0lpsm5++JslRpl+P4rh/t6koHJU50ZxptCa6Q3GNytaVFW82+PW
+OGgyphmNebw2reE4x7HdcZBj/OOyIdlmnZNpkY2s4YoyecYzzihDqYyymCYYymEtnOFU+lPNWS5y
+ZBaz6TgXOy53Wao7PvNJfdq4OL/ZdEElMpsle9zhnbipffbzn9llPDVfGM94rSr0uJpoRS86q169
+c6ENPVJLpW99cX2rXC+daUtvGtOc1vRcEzjYFEO6sJW1hwRZm2pVm6hFBIORP/qxwVjDWv/Wtab1
+rWeda1vrGte79nWvgc1rYf962MEm9rGNnexiLxvZzFZ2s6H9bGk7m9rRrva0rZ1tbG/72teW9Hvy
+cbhWfWeS2Cn3qs597t9uqm/3yAd24R1vec+b3vXWjk3JlItckGLfubAFv0kRcIEPnOAAL7jA9z3w
+hBsc4Qp3eMMDvnCGS3zhFId4xC8+8YczXOMXtzjGPb7xj3O84iI3echRDnKSZ7zkKe+4ykce85PD
+fOYvt3nLae5ynN+c5T1XOc9/vnOh+3zlQSe6zDPe8H7z26YaKsc3oB71ZEyd6lW3ejKigfVobF3r
+WNf61reui2iInexjh4Yu0H72tOtC7W3/Xzvb3+52uM9d7nWP+93pjne7553ve/e73gHf98D/XfCF
+J/zhB594wyse8Yt3fOMhz3jJP37ykaf85RsP97OrPe3Q8Pw2toHvnrzjHeUofTlQj3pxpL4c5Ei9
+61sfe3KIg0CtZ1D7CIR79+W+QLj3Pe93//vgA1/4xSf+8YeffOMrH/nLd37zoc986T9/+tGn/vWt
+n/3qbx/73Nd+98H/ffF7n/zhL//4jR8/BcWj6T3J3TvYFn/4z1/+9mCb/e3xDoXoP/8DkYdA/u//
+7EEA/+9BDBA+EPAAFTABGXABHbABIfABJTACKXACLbACMfACNTADOXADPbADQfADRTAE/0lwBE2w
+BFHwBFUwBVlQAePjBV/QHkTPBSAn3PphccJtH24wH2KNB/uBB9nF3YQwCLMmH0xDNVIjKNxkCQeC
+CQXCCZPwCZtwCqWwCqPwCqEwC6kQC7dQC63QC7nwC7twDMWwDMPwDMEwDckQDddQDc3QDdnwDdtw
+DuWwDuPwDuEwD+kQDxVCPKhlItqPBnVQccKtEGPtB3vQd9yNXfDPCBsR/ywjEiVxEimxEi3xEjEx
+EzVxEzmxEz3xE0FxIF5kBlGGEAlxB1FmB3+Qd4awCN3tEbPGCkNxFmmxFm3xFnExF3VxF3kRKF6k
+HgIRB02xB4lxFXtnEYvQ/iwiGSFRFv978RmhMRqlcRqpsRqtkSFigDDIpBRR8Qd10AdT8RgBwAhd
+MRmZ0RmvMR3VcR3ZsR3dERqZKBj3YWp0EBFV0Rh5ZxwXERbx7xXf8R8BMiAFciAJciIehBTzAQBK
+USHt0QeBkBX1sRz5ER0LsiIt8iIxMiMxcbTkUSHDjSETsiB20CByZ2oSkhxhwxybkSI1siVd8iVh
+siB1IRcsAiE9ch51EAB6UCeNcRzHkV18EiVf8Rz/MCaN8iiRMimlMRd04R9kMEN6QnHo8QenhidN
+8idPUjdSkh9jUSm98ivBMiw5cTqe0j1QxiPH8Sx3ByuDEiiNMCj9sSvFci7psi7tUiD/flEhRhEq
+XcAt/ZItT9ItIzIhsmYc+/AuETMxFRMmf3EmLYIp4WMG/dItEaIgSpIkK9My06IsmCgvEfAzPTM0
+8XI0QZM0RbM0UfM0VdM0WTM1W3M1XTM2YXM2X7M2ZdM2afM2dTM3eRM3fXM3f7M3gXM4hbM4g/M4
+P1MUH2ImnZI5yzI6Aq13GlEl5VItJkIAPVM59ZIhRis5SVM7wfM7xdM7ybM7zZM70XM71TM8yzM9
+2fM813M84fM93VM+67M94xM/6TM/59M++fM++1M//XM/CXRADVRAETRAFRRA01M1ydI4nHIGl7ES
+HUIABxAAKxAGLSsGYdAANbRDNzQ+/0LUQzn0Q020RFFUREF0RU9URVuURF00RWF0Rke0RllURm30
+RXMUR280Rn2URnsUSHU0SHf0R4tUSHl0SJU0SZnUSIn0SZfUSaPUQy2rSmUUGPkyAC80ALVUeuoh
+er40TMNUHsS0TDv0TNE0TdV0Tdm0Td30TeE0TuV0Tum0Tu30TvE0T/V0T/m0T/30T+c0HmYyPga1
+Hgp1BuOhHBIV9RZ1URX1URM1UiH1PiiVUslhPi41Hi51UzW1UzWVUz/VUwlEVEF1VDPVVDG1VFWV
+VFn1VFfVVVs1VWM1VGG1VmXVVmn1VnU1V3kVVXv1VXfVV4UVWH91VofVWIn1WHFVWf+DNVmdFVmh
+dVmfVVqjtVmrtViptVZHlTkFNRf+oVu/tel4wAU2tVzN1VRBC7S2gUDWlRza9V3ZNV7dVV7hdV7t
+tV7xlV719V73NV/59V/9NWD7dWABlmAFtmAR9mAV1mAZNmEbdmEdNmIhdmIftmIl1mIp9mI1NmPZ
+dToIxGPJwWNnkExJFkxJthy+FD9QVlHrgWVRVmXl42UrdWZptmZt9mZxNmd1dmd5tmd99meBNmiF
+dmiJtmiN9miRNmmVdmmZdlOb7gV6YgZkQGpfQGqt9gWmVga0dmu5tmu99mvBNmzFdmzJtmzN9mzR
+Nm3Vdm3Ztm3d9m3hNm7ldm7ptm6v7fZuy3YENiAsXuAFWmAE/jZwAXdw/3YEDPdwETdxFXdxGbdx
+HfdxITdyJXdyKbdyLfdyMTdzNXdzObdzPfdzQTd0RXd0JXdvLQADUDd1VXd1Wbd1Xfd1YTd2ZXd2
+abd2bfd2cTd3dXd3ebd3ffd3gTd4hXd4ibd4jVcnViB5lXd5mbd5nfd5oTd6pXd6qbd6rfd6sTd7
+tXd7ubd7vfd7wTd8xXd8ybd8zfd8kzcgAAA7
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/jpeg
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Membership/ProfileImages/%7BC12DBEB3-F761-42C4-B8DA-542A6754DE83%7D.jpg
+
+/9j/4AAQSkZJRgABAgEASABIAAD/4hxtSUNDX1BST0ZJTEUAAQEAABxdTGlubwIQAABtbnRyUkdC
+IFhZWiAHzgACAAkABgAxAABhY3NwTVNGVAAAAABJRUMgc1JHQgAAAAAAAAAAAAAAAAAA9tYAAQAA
+AADTLUhQICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABFj
+cHJ0AAABUAAAADNkZXNjAAABgwAAAGx3dHB0AAAB7wAAABRia3B0AAACAwAAABRyWFlaAAACFwAA
+ABRnWFlaAAACKwAAABRiWFlaAAACPwAAABRkbW5kAAACUwAAAHBkbWRkAAACwwAAAIh2dWVkAAAD
+SwAAAIZ2aWV3AAAD0QAAACRsdW1pAAAD9QAAABRtZWFzAAAECQAAACR0ZWNoAAAELQAAAAxyVFJD
+AAAEOQAACAxnVFJDAAAMRQAACAxiVFJDAAAUUQAACAx0ZXh0AAAAAENvcHlyaWdodCAoYykgMTk5
+OCBIZXdsZXR0LVBhY2thcmQgQ29tcGFueQBkZXNjAAAAAAAAABJzUkdCIElFQzYxOTY2LTIuMQAA
+AAAAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAA81EAAQAAAAEWzFhZWiAAAAAAAAAAAAAAAAAA
+AAAAWFlaIAAAAAAAAG+iAAA49QAAA5BYWVogAAAAAAAAYpkAALeFAAAY2lhZWiAAAAAAAAAkoAAA
+D4QAALbPZGVzYwAAAAAAAAAWSUVDIGh0dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAWSUVDIGh0
+dHA6Ly93d3cuaWVjLmNoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAGRlc2MAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0g
+c1JHQgAAAAAAAAAAAAAALklFQyA2MTk2Ni0yLjEgRGVmYXVsdCBSR0IgY29sb3VyIHNwYWNlIC0g
+c1JHQgAAAAAAAAAAAAAAAAAAAAAAAAAAAABkZXNjAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBD
+b25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAsUmVmZXJlbmNlIFZpZXdpbmcgQ29u
+ZGl0aW9uIGluIElFQzYxOTY2LTIuMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHZpZXcAAAAAABOk
+/gAUXy4AEM8UAAPtzAAEEwsAA1yeAAAAAVhZWiAAAAAAAEwJVgBQAAAAVx/nbWVhcwAAAAAAAAAB
+AAAAAAAAAo8AAAACAAAAAAAAAAAAAAAAc2lnIAAAAABDUlQgY3VydgAAAAAAAAQAAAAABQAKAA8A
+FAAZAB4AIwAoAC0AMgA3ADsAQABFAEoATwBUAFkAXgBjAGgAbQByAHcAfACBAIYAiwCQAJUAmgCf
+AKQAqQCuALIAtwC8AMEAxgDLANAA1QDbAOAA5QDrAPAA9gD7AQEBBwENARMBGQEfASUBKwEyATgB
+PgFFAUwBUgFZAWABZwFuAXUBfAGDAYsBkgGaAaEBqQGxAbkBwQHJAdEB2QHhAekB8gH6AgMCDAIU
+Ah0CJgIvAjgCQQJLAlQCXQJnAnECegKEAo4CmAKiAqwCtgLBAssC1QLgAusC9QMAAwsDFgMhAy0D
+OANDA08DWgNmA3IDfgOKA5YDogOuA7oDxwPTA+AD7AP5BAYEEwQgBC0EOwRIBFUEYwRxBH4EjASa
+BKgEtgTEBNME4QTwBP4FDQUcBSsFOgVJBVgFZwV3BYYFlgWmBbUFxQXVBeUF9gYGBhYGJwY3BkgG
+WQZqBnsGjAadBq8GwAbRBuMG9QcHBxkHKwc9B08HYQd0B4YHmQesB78H0gflB/gICwgfCDIIRgha
+CG4IggiWCKoIvgjSCOcI+wkQCSUJOglPCWQJeQmPCaQJugnPCeUJ+woRCicKPQpUCmoKgQqYCq4K
+xQrcCvMLCwsiCzkLUQtpC4ALmAuwC8gL4Qv5DBIMKgxDDFwMdQyODKcMwAzZDPMNDQ0mDUANWg10
+DY4NqQ3DDd4N+A4TDi4OSQ5kDn8Omw62DtIO7g8JDyUPQQ9eD3oPlg+zD88P7BAJECYQQxBhEH4Q
+mxC5ENcQ9RETETERTxFtEYwRqhHJEegSBxImEkUSZBKEEqMSwxLjEwMTIxNDE2MTgxOkE8UT5RQG
+FCcUSRRqFIsUrRTOFPAVEhU0FVYVeBWbFb0V4BYDFiYWSRZsFo8WshbWFvoXHRdBF2UXiReuF9IX
+9xgbGEAYZRiKGK8Y1Rj6GSAZRRlrGZEZtxndGgQaKhpRGncanhrFGuwbFBs7G2MbihuyG9ocAhwq
+HFIcexyjHMwc9R0eHUcdcB2ZHcMd7B4WHkAeah6UHr4e6R8THz4faR+UH78f6iAVIEEgbCCYIMQg
+8CEcIUghdSGhIc4h+yInIlUigiKvIt0jCiM4I2YjlCPCI/AkHyRNJHwkqyTaJQklOCVoJZclxyX3
+JicmVyaHJrcm6CcYJ0kneierJ9woDSg/KHEooijUKQYpOClrKZ0p0CoCKjUqaCqbKs8rAis2K2kr
+nSvRLAUsOSxuLKIs1y0MLUEtdi2rLeEuFi5MLoIuty7uLyQvWi+RL8cv/jA1MGwwpDDbMRIxSjGC
+Mbox8jIqMmMymzLUMw0zRjN/M7gz8TQrNGU0njTYNRM1TTWHNcI1/TY3NnI2rjbpNyQ3YDecN9c4
+FDhQOIw4yDkFOUI5fzm8Ofk6Njp0OrI67zstO2s7qjvoPCc8ZTykPOM9Ij1hPaE94D4gPmA+oD7g
+PyE/YT+iP+JAI0BkQKZA50EpQWpBrEHuQjBCckK1QvdDOkN9Q8BEA0RHRIpEzkUSRVVFmkXeRiJG
+Z0arRvBHNUd7R8BIBUhLSJFI10kdSWNJqUnwSjdKfUrESwxLU0uaS+JMKkxyTLpNAk1KTZNN3E4l
+Tm5Ot08AT0lPk0/dUCdQcVC7UQZRUFGbUeZSMVJ8UsdTE1NfU6pT9lRCVI9U21UoVXVVwlYPVlxW
+qVb3V0RXklfgWC9YfVjLWRpZaVm4WgdaVlqmWvVbRVuVW+VcNVyGXNZdJ114XcleGl5sXr1fD19h
+X7NgBWBXYKpg/GFPYaJh9WJJYpxi8GNDY5dj62RAZJRk6WU9ZZJl52Y9ZpJm6Gc9Z5Nn6Wg/aJZo
+7GlDaZpp8WpIap9q92tPa6dr/2xXbK9tCG1gbbluEm5rbsRvHm94b9FwK3CGcOBxOnGVcfByS3Km
+cwFzXXO4dBR0cHTMdSh1hXXhdj52m3b4d1Z3s3gReG54zHkqeYl553pGeqV7BHtje8J8IXyBfOF9
+QX2hfgF+Yn7CfyN/hH/lgEeAqIEKgWuBzYIwgpKC9INXg7qEHYSAhOOFR4Wrhg6GcobXhzuHn4gE
+iGmIzokziZmJ/opkisqLMIuWi/yMY4zKjTGNmI3/jmaOzo82j56QBpBukNaRP5GokhGSepLjk02T
+tpQglIqU9JVflcmWNJaflwqXdZfgmEyYuJkkmZCZ/JpomtWbQpuvnByciZz3nWSd0p5Anq6fHZ+L
+n/qgaaDYoUehtqImopajBqN2o+akVqTHpTilqaYapoum/adup+CoUqjEqTepqaocqo+rAqt1q+ms
+XKzQrUStuK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blK
+ucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPH
+Qce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO
+1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vk
+c+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn
+9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t//9jdXJ2AAAAAAAABAAA
+AAAFAAoADwAUABkAHgAjACgALQAyADcAOwBAAEUASgBPAFQAWQBeAGMAaABtAHIAdwB8AIEAhgCL
+AJAAlQCaAJ8ApACpAK4AsgC3ALwAwQDGAMsA0ADVANsA4ADlAOsA8AD2APsBAQEHAQ0BEwEZAR8B
+JQErATIBOAE+AUUBTAFSAVkBYAFnAW4BdQF8AYMBiwGSAZoBoQGpAbEBuQHBAckB0QHZAeEB6QHy
+AfoCAwIMAhQCHQImAi8COAJBAksCVAJdAmcCcQJ6AoQCjgKYAqICrAK2AsECywLVAuAC6wL1AwAD
+CwMWAyEDLQM4A0MDTwNaA2YDcgN+A4oDlgOiA64DugPHA9MD4APsA/kEBgQTBCAELQQ7BEgEVQRj
+BHEEfgSMBJoEqAS2BMQE0wThBPAE/gUNBRwFKwU6BUkFWAVnBXcFhgWWBaYFtQXFBdUF5QX2BgYG
+FgYnBjcGSAZZBmoGewaMBp0GrwbABtEG4wb1BwcHGQcrBz0HTwdhB3QHhgeZB6wHvwfSB+UH+AgL
+CB8IMghGCFoIbgiCCJYIqgi+CNII5wj7CRAJJQk6CU8JZAl5CY8JpAm6Cc8J5Qn7ChEKJwo9ClQK
+agqBCpgKrgrFCtwK8wsLCyILOQtRC2kLgAuYC7ALyAvhC/kMEgwqDEMMXAx1DI4MpwzADNkM8w0N
+DSYNQA1aDXQNjg2pDcMN3g34DhMOLg5JDmQOfw6bDrYO0g7uDwkPJQ9BD14Peg+WD7MPzw/sEAkQ
+JhBDEGEQfhCbELkQ1xD1ERMRMRFPEW0RjBGqEckR6BIHEiYSRRJkEoQSoxLDEuMTAxMjE0MTYxOD
+E6QTxRPlFAYUJxRJFGoUixStFM4U8BUSFTQVVhV4FZsVvRXgFgMWJhZJFmwWjxayFtYW+hcdF0EX
+ZReJF64X0hf3GBsYQBhlGIoYrxjVGPoZIBlFGWsZkRm3Gd0aBBoqGlEadxqeGsUa7BsUGzsbYxuK
+G7Ib2hwCHCocUhx7HKMczBz1HR4dRx1wHZkdwx3sHhYeQB5qHpQevh7pHxMfPh9pH5Qfvx/qIBUg
+QSBsIJggxCDwIRwhSCF1IaEhziH7IiciVSKCIq8i3SMKIzgjZiOUI8Ij8CQfJE0kfCSrJNolCSU4
+JWgllyXHJfcmJyZXJocmtyboJxgnSSd6J6sn3CgNKD8ocSiiKNQpBik4KWspnSnQKgIqNSpoKpsq
+zysCKzYraSudK9EsBSw5LG4soizXLQwtQS12Last4S4WLkwugi63Lu4vJC9aL5Evxy/+MDUwbDCk
+MNsxEjFKMYIxujHyMioyYzKbMtQzDTNGM38zuDPxNCs0ZTSeNNg1EzVNNYc1wjX9Njc2cjauNuk3
+JDdgN5w31zgUOFA4jDjIOQU5Qjl/Obw5+To2OnQ6sjrvOy07azuqO+g8JzxlPKQ84z0iPWE9oT3g
+PiA+YD6gPuA/IT9hP6I/4kAjQGRApkDnQSlBakGsQe5CMEJyQrVC90M6Q31DwEQDREdEikTORRJF
+VUWaRd5GIkZnRqtG8Ec1R3tHwEgFSEtIkUjXSR1JY0mpSfBKN0p9SsRLDEtTS5pL4kwqTHJMuk0C
+TUpNk03cTiVObk63TwBPSU+TT91QJ1BxULtRBlFQUZtR5lIxUnxSx1MTU19TqlP2VEJUj1TbVShV
+dVXCVg9WXFapVvdXRFeSV+BYL1h9WMtZGllpWbhaB1pWWqZa9VtFW5Vb5Vw1XIZc1l0nXXhdyV4a
+XmxevV8PX2Ffs2AFYFdgqmD8YU9homH1YklinGLwY0Njl2PrZEBklGTpZT1lkmXnZj1mkmboZz1n
+k2fpaD9olmjsaUNpmmnxakhqn2r3a09rp2v/bFdsr20IbWBtuW4SbmtuxG8eb3hv0XArcIZw4HE6
+cZVx8HJLcqZzAXNdc7h0FHRwdMx1KHWFdeF2Pnabdvh3VnezeBF4bnjMeSp5iXnnekZ6pXsEe2N7
+wnwhfIF84X1BfaF+AX5ifsJ/I3+Ef+WAR4CogQqBa4HNgjCCkoL0g1eDuoQdhICE44VHhauGDoZy
+hteHO4efiASIaYjOiTOJmYn+imSKyoswi5aL/IxjjMqNMY2Yjf+OZo7OjzaPnpAGkG6Q1pE/kaiS
+EZJ6kuOTTZO2lCCUipT0lV+VyZY0lp+XCpd1l+CYTJi4mSSZkJn8mmia1ZtCm6+cHJyJnPedZJ3S
+nkCerp8dn4uf+qBpoNihR6G2oiailqMGo3aj5qRWpMelOKWpphqmi6b9p26n4KhSqMSpN6mpqhyq
+j6sCq3Wr6axcrNCtRK24ri2uoa8Wr4uwALB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldo
+t+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7F
+S8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE
+08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4czi
+U+Lb42Pj6+Rz5PzlhOYN5pbnH+ep6DLovOlG6dDqW+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy
+8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23//2N1cnYA
+AAAAAAAEAAAAAAUACgAPABQAGQAeACMAKAAtADIANwA7AEAARQBKAE8AVABZAF4AYwBoAG0AcgB3
+AHwAgQCGAIsAkACVAJoAnwCkAKkArgCyALcAvADBAMYAywDQANUA2wDgAOUA6wDwAPYA+wEBAQcB
+DQETARkBHwElASsBMgE4AT4BRQFMAVIBWQFgAWcBbgF1AXwBgwGLAZIBmgGhAakBsQG5AcEByQHR
+AdkB4QHpAfIB+gIDAgwCFAIdAiYCLwI4AkECSwJUAl0CZwJxAnoChAKOApgCogKsArYCwQLLAtUC
+4ALrAvUDAAMLAxYDIQMtAzgDQwNPA1oDZgNyA34DigOWA6IDrgO6A8cD0wPgA+wD+QQGBBMEIAQt
+BDsESARVBGMEcQR+BIwEmgSoBLYExATTBOEE8AT+BQ0FHAUrBToFSQVYBWcFdwWGBZYFpgW1BcUF
+1QXlBfYGBgYWBicGNwZIBlkGagZ7BowGnQavBsAG0QbjBvUHBwcZBysHPQdPB2EHdAeGB5kHrAe/
+B9IH5Qf4CAsIHwgyCEYIWghuCIIIlgiqCL4I0gjnCPsJEAklCToJTwlkCXkJjwmkCboJzwnlCfsK
+EQonCj0KVApqCoEKmAquCsUK3ArzCwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwSDCoMQwxcDHUMjgyn
+DMAM2QzzDQ0NJg1ADVoNdA2ODakNww3eDfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8lD0EPXg96D5YP
+sw/PD+wQCRAmEEMQYRB+EJsQuRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJFEmQShBKjEsMS4xMD
+EyMTQxNjE4MTpBPFE+UUBhQnFEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaPFrIW
+1hb6Fx0XQRdlF4kXrhfSF/cYGxhAGGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3Gp4axRrs
+GxQbOxtjG4obshvaHAIcKhxSHHscoxzMHPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+H2kf
+lB+/H+ogFSBBIGwgmCDEIPAhHCFIIXUhoSHOIfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8
+JKsk2iUJJTglaCWXJccl9yYnJlcmhya3JugnGCdJJ3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAq
+Aio1KmgqmyrPKwIrNitpK50r0SwFLDksbiyiLNctDC1BLXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/H
+L/4wNTBsMKQw2zESMUoxgjG6MfIyKjJjMpsy1DMNM0YzfzO4M/E0KzRlNJ402DUTNU01hzXCNf02
+NzZyNq426TckN2A3nDfXOBQ4UDiMOMg5BTlCOX85vDn5OjY6dDqyOu87LTtrO6o76DwnPGU8pDzj
+PSI9YT2hPeA+ID5gPqA+4D8hP2E/oj/iQCNAZECmQOdBKUFqQaxB7kIwQnJCtUL3QzpDfUPARANE
+R0SKRM5FEkVVRZpF3kYiRmdGq0bwRzVHe0fASAVIS0iRSNdJHUljSalJ8Eo3Sn1KxEsMS1NLmkvi
+TCpMcky6TQJNSk2TTdxOJU5uTrdPAE9JT5NP3VAnUHFQu1EGUVBRm1HmUjFSfFLHUxNTX1OqU/ZU
+QlSPVNtVKFV1VcJWD1ZcVqlW91dEV5JX4FgvWH1Yy1kaWWlZuFoHWlZaplr1W0VblVvlXDVchlzW
+XSddeF3JXhpebF69Xw9fYV+zYAVgV2CqYPxhT2GiYfViSWKcYvBjQ2OXY+tkQGSUZOllPWWSZedm
+PWaSZuhnPWeTZ+loP2iWaOxpQ2maafFqSGqfavdrT2una/9sV2yvbQhtYG25bhJua27Ebx5veG/R
+cCtwhnDgcTpxlXHwcktypnMBc11zuHQUdHB0zHUodYV14XY+dpt2+HdWd7N4EXhueMx5KnmJeed6
+RnqlewR7Y3vCfCF8gXzhfUF9oX4BfmJ+wn8jf4R/5YBHgKiBCoFrgc2CMIKSgvSDV4O6hB2EgITj
+hUeFq4YOhnKG14c7h5+IBIhpiM6JM4mZif6KZIrKizCLlov8jGOMyo0xjZiN/45mjs6PNo+ekAaQ
+bpDWkT+RqJIRknqS45NNk7aUIJSKlPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQmfyaaJrVm0Kbr5wc
+nImc951kndKeQJ6unx2fi5/6oGmg2KFHobaiJqKWowajdqPmpFakx6U4pammGqaLpv2nbqfgqFKo
+xKk3qamqHKqPqwKrdavprFys0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LCszizrrQltJy1E7WK
+tgG2ebbwt2i34LhZuNG5SrnCuju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDswWfB48JfwtvD
+WMPUxFHEzsVLxcjGRsbDx0HHv8g9yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE8
+0b7SP9LB00TTxtRJ1MvVTtXR1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/g
+NuC94UThzOJT4tvjY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A
+78zwWPDl8XLx//KM8xnzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/
+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
++JHfEPnllnifVtvh/9k=
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Geo/Images/IT.gif
+
+R0lGODlhEAALANUAAPdMTACFAOLi4t7e3uYAAPITE/lVVfT09PU9PewAAPIuLli6WQBXAPENDf7+
+/ly9XPMAAEOvQlS2VQB9AHvKewBlAFS5VPUlJfMZGU+2TwB2APMyMuAAAACJAMLCwvcxMUm0SfQf
+H/YrK3nIeXTGdOXl5QBvAACRAPQ2Nli8WM3NzfYsLMjIyEuzS/g3NzqqOmjCaPpcXPM1NfZERGC/
+Ydvb2/X19d0AAP39/fv7+/z8/Pb29vr6+vn5+fj4+Pf39yH5BAAAAAAALAAAAAAQAAsAAAaLwFOn
+EwiUBILBoAZpJhIBCmU0cuBwOl0uZjAAEh0K7bG4ank912cFIARGZAk2h/Z9RJeZm5SyZM49Pj94
+IQh7fi10gT87FyEYhhMkGSARdYw2jwUoBBMwlRGLOzYHGAUFGxwaMBERL4KjBwcFDQ0KHCZjCxKC
+mAcyGwoKNxoVFQwMKiwsHs0cHDfRQQA7
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/t.gif
+
+R0lGODlhAQABAIAAAP//////zCH5BAUUAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_question.gif
+
+R0lGODlhEAAQAPe0AP8A/7jG5cHM6b/L6brH5uDm8/Lz+Pv8/vz+//v7/PLz+tfg8unt9////8/j
+96DH75nC7ZO76pK46sXZ9OPp9LHB4uru+JjC7ZLA69np+PL3/O/2/M/g9nKe4YSr4+Ln88rU6tfg
+8J/F7oKy6fP3/Jy76pi66fL2/Pf6/kp703+g3sDM6fr6/ODu+k+O3LfR8v7//3ej4TBrziVex3KZ
+3Yqp4hxNwM7Z7u/w87bE4pzA60F+1UyD11SH2DtyzzFnyyZaxZm15nma3Aw7t3aW1//688zX7nWj
+4Tl00Dty0DNpyy5jySlcxpy25tXg9CxaxBJBulB4zPjz7brF4c7X7m2X3C1myjFmyitexyNUwZ+3
+57fJ6ytZwhlJvBdHvE11yu3m4bbC3cLO6oen4iNXxClaxR5Pvy9dxvT4/uXr+CVUwRZGux9PvxZF
+vWuJy93Y1a+83LLB4/z8/tHe9CRVwh1MvxxKvShXwoCf3meL1xpKvR5OvxxMv6axysTEyam63dnh
+8Hqa2hFBuhtLvR9Ov46q4oGf3hxMvRVFv2WDxcG9v6y1zK294e/w9v//+mmL0xZGvBpKv8nY87XH
+7hZGvRhJv15+wbe0t6aquOnt8Pz48LG/3ll+y0pzyUlyx1N2wo6cwLGvsaCktKSy0bC/4dDX5ubl
+4+bg3MfHzr+9xMC8vK2vt52kuLLA3rK/2rG81ay30Ka00QAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAAJ3V7P//AewAAAGd1QAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd5h//QAAAAAAAAACAKAAAAIaAB0sIP//AAAAAAAA
+AB0sIAAFACAAAAAS2+SacTODdyF39HfkkgABxNtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAj+AAEIFBgggIABBAgMXAiAQAEDBxAcSKBgwQKGBBg0cPAAQgQJExpQqDCQgIUGFzBk0LCBQwcP
+DT6AEBiigYgRDUiUMHECRQoVDWauYNHCxQsYMWTMoNGgho0bOHKsaKBjB48ePn4ACdJAyBAiRXIY
+aXAESRIlS5g0aeDkCZQoUqZQaVDFyhUsWbQ02MKli5cvYMKIaTCGTBkzZ9CkUbOGTRs3b+DEkTOH
+Th07d/Dk0bOHD5s+fv4AANQgkKBBhAoZOnQIUSJFiwQyauToEaRIkiZRqmTpEibRAuNk0rSJUydP
+n0CFEjWKIalSpk6hSqVqFSvgDAG0cvUKVizsAgMBAgAh/gA7
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Membership/Images/member_sm.gif
+
+R0lGODlhDgAPAKIAAP///+zi3NTGtLOahYRmTGxaRCQeFAAAACH5BAUUAAAALAAAAAAOAA8AAANK
+CKrVtRA0IcZosVDbTDmQxgWkATJVQwaCEQqFsQaEuxSXTFLtfcWsiil0CVpsIVllUIsoZIYoEkIg
+BAZTalWaBVS/tWjkQC6bFwkAOw==
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_answer.gif
+
+R0lGODlhEAAQAPcAAAAAAAEBAQICAgMDAwQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDA0NDQ4O
+Dg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEh
+ISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0
+NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdH
+R0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpa
+WltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1t
+bW5vcnByeGp5dWR+cV+AblqCalOFZEqIWkCLUDiORjCQPSmRNiOTLx6UKBqVIxSWHBCWFg2XEgqX
+DgiXCwaYCQWYBwSYBgOYBAKYBAKYAwGYAgGYAQOYCgeYFwyYKBOYQR2ZYyOZeiqZki+ZozOZszaZ
+wTqZyjyZzz6Z00CZ2EGZ2kOa2Eab1Eqb0E+dylSexFifv1yguV6gtmGhsmShrmaiqmehqWigp2qe
+pmudpW2apm6Yp3GUqXSRrHaOrniMr3mKsXqJsnqJsnqJs3uIs3uJs3uJs3uKtHuLtnyNuX6Tvn6T
+wn6Wx3+Zy4CbzoCc0IGe0oGf04Ge0oKd0YSb0IeW0JGL1J952q9l4cdH69su8vAS+vsE/f4A/v4A
+/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/vwJ/vgX/e8y/Nxo
++dCL+Man9r2+9bfL9LPS87HW87PY8rXa87bb87jd87re87zf9L7g9MHh9MTj9cnl9czm9s7n9tDo
+99Lp99Xr+Njs+Nzu+eHw+uXy++j0++v1++72/PH3/PL4/PT5/PP5/CH5BAkAANMALAAAAAAQABAA
+AAiYAKcJHEiw4MBfCBMqTHjQn0OH/frly4cP36yGECNOrFjvosBf/jCJHDmSnsdpwPxFlEixXj16
+JgfuWkkRn0uY707OJMnT3clcE1vCjPfOHbufLW+2S5SI3bqTtyomkicPF9N169BBdZnITpxEc7Ki
+M3dy1kt5TBOJNVfupCx6RN2pRYeunN2TruI6pcv27kBXswILHhx4WkAAOw==
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_general.gif
+
+R0lGODlhEAAQAPcZAP8A/7Ozs+Tk5L+/v9LS0uXl5ff39+jo6N3d3erq6q6uruzs7Lu7u7q6urm5
+ue7u7tHR0fDw8PLy8vT09Pb29vj4+Pr6+vz8/ABfADYAMQBfAC4AZABnAGYAaQAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABLagAAAAJcAAHf0fB4NWGfhAHh39AAVE/Rn+QAAd+UAAHf0ZgAA
+AEB0AIwBtgEoCgAAYdoMAAIAEgAAAAoACK6QAAJ3+AAAALwAuuwAAGh//QF5BBLanAAAABoAAAAA
+AgAAAAC6ALwAAAAS1xLbaA1gACgAHgAAAhLXsAWOAEwDUwAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAAKcwtP//AbQAAAGnMAAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd7p//QAAAAAAAAACAMIAAAIaAB4NYP//AAAAAAAA
+AB4NYAAFACAAAAAS2+SacTODdyF39HfkkgABlNtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAh1AAEIBBCgoMGCAxMSFMCQ4QACARQKDFCgYsUBBiBKDHCgY0eMBhBETBgggcmTClIqGDlxgcuX
+DBg0cMCS4IObOCHohFAzQISfQIP2lEC0qNGeE5IqXdqTgtOnUHtWmEq1ak8LWLNq7Xmhq9evXL+K
+7XmwbMGAACH+ADs=
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_news.gif
+
+R0lGODlhEAAQAPdEAP8A/3ObyYeo3P///2NokwBmy3KYxnCUwm6PvT6Z3/r//2yJtwCZALXi//v9
+/vX6/u/3/fL5/u37/2mDsf/MAACZ/+/3/N3z/mZ+quLy+9vu+tPq+Nbs+c7r/GN4pP7//+/4/On0
+/OLy+trv+tPr+Mvn98Pi9sXk973l+mFxnvT//6/e+F5smePx+8Tj9rzg9bTd9K3Z86jW8qnX8qPY
+9Vxnk9Xx/5vU9FpjkMTk9rzk+rPh+qvd96Pa95/X9pzW9prV9p7b+llgjHR4pAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABLagAAAAJcAAHf0fCDSKGfhAHh39AAVE/Rn+QAAd+UAAHf0ZgAA
+AFsIAIwCCwEoCgAAVtoMAAIAEgAAAAoACK6QAAJ3+AAAAKYApOwAAEF//QF1BBLanAAAABoAAAAA
+AgAAAACkALwAAAAS1xLbaNIwACgAIAAAAhLXsAOGAEwkqwAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAALGNQP//AUAAAAGxjQAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd6R//QAAAAAAAAACAKwAAAIaACDSMP//AAAAAAAA
+ACDSMAAFACAAAAAS2+SacTODdyF39HfkkgAB0NtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAiYAAEIHEiw4MAAAhIqXCiAYIABECNKJOBwQIGLGC8OoDjQgMWMGDcSPCCxpMiBCD5qTMBSAUeB
+CywyaFDAwQMIESS8BDDBIoUKBSywTHBhJwaVBTJo2MChw04PH0CEEDGCRAkTJ1DsTKFiqNcEK3ay
+aLGhhIsXMGLImEFjZw0bX4fe2Ikjh44dPHr4+AEESJCdQoYIHkyYY0AAIf4AOw==
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_joke.gif
+
+R0lGODlhEAAQAOYAAP////b4+fH4/er0/vfy4Obv/ODs++bq7f/ksffjwdfn/M/n/9vj7eLd2e7c
+tsvi+//blNbc5dbe3vTWndXW29XW1sDa+MrW57vZ/v7OcL/U7+XMoMrP2v/FUKTS/6bO/dPEpfHC
+ZrLI5vK/aLnGzOW/epnM/+69Sr2/xN25eeW7UdK9efW3OK282v2zKI/C/+O0YZ2597W2vaG55KW4
+2P6tDauwvJG13na6//imBqiqrd2lK6alm4Og/p+hqZOjtuCZCNCaJZudpWyk4ZmZmY2crdWSGdWS
+Ct+PAaaUdtWQAE+i/1+b4ICNvtWEAM2GAYiLlkCb/5GIesWBAauCOIuGfzOZ/1WN4o6DcXOAtKN9
+OGeBw6F5MW57mnx4cWB7p4B1ZqtxCC2C9aduA6BsDpJqIpVnE41nJ5lmAHVnUnhnRollI1VklnRh
+O3JeQ2teS3lcJ31ZH4RWAXBWMG5XMnFRH29OF3hOAAdY31pLOWhFCWA7AFQ3CEIsBf///wAAACH5
+BAUUAH4ALAAAAAAQABAAAAfwgH4FGBYWIiItLTM0DQAAfpAGjgACAgMDD1dfFY+QDJWXBqIaYnhd
+B5B+DAWhCq4LMT1sKKkMBgMBAwUKKDw8JF0yqREFH1FLTGBwa2twXjbDDBYmN3RaGwgQKmRuEZAR
+DCZWaVQEFQkTKyxjYN8RGD9xCBxpJTB1QTlxtBERJlhcHIBIMeJEkCdI0EjxQ+HCByxUkrzJ0MFF
+jTtywixsaIJImRB5zuwAgqbPEzM8GHJ4MaSNkRN69uzhc8SJGgkMNXjAUcTOkRpKlORQUkcHJA5b
+smRpAmUOmilT0LQRkioACSE+svqokiZNFRuo/AQCADs=
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_admin.gif
+
+R0lGODlhEAAQAPeIAP8A/5aq2Kq64Jeq2M/Z7v///+Dm85Gm19DZ7tPq+sbg9t7l9Jmt2NDa7rvc
+9o/F8Hmw6pO869ri8JOn19Td7rbX9kqS4Nrq+tDg9yhkyYKk4f///tfc6Zeq19Xd77LU80WK3D5+
+1VWJ2Eh50CFUwBhHu3+a1//+8MnP4Nnh8qfL7zt91TFvzkZ707/U8p+65xlFuA83sAktqm2IyuXh
+2ra8z5On1cve9jZ20y9pzChdxiJUwNjj9s7a8hA3rw0yrAkuq4eXwsC7uJijwcXZ8yddxhxKuxdB
+ts/c88nV8A80rQ81rQcsrWp/tKGen4uVsdrh8oim4RA7tA81sA82r8zY8sfU8A4zrQ0xrAgtrUBe
+sJyYoISImYuex93i8nKP1QYqpxA2rdzl9tfh9AgtrENisaGeo4eKntnh72qHzhpBtYKf3YGe3RpC
+uKOeoYeLnoudxtne6v/+8l19xgMlpwMmqkhlsaOfo5qv2M7R4eHd2n6RwnCDtJ2aoIiOoIyex7u/
+zsC7t6CcnoaMn5iq1ZijvYuWtI6eyQAAAJcAAHf0fB0sGGfhAHh39AAVE/Rn+QAAd+UAAHf0ZgAA
+AGycAIwBoAEoCgAAUdoMAAIAEgAAAAoACK6QAAJ3+AAAAJwAmuwAAHV//QF1BBLanAAAABoAAAAA
+AgAAAACaALwAAAAS1xLbaCwgACgAHQAAAhLXsAMsAEwADAAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAADfrZP//AWQAAAE36wAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd5p//QAAAAAAAAACAKIAAAIaAB0sIP//AAAAAAAA
+AB0sIAAFACAAAAAS2+SacTODdyF39HfkkgABxNtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAjWAAEIHBhAgIAAAxMmHECgQAEDAxQmPICgQAIFBRYwkAhgQIMCDh5AiFBAQsSEEygUqGDhAoYM
+GjZw6DBwgIcCH0CEEDGCRAkTJ1BEDJCigIoVLFq4eAEjhowZNGrYEFDgBo4cOnbw6OHjxw8gQYQM
+oUqkyA4jR5AkUfJjCZMmTp4EgFIgipQpVKpYuYIli5YtXLp09FLgC5gwYsaEIVPGzJmTHdFsSKNm
+DZs2Wty8gaNwQBw5c+jUsXPnMUc8efTs4dPHzx+OAgcACiRoEGTYhAoZOiQxIAAh/gA7
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.codeproject.com/App_Themes/NetCommunity/CodeProject.css
+
+HTML {
+	FONT-SIZE: 100.01%
+}
+BODY {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+P {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H1 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H2 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H3 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H4 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H5 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H6 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+LI {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+TR {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+TD {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+TH {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+DD {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+DT {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+BODY {
+	MARGIN: 0pt; BACKGROUND-COLOR: #ffffff
+}
+H1 {
+	FONT-WEIGHT: bold
+}
+H2 {
+	FONT-WEIGHT: bold
+}
+H3 {
+	FONT-WEIGHT: bold
+}
+H4 {
+	FONT-WEIGHT: bold
+}
+H5 {
+	FONT-WEIGHT: bold
+}
+TH {
+	FONT-WEIGHT: bold
+}
+H1 {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px
+}
+H2 {
+	COLOR: #ff9900
+}
+H3 {
+	COLOR: #ff9900
+}
+H5 {
+	COLOR: #ff9900
+}
+H1 {
+	FONT-SIZE: 16pt
+}
+H2 {
+	FONT-SIZE: 13pt
+}
+H3 {
+	FONT-SIZE: 12pt; LETTER-SPACING: -1px
+}
+H4 {
+	MARGIN-TOP: 2px; FONT-SIZE: 10pt; MARGIN-BOTTOM: 0px
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; MARGIN-BOTTOM: 2px
+}
+H6 {
+	FONT-WEIGHT: normal; FONT-SIZE: 65%; COLOR: #666666
+}
+PRE {
+	PADDING-RIGHT: 7pt; PADDING-LEFT: 7pt; PADDING-BOTTOM: 7pt; FONT: 9pt =
+"Courier New", Courier, mono; OVERFLOW: auto; PADDING-TOP: 7pt; =
+WHITE-SPACE: pre; BACKGROUND-COLOR: #fbedbb
+}
+CODE {
+	FONT-SIZE: 11pt; COLOR: #990000; FONT-FAMILY: "Courier New" , Courier, =
+mono
+}
+A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A:focus {
+	outline: none
+}
+TT.equation {
+	FONT-SIZE: 10pt; FONT-STYLE: italic; FONT-FAMILY: 'Times New Roman', =
+serif; WHITE-SPACE: pre
+}
+.FormInput {
+	WIDTH: 500px
+}
+.FormInputLong {
+	WIDTH: 800px
+}
+.MenuCat {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 5px; =
+FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; =
+BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 2px; MARGIN: 0px; =
+TEXT-TRANSFORM: uppercase; WIDTH: 160px; COLOR: #ffffff; PADDING-TOP: =
+2px; FONT-FAMILY: Arial,Verdana; BACKGROUND-COLOR: #333; =
+BORDER-RIGHT-WIDTH: 0px
+}
+.MenuSectionBlock {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; =
+FONT-WEIGHT: normal; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 160px; PADDING-TOP: 0px; =
+FONT-FAMILY: Tahoma, Arial, sans-serif; POSITION: relative; TOP: 0px; =
+BACKGROUND-COLOR: #ffcc66; BORDER-RIGHT-WIDTH: 0px
+}
+.MenuChapter {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ff9900 0px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+11px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #ff9900 1px solid; =
+WIDTH: 160px; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #ff9900 =
+1px solid; FONT-FAMILY: Arial; BACKGROUND-COLOR: #ffcc66
+}
+.MenuChapter A {
+	COLOR: #000000
+}
+.MI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MI A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MIS {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MIS A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MI A:hover {
+	BACKGROUND-COLOR: #ffefdb; TEXT-DECORATION: none
+}
+.MIS {
+	BACKGROUND-COLOR: #ffefdb; TEXT-DECORATION: none
+}
+.MIS A {
+	BACKGROUND-COLOR: #ffefdb; TEXT-DECORATION: none
+}
+.HeaderLogo {
+	BACKGROUND-COLOR: #ff9900
+}
+.HeaderBanner {
+	VERTICAL-ALIGN: middle; WIDTH: 100%; BACKGROUND-COLOR: #ff9900; =
+TEXT-ALIGN: right
+}
+.MainBlockHeader {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; PADDING-BOTTOM: 2px; TEXT-TRANSFORM: uppercase; BORDER-LEFT: =
+#cccccc 1px solid; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: =
+#cccccc 1px; FONT-FAMILY: Arial,Verdana; WHITE-SPACE: nowrap; =
+BACKGROUND-COLOR: #ededed
+}
+.TitleHeader {
+	FONT-SIZE: 13px
+}
+.MainBlockContent {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; MARGIN-BOTTOM: =
+10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: =
+5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.MainBlockContent SPAN {
+	FONT-SIZE: 8pt
+}
+.MainBlockContent TD {
+	FONT-SIZE: 8pt
+}
+.FeatureBlockHeader {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; PADDING-BOTTOM: 2px; TEXT-TRANSFORM: uppercase; BORDER-LEFT: =
+#ff9900 1px solid; COLOR: #990000; PADDING-TOP: 2px; BORDER-BOTTOM: =
+#ff9900 1px; FONT-FAMILY: Arial,Verdana; WHITE-SPACE: nowrap; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.FeatureBlockHeader A {
+	COLOR: #990000
+}
+.FeatureBlockContent {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; MARGIN-BOTTOM: =
+10px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; BORDER-LEFT: #ff9900 1px =
+solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ff9900 1px solid; =
+TEXT-OVERFLOW: ellipsis; BACKGROUND-COLOR: #fffaf0
+}
+.FeatureBlockContent LI {
+	FONT-SIZE: 8pt
+}
+.FeatureBlockContent TD {
+	FONT-SIZE: 8pt
+}
+.FeatureBlockContent P {
+	FONT-SIZE: 8pt
+}
+.FeatureBox {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: black =
+1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: black =
+1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: black 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.FeatureTable {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; =
+BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: white
+}
+.FeatureTable TD {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+5px; MARGIN: 0px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 5px; =
+BORDER-BOTTOM: #cccccc 1px solid
+}
+.AwdObj {
+	WIDTH: 90%
+}
+.AwdObj #cname {
+	WIDTH: 20%
+}
+.FeatureHeader {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ffcc66
+}
+.FeatureTable THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ffcc66
+}
+.FeatureTable TR.AltItem {
+	BACKGROUND-COLOR: #fbedbb
+}
+.BlockExtraText {
+	PADDING-LEFT: 20px; TEXT-TRANSFORM: none
+}
+.TitleBar {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 1.6em; FLOAT: left; =
+MARGIN-BOTTOM: 5px; COLOR: #488e00; FONT-FAMILY: Verdana,Arial, =
+Helvetica, sans-serif; LETTER-SPACING: -1px; TEXT-ALIGN: left
+}
+.TitleBarSideText {
+	MARGIN-TOP: 20px; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; FLOAT: right; =
+TEXT-ALIGN: right
+}
+.Divider {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: =
+0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; COLOR: #ff9900; =
+PADDING-TOP: 0px; BORDER-BOTTOM: 0px; HEIGHT: 1px; BACKGROUND-COLOR: =
+#ff9900
+}
+.DividerFaint {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: =
+0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; COLOR: #ccc; =
+PADDING-TOP: 0px; BORDER-BOTTOM: 0px; HEIGHT: 1px; BACKGROUND-COLOR: =
+#ccc
+}
+.JoinHeader {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: black =
+1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 17px; =
+PADDING-BOTTOM: 4px; MARGIN: 4px; VERTICAL-ALIGN: middle; BORDER-LEFT: =
+black 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: black 1px solid; =
+WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ffcc66
+}
+.JoinHeader A {
+	COLOR: #990000; HEIGHT: 20px
+}
+.ShopHeader {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: black =
+1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 17px; =
+PADDING-BOTTOM: 4px; MARGIN: 4px; VERTICAL-ALIGN: middle; BORDER-LEFT: =
+black 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: black 1px solid; =
+WHITE-SPACE: nowrap; BACKGROUND-COLOR: #76ab40
+}
+.ShopHeader A {
+	FILTER: Shadow(color=3D#000000,strength=3D1,direction=3D135); COLOR: =
+white; HEIGHT: 20px
+}
+.MemberNavBar {
+	BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #ffcc66
+}
+.MemberNavBarText {
+	FONT-SIZE: 0.9em; COLOR: black; FONT-FAMILY: verdana,Sans-Serif; =
+LETTER-SPACING: -1px
+}
+.MemberNavBarText A {
+	FONT-SIZE: 0.9em; COLOR: black; FONT-FAMILY: verdana,Sans-Serif; =
+LETTER-SPACING: -1px
+}
+.SiteNavBar TD {
+	BORDER-RIGHT: #488e00 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#488e00 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; MARGIN: 0px; =
+BORDER-LEFT: #488e00 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #488e00 =
+1px solid; POSITION: relative; BACKGROUND-COLOR: #488e00
+}
+.SiteNavBar A {
+	BORDER-RIGHT: #488e00 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: =
+#488e00 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: bold; FONT-SIZE: =
+12px; PADDING-BOTTOM: 1px; BORDER-LEFT: #488e00 1px solid; COLOR: white; =
+PADDING-TOP: 1px; BORDER-BOTTOM: #488e00 1px solid; HEIGHT: 16px
+}
+.SiteNavBar A:hover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; COLOR: =
+black; PADDING-TOP: 1px; BACKGROUND-COLOR: #c3de6c; TEXT-DECORATION: =
+none
+}
+TD.SelCat {
+	BORDER-LEFT-COLOR: #488e00; BORDER-BOTTOM-COLOR: #488e00; =
+BORDER-TOP-COLOR: #488e00; BACKGROUND-COLOR: #c3de6c; =
+BORDER-RIGHT-COLOR: #488e00
+}
+TD.SelCat A {
+	BORDER-LEFT-COLOR: #c3de6c; BORDER-BOTTOM-COLOR: #c3de6c; COLOR: black; =
+BORDER-TOP-COLOR: #c3de6c; BACKGROUND-COLOR: #c3de6c; =
+BORDER-RIGHT-COLOR: #c3de6c
+}
+.SearchHeaderBar {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: =
+0px; PADDING-TOP: 3px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #ededed
+}
+.LHNavBar {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; =
+VERTICAL-ALIGN: top; WIDTH: 160px; PADDING-TOP: 3px; BACKGROUND-COLOR: =
+#ff9900
+}
+.ContentPane {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; MIN-HEIGHT: 300px; =
+VERTICAL-ALIGN: top; ; WIDTH: expression(document.body.clientWidth < =
+973? "813px" : document.body.clientWidth-160); PADDING-TOP: 3px; =
+POSITION: relative; ; HEIGHT: expression(this.height < 300? "300px" : =
+"auto")
+}
+.ArticlePane {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; MIN-HEIGHT: 300px; =
+VERTICAL-ALIGN: top; ; WIDTH: expression(document.body.clientWidth < =
+973? "813px" : document.body.clientWidth-160); PADDING-TOP: 3px; =
+POSITION: relative; ; HEIGHT: expression(this.height < 300? "300px" : =
+"auto")
+}
+.RHFeatureBar {
+	MAX-WIDTH: 160px; VERTICAL-ALIGN: top; OVERFLOW: hidden; WIDTH: 160px
+}
+.precollapse {
+	DISPLAY: inline; FONT-WEIGHT: bold; FONT-SIZE: 7pt; BORDER-BOTTOM: =
+#cccccc 1px solid; BACKGROUND-COLOR: #fbedbb
+}
+* HTML .no-vmads {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; OVERFLOW: auto; WIDTH: 100%; PADDING-TOP: 0px
+}
+.FormButton {
+	FONT-WEIGHT: 700; FONT-SIZE: 90%; BORDER-LEFT-COLOR: #ffefdb; =
+BORDER-BOTTOM-COLOR: #ffefdb; COLOR: white; BORDER-TOP-COLOR: #ffefdb; =
+BACKGROUND-COLOR: #e08900; BORDER-RIGHT-COLOR: #ffefdb
+}
+.TextButton {
+	BORDER-TOP-WIDTH: 0px; FONT-WEIGHT: 500; BORDER-LEFT-WIDTH: 0px; =
+BORDER-BOTTOM-WIDTH: 0px; CURSOR: pointer; COLOR: blue; =
+BACKGROUND-COLOR: white; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.LargeText {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt
+}
+.SmallText {
+	FONT-SIZE: 8pt
+}
+.TinyText {
+	FONT-SIZE: 7pt
+}
+.SeparatorBottom {
+	VERTICAL-ALIGN: top; COLOR: #ff9900; TEXT-DECORATION: none; =
+text-shadow: none
+}
+.SeparatorTop {
+	VERTICAL-ALIGN: bottom; COLOR: #ff9900; TEXT-DECORATION: none; =
+text-shadow: none
+}
+.SiteError {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 9pt; =
+PADDING-BOTTOM: 10px; MARGIN-LEFT: 20px; WIDTH: 80%; PADDING-TOP: 10px
+}
+.Caption {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-STYLE: italic
+}
+.Filename {
+	FONT-STYLE: italic
+}
+.Command {
+	FONT-WEIGHT: bold
+}
+.Warning {
+	BORDER-RIGHT: red 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: red 1px =
+solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 20px; =
+BORDER-LEFT: red 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: red 1px =
+solid; BACKGROUND-COLOR: #ffe3e0
+}
+.Error {
+	COLOR: red
+}
+.Error LI {
+	COLOR: red
+}
+.Success {
+	FONT-WEIGHT: bold; COLOR: green
+}
+.Failure {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.Callout {
+	BORDER-RIGHT: blue 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: blue 1px =
+solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 20px; =
+BORDER-LEFT: blue 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: blue 1px =
+solid; BACKGROUND-COLOR: #ffffcc
+}
+.highlight {
+	BACKGROUND-COLOR: yellow
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.emphasis {
+	COLOR: red
+}
+.subdue {
+	COLOR: #666
+}
+.AddTo {
+	FONT-SIZE: 8pt; MARGIN: 4px; CURSOR: pointer
+}
+.ArticleTable {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse
+}
+.ArticleTableNoBorder {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse
+}
+.ArticleTableNoBorder {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; BORDER-BOTTOM-STYLE: none
+}
+.ArticleTable TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTableNoBorder TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTable TH {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; =
+BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticleTable THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTableNoBorder THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTable TFOOT {
+	FONT-WEIGHT: bold
+}
+.ArticleTableNoBorder TFOOT {
+	FONT-WEIGHT: bold
+}
+.ArticleTable TR.ArticleTableRow {
+	BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTableNoBorder TR.ArticleTableRow {
+	BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTable TR.ArticleTableAltRow {
+	BACKGROUND-COLOR: #ddf0fe
+}
+.ArticleTableNoBorder TR.ArticleTableAltRow {
+	BACKGROUND-COLOR: #ddf0fe
+}
+.ArticleTable TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTableNoBorder TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTable TD {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; =
+BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.EditorReportTable {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #dadada
+}
+.EditorReportTable TH {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.EditorReportTable THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ff9900
+}
+.EditorReportTable TFOOT {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #85bc4c
+}
+.EditorReportTable TR.EditorReportRow {
+	BACKGROUND-COLOR: #fafafa
+}
+.EditorReportTable TD {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.EditorComment {
+	BORDER-RIGHT: #ff9900 thin solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#ff9900 thin solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#ff9900 thin solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ff9900 thin solid; =
+BACKGROUND-COLOR: yellow
+}
+UL.InfoList {
+	MARGIN-TOP: 5px; PADDING-LEFT: 15px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: =
+0px
+}
+UL.InfoList LI {
+	PADDING-BOTTOM: 5px
+}
+UL.download {
+	MARGIN-LEFT: 1.5em
+}
+UL.download LI {
+	PADDING-LEFT: 0.5em; LIST-STYLE-IMAGE: url(/images/download.gif); =
+FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+LI.download {
+	PADDING-LEFT: 0.5em; LIST-STYLE-IMAGE: url(/images/download.gif); =
+FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+UL.delegate LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/delegate.gif)
+}
+LI.delegate {
+	LIST-STYLE-IMAGE: url(/images/symbols/delegate.gif)
+}
+UL.enum LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/Enum.GIF)
+}
+LI.enum {
+	LIST-STYLE-IMAGE: url(/images/symbols/Enum.GIF)
+}
+UL.event LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/event.GIF)
+}
+LI.event {
+	LIST-STYLE-IMAGE: url(/images/symbols/event.GIF)
+}
+UL.interface LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/interface.GIF)
+}
+LI.interface {
+	LIST-STYLE-IMAGE: url(/images/symbols/interface.GIF)
+}
+UL.literal LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/literal.GIF)
+}
+LI.literal {
+	LIST-STYLE-IMAGE: url(/images/symbols/literal.GIF)
+}
+UL.method LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/method.GIF)
+}
+LI.method {
+	LIST-STYLE-IMAGE: url(/images/symbols/method.GIF)
+}
+UL.namespace LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/namespace.GIF)
+}
+LI.namespace {
+	LIST-STYLE-IMAGE: url(/images/symbols/namespace.GIF)
+}
+UL.property LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/property.GIF)
+}
+LI.property {
+	LIST-STYLE-IMAGE: url(/images/symbols/property.GIF)
+}
+UL.struct LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/struct.GIF)
+}
+LI.struct {
+	LIST-STYLE-IMAGE: url(/images/symbols/struct.GIF)
+}
+UL.compactlist LI {
+	FONT-SIZE: 8pt; LIST-STYLE-IMAGE: url(/images/smallarrow.gif); =
+MARGIN-BOTTOM: 0px; MARGIN-LEFT: -1em; FONT-FAMILY: Verdana, Arial, =
+Helvetica, sans-serif
+}
+LI.compactlist {
+	FONT-SIZE: 8pt; LIST-STYLE-IMAGE: url(/images/smallarrow.gif); =
+MARGIN-BOTTOM: 0px; MARGIN-LEFT: -1em; FONT-FAMILY: Verdana, Arial, =
+Helvetica, sans-serif
+}
+UL.compactlist {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+}
+LI.horizontal {
+	PADDING-RIGHT: 1em; DISPLAY: inline; PADDING-LEFT: 1em; FLOAT: left; =
+PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em
+}
+UL.horizontal {
+	WHITE-SPACE: nowrap; LIST-STYLE-TYPE: circle
+}
+.SpacedList LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.MenuGroup {
+	FONT-WEIGHT: bold; COLOR: gray; FONT-STYLE: italic
+}
+.OptionInGroup {
+	PADDING-LEFT: 10px
+}
+DT {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 6px
+}
+DD {
+	MARGIN-BOTTOM: 6px; MARGIN-LEFT: 25px
+}
+.code-comment {
+	COLOR: #008000; FONT-STYLE: italic
+}
+.code-SummaryComment {
+	COLOR: #808080
+}
+.code-keyword {
+	COLOR: blue
+}
+.code-SDKkeyword {
+	COLOR: #339999
+}
+.code-preprocessor {
+	COLOR: navy
+}
+.code-string {
+	COLOR: purple
+}
+.code-literal {
+	COLOR: navy
+}
+.code-pagedirective {
+	BACKGROUND-COLOR: yellow
+}
+.code-attribute {
+	COLOR: red
+}
+.code-tag {
+	COLOR: #800000
+}
+.code-leadattribute {
+	COLOR: #800000
+}
+.code-digit {
+	COLOR: navy
+}
+.code-none {
+	COLOR: #000
+}
+.RatingBar {
+	BORDER-RIGHT: #ff9900 1px solid; BORDER-TOP: #ff9900 1px solid; =
+BORDER-LEFT: #ff9900 1px solid; BORDER-BOTTOM: #ff9900 1px solid; =
+BACKGROUND-COLOR: #fbedbb
+}
+.RatingBar TR {
+	FONT-SIZE: 8pt
+}
+.ArticleHeader {
+	BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticleUneditedHeader {
+	BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticlePurgatoryHeader {
+	BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticleHeader {
+	BACKGROUND-COLOR: #fbedbb
+}
+.ArticleUneditedHeader {
+	BACKGROUND-COLOR: #e6e6fa
+}
+.ArticlePurgatoryHeader {
+	BACKGROUND-COLOR: #e3e3e3
+}
+.ArticleReady {
+	COLOR: green
+}
+.ArticleLocked {
+	COLOR: red
+}
+.ArticlePending {
+	COLOR: #333
+}
+.SectionTOC {
+=09
+}
+.SectionTOCHeader {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.SectionTOCHeader TD {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.SectionTOCRow {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.SectionTOCRow TD {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.SectionTOCUneditedRow {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: #c0cbee
+}
+.SectionTOCUneditedRow TD {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: #c0cbee
+}
+.ArticleAttributes {
+	MARGIN-TOP: 3px; COLOR: #666666
+}
+.ArticleDescription {
+	FONT-SIZE: 8pt; COLOR: #666666
+}
+.ArticleBeginner {
+	FONT-WEIGHT: bold; COLOR: green
+}
+.ArticleIntermediate {
+	DISPLAY: none
+}
+.ArticleAdvanced {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.ImagePreview {
+	BORDER-RIGHT: #333 1px solid; BORDER-TOP: #333 1px solid; BORDER-LEFT: =
+#333 1px solid; BORDER-BOTTOM: #333 1px solid
+}
+.QueueArticle {
+=09
+}
+.QueueArticleComment {
+=09
+}
+.QueueArticleOnHold {
+=09
+}
+.QueueArticleCommentOnHold {
+=09
+}
+.QueueArticleQueued {
+=09
+}
+.QueueArticleCommentQueued {
+=09
+}
+.QueueArticlePosting {
+	COLOR: green
+}
+.QueueArticleCommentPosting {
+	COLOR: green
+}
+.QueueArticlePosted {
+	COLOR: green
+}
+.QueueArticleCommentPosted {
+	COLOR: gray
+}
+.QueueArticleNeedAssistance {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.QueueArticleCommentNeedAssistance {
+	COLOR: red
+}
+.QueueArticleNeedAttention {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.QueueArticleCommentNeedAttention {
+	COLOR: red
+}
+.MemberBronze {
+	BACKGROUND-COLOR: #cc9966
+}
+.MemberSilver {
+	BACKGROUND-COLOR: silver
+}
+.MemberGold {
+	BACKGROUND-COLOR: #ffcc00
+}
+.MemberPlatinum {
+	BACKGROUND-COLOR: #99ccff
+}
+.IndustryHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt
+}
+.SurveyBriefHeader {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; PADDING-BOTTOM: 2px; BORDER-LEFT: #ff9900 1px solid; COLOR: =
+#990000; PADDING-TOP: 2px; BORDER-BOTTOM: #ff9900 1px solid; =
+FONT-FAMILY: Arial,Verdana; BACKGROUND-COLOR: #ffe0b3
+}
+.SurveyBlockContent {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#ff9900 1px; PADDING-LEFT: 3px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; =
+OVERFLOW: hidden; BORDER-LEFT: #ff9900 1px solid; PADDING-TOP: 5px; =
+BORDER-BOTTOM: #ff9900 1px solid; TEXT-OVERFLOW: ellipsis; =
+BACKGROUND-COLOR: #fffaf0
+}
+.SurveySubline {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: black
+}
+.SurveyQPrmpt {
+	FONT-SIZE: 8pt
+}
+.SurveyError {
+	COLOR: red; FONT-STYLE: italic; TEXT-ALIGN: center
+}
+.SurveyVoteBar {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+10pt; PADDING-BOTTOM: 2px; MARGIN: 5px 0px 0px; BORDER-LEFT: #cccccc 1px =
+solid; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #cccccc 1px solid; =
+FONT-FAMILY: Arial,Verdana; BACKGROUND-COLOR: #ededed
+}
+.SurveyTable {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; =
+BORDER-LEFT: #ededed 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ededed =
+1px solid; BACKGROUND-COLOR: #fafafa
+}
+.SurveyVoteTable {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; =
+PADDING-TOP: 20px; BACKGROUND-COLOR: #fffaf0
+}
+.SurveyVoteCell {
+	FONT-SIZE: 8pt
+}
+.SurveyCell {
+	BORDER-RIGHT: #ededed 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#ededed 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+1px; PADDING-TOP: 1px
+}
+.SurveyHeader {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ff9900
+}
+.SurveyBody {
+	BACKGROUND-COLOR: #ffffff
+}
+.SurveyFooter {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #488e00
+}
+.SurveyHeaderCell {
+	COLOR: white
+}
+.AttrBarMainHover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; OVERFLOW: hidden; FONT-FAMILY: =
+verdana; WHITE-SPACE: nowrap; TEXT-OVERFLOW: clip
+}
+.AttrBarMain {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+.AttrBarSubHover {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; BORDER-LEFT: #ff9900 =
+1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ff9900 1px solid; =
+FONT-FAMILY: verdana; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ffe0b3
+}
+.AttrBarSub {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: verdana; HEIGHT: 18px; =
+BACKGROUND-COLOR: white
+}
+.AttrBarCont {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; =
+BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; =
+BACKGROUND-COLOR: white
+}
+.AttrScrollBox {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; =
+SCROLLBAR-FACE-COLOR: #ff9900; FONT-SIZE: 8pt; OVERFLOW: auto; =
+BORDER-LEFT: gray 1px solid; WIDTH: 120px; SCROLLBAR-ARROW-COLOR: white; =
+BORDER-BOTTOM: gray 1px solid; HEIGHT: 150px
+}
+.ASBVers {
+	PADDING-LEFT: 10px; FONT-SIZE: 7pt; OVERFLOW: hidden; WHITE-SPACE: =
+nowrap
+}
+.NavBarMainHover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #c3de6c
+}
+.NavBarMain {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #488e00
+}
+.NavBarSubHover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #c3de6c
+}
+.NavBarSub {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #488e00
+}
+.NavBarCont {
+	BACKGROUND-COLOR: #488e00
+}
+.AdminMessageTable {
+=09
+}
+.AdminMessageCell {
+=09
+}
+.AdminMessageDiv {
+=09
+}
+.AdminMessageList {
+=09
+}
+.AdminTrace {
+	BORDER-RIGHT: red 1px dashed; PADDING-RIGHT: 5px; BORDER-TOP: red 1px =
+dashed; PADDING-LEFT: 5px; FONT-SIZE: 7pt; PADDING-BOTTOM: 5px; MARGIN: =
+10px 20px 5px; BORDER-LEFT: red 1px dashed; PADDING-TOP: 5px; =
+BORDER-BOTTOM: red 1px dashed; FONT-FAMILY: verdana; BACKGROUND-COLOR: =
+#ededed
+}
+.Archive {
+=09
+}
+.ArchiveHeader {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.ArchiveHeader TD {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.ArchiveRow {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.ArchiveRow TD {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.ZoneBlockHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; MARGIN-LEFT: 0px; BORDER-BOTTOM: =
+#efefef 5px dotted; FONT-FAMILY: Arial,Verdana; WHITE-SPACE: nowrap
+}
+.ZoneSponsor {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666
+}
+.ZoneSponsor A {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666
+}
+.ZoneList {
+	MARGIN-TOP: 7px
+}
+.ZoneBlockHeader A {
+	COLOR: #000
+}
+.ZoneBlockContent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; MARGIN-BOTTOM: =
+10px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; PADDING-TOP: 5px; =
+TEXT-OVERFLOW: ellipsis
+}
+.Gradient {
+	BACKGROUND-POSITION: 50% top; BACKGROUND-IMAGE: =
+url(/script/jobs/images/gradient.png); BACKGROUND-REPEAT: repeat-x
+}
+.AdTextLinks {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 300px; LINE-HEIGHT: 1.5em; =
+PADDING-TOP: 0px; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.WinnersCompetitionNameCell {
+	WIDTH: 150px; WHITE-SPACE: nowrap
+}
+.SmallParagraph {
+	PADDING-TOP: 7px
+}
+.CompetitionTable {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; =
+BORDER-LEFT: #ededed 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ededed =
+1px solid
+}
+.CompetitionCell {
+	BORDER-RIGHT: #ededed 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#ededed 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+1px; PADDING-TOP: 1px
+}
+.CompetitionHeader {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ff9900
+}
+.CompetitionHeaderCell {
+	COLOR: white
+}
+.CompetitionAlternativeRow {
+	BACKGROUND-COLOR: #fffaf0
+}
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.codeproject.com/App_Themes/NetCommunity/ForumClassic.css
+
+.Frm_MainTable {
+	BORDER-RIGHT: #ff9900 1px solid; BORDER-TOP: #ff9900 1px solid; =
+BORDER-LEFT: #ff9900 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ff9900 1px =
+solid; BACKGROUND-COLOR: transparent
+}
+.Frm_MsgTable {
+	TABLE-LAYOUT: fixed; BORDER-TOP: #ff9900 1px solid; BORDER-BOTTOM: =
+#ff9900 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: =
+transparent
+}
+.Frm_MsgAlert {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+2px; COLOR: #000000; PADDING-TOP: 2px; BACKGROUND-COLOR: yellow
+}
+.Frm_MsgAlert TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+2px; COLOR: #000000; PADDING-TOP: 2px; BACKGROUND-COLOR: yellow
+}
+.Frm_HeaderRow1 {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #fbedbb
+}
+.Frm_HeaderRow1 TD {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #fbedbb
+}
+.Frm_HeaderRow2 {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #ff9900
+}
+.Frm_HeaderRow2 TD {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #ff9900
+}
+.Frm_Footer {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_Footer TD {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_NavigationBar {
+	FONT-SIZE: 8pt; COLOR: #000000; PADDING-TOP: 5px; BACKGROUND-COLOR: =
+#fbedbb
+}
+.Frm_NavigationBar TD {
+	FONT-SIZE: 8pt; COLOR: #000000; PADDING-TOP: 5px; BACKGROUND-COLOR: =
+#fbedbb
+}
+.Frm_ColumnHeaders {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_ColumnHeaders TD {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_MsgRtDivide {
+	BORDER-BOTTOM: #ff9900 1px dotted; HEIGHT: 7px; BACKGROUND-COLOR: white
+}
+.Topic .Frm_MsgRtDivide {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; HEIGHT: 35px; BORDER-BOTTOM-STYLE: none
+}
+.Frm_MsgDivide {
+	HEIGHT: 6px; BACKGROUND-COLOR: white
+}
+.ForumSig {
+	BORDER-TOP: #cccccc 1px solid; MARGIN-TOP: 10px; OVERFLOW: auto; =
+MAX-HEIGHT: 150px; PADDING-TOP: 0px
+}
+.ForumMod {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+0px; MARGIN: 0px; COLOR: #333; PADDING-TOP: 0px; FONT-STYLE: italic
+}
+.ForumMod:unknown {
+	content: "-- "
+}
+.Frm_MsgFt {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt! important; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 15px; BACKGROUND-COLOR: #d5eaff
+}
+.Frm_MsgFt TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt! important; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 15px; BACKGROUND-COLOR: #d5eaff
+}
+.MsgHd {
+	FONT-SIZE: 8pt
+}
+.MsgHd TD {
+	FONT-SIZE: 8pt
+}
+.MsgBd {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 1.25em
+}
+.MsgBd TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 1.25em
+}
+.HdSel {
+	BACKGROUND-COLOR: #99ccff
+}
+.HdSel TD {
+	BACKGROUND-COLOR: #99ccff
+}
+.HdUnSel {
+	BACKGROUND-COLOR: #fefaed
+}
+.HdUnSel TD {
+	BACKGROUND-COLOR: #fefaed
+}
+.BdSel {
+	BACKGROUND-COLOR: #d5eaff
+}
+.BdSel TD {
+	BACKGROUND-COLOR: #d5eaff
+}
+.BdUnSel {
+	BORDER-RIGHT: #fbedbb 1px solid; BORDER-TOP: #fbedbb 1px solid; =
+BORDER-LEFT: #fbedbb 1px solid; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: white
+}
+.BdUnSel TD {
+	BORDER-RIGHT: #fbedbb 1px solid; BORDER-TOP: #fbedbb 1px solid; =
+BORDER-LEFT: #fbedbb 1px solid; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: white
+}
+.Rt {
+	FONT-WEIGHT: bold
+}
+.Rt TD {
+	FONT-WEIGHT: bold
+}
+.Chld {
+=09
+}
+.Chld TD {
+=09
+}
+.LoVote {
+	COLOR: gray! important
+}
+.LoVote TD A {
+	COLOR: gray! important
+}
+.HiVote {
+	COLOR: maroon! important
+}
+.HiVote TD A {
+	COLOR: maroon! important
+}
+.ExpandedBd TD.BdUnSel TD {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; =
+BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.TopicBd TD.BdUnSel TD {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; =
+BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.ThreadBd TD {
+	BORDER-RIGHT: #fbedbb 1px solid; BORDER-TOP: #fbedbb 1px solid; =
+BORDER-LEFT: #fbedbb 1px solid; BORDER-BOTTOM: #fbedbb 1px solid
+}
+.ThreadBd TD.BdSel TD {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; =
+BORDER-LEFT-STYLE: none! important; BACKGROUND-COLOR: #f0f7ff; =
+BORDER-BOTTOM-STYLE: none! important
+}
+.ThreadHd TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt
+}
+.Rt .ThreadHd TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; BACKGROUND-COLOR: #fefaed
+}
+.HdSel .ThreadHd TD {
+	BACKGROUND-COLOR: #99ccff! important
+}
+.ThreadHd .BlgHdr {
+	FONT-WEIGHT: bold! important; FONT-SIZE: 9pt! important
+}
+.ExpandedHd TD {
+	BACKGROUND-COLOR: #fbedbb
+}
+.ThreadHd TD {
+	BACKGROUND-COLOR: #fbedbb
+}
+.TopicHd TD {
+	BACKGROUND-COLOR: #f0f7ff
+}
+.Rt .TopicHd TD {
+	BACKGROUND-COLOR: #fbedbb
+}
+.TopicBd TD {
+	BACKGROUND-COLOR: white
+}
+.ThreadBd TD {
+	BACKGROUND-COLOR: white
+}
+.Rt .TopicBd TD {
+	BACKGROUND-COLOR: white
+}
+.PreviewBd TD.BdUnSel {
+	FONT-SIZE: 10px; COLOR: #666666; BORDER-TOP-STYLE: none; =
+BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: =
+none
+}
+.MsgCnt {
+=09
+}
+.Frm_MsgIndent {
+	BACKGROUND-COLOR: white! important; TEXT-ALIGN: right
+}
+TD.Frm_MsgIndent {
+	BACKGROUND-COLOR: white! important; TEXT-ALIGN: right
+}
+.Frm_MsgSubject {
+	PADDING-LEFT: 5px
+}
+.Frm_MsgAuthor {
+	PADDING-LEFT: 2px; WIDTH: 140px; TEXT-ALIGN: left
+}
+.Frm_MsgAuthor A {
+	PADDING-BOTTOM: 3px; VERTICAL-ALIGN: text-top; OVERFLOW: hidden; WIDTH: =
+140px; TEXT-OVERFLOW: ellipsis
+}
+.Frm_MsgDate {
+	WIDTH: 130px! important; TEXT-ALIGN: right
+}
+.Frm_MsgCount {
+	WIDTH: 30px! important; TEXT-ALIGN: right
+}
+.Frm_HL {
+	BORDER-RIGHT: #fbedbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#fbedbb 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: =
+#fbedbb 1px solid; COLOR: gray; PADDING-TOP: 1px; BORDER-BOTTOM: #fbedbb =
+1px solid; TEXT-DECORATION: none
+}
+.Frm_MHL {
+	BORDER-RIGHT: #fbedbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#fbedbb 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: =
+#fbedbb 1px solid; COLOR: gray; PADDING-TOP: 1px; BORDER-BOTTOM: #fbedbb =
+1px solid; TEXT-DECORATION: none
+}
+.Frm_MHL {
+	BORDER-RIGHT: transparent 1px solid; BORDER-TOP: transparent 1px solid; =
+BORDER-LEFT: transparent 1px solid; BORDER-BOTTOM: transparent 1px solid
+}
+A.Frm_HL {
+	CURSOR: pointer; COLOR: blue; TEXT-DECORATION: none
+}
+A.Frm_MHL {
+	CURSOR: pointer; COLOR: blue; TEXT-DECORATION: none
+}
+A.Frm_HL:hover {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #ff9900; BORDER-RIGHT-STYLE: =
+solid; BORDER-LEFT-STYLE: solid; BACKGROUND-COLOR: #ffcc99; =
+BORDER-RIGHT-COLOR: #ff9900; BORDER-BOTTOM-STYLE: solid
+}
+A.Frm_MHL:hover {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #ff9900; BORDER-RIGHT-STYLE: =
+solid; BORDER-LEFT-STYLE: solid; BACKGROUND-COLOR: #ffcc99; =
+BORDER-RIGHT-COLOR: #ff9900; BORDER-BOTTOM-STYLE: solid
+}
+A.Frm_HL:active {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-COLOR: #ff9900; BACKGROUND-COLOR: #ffc082; =
+BORDER-RIGHT-COLOR: #ff9900
+}
+A.Frm_MHL:active {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-COLOR: #ff9900; BACKGROUND-COLOR: #ffc082; =
+BORDER-RIGHT-COLOR: #ff9900
+}
+.BlgHdr {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt! important; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 10px
+}
+.Frm_DropDown {
+	FONT-SIZE: 95%; MARGIN-LEFT: 5px; BACKGROUND-COLOR: #fef9e7
+}
+.Frm_Button {
+	FONT-WEIGHT: 700; FONT-SIZE: 100%; BORDER-LEFT-COLOR: #fbedbb; =
+BORDER-BOTTOM-COLOR: #fbedbb; COLOR: white; BORDER-TOP-COLOR: #fbedbb; =
+BACKGROUND-COLOR: #e08900; BORDER-RIGHT-COLOR: #fbedbb
+}
+.toolbar {
+	BORDER-RIGHT: white 1px solid; BORDER-TOP: white 1px solid; =
+BORDER-LEFT: white 1px solid; BORDER-BOTTOM: white 1px solid; =
+BACKGROUND-COLOR: white
+}
+.toolbarHover {
+	BORDER-RIGHT: #ff9900 1px outset; BORDER-TOP: #ff9900 1px outset; =
+BORDER-LEFT: #ff9900 1px outset; BORDER-BOTTOM: #ff9900 1px outset; =
+BACKGROUND-COLOR: #ffcc99
+}
+.toolbarDown {
+	BORDER-RIGHT: #ff9900 1px outset; BORDER-TOP: #ff9900 1px outset; =
+BORDER-LEFT: #ff9900 1px outset; BORDER-BOTTOM: #ff9900 1px outset; =
+BACKGROUND-COLOR: #ffcc99
+}
+.toolbarUp {
+	BORDER-RIGHT: #ff9900 1px outset; BORDER-TOP: #ff9900 1px outset; =
+BORDER-LEFT: #ff9900 1px outset; BORDER-BOTTOM: #ff9900 1px outset; =
+BACKGROUND-COLOR: #ffcc99
+}
+.ForumTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: black
+}
+.FQ {
+	PADDING-LEFT: 0.6em; MARGIN-BOTTOM: -1em; MARGIN-LEFT: 0.25em; =
+BORDER-LEFT: gray 0.2em solid; COLOR: #556655; MARGIN-RIGHT: 1em
+}
+.FQA {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; MARGIN-LEFT: -0.25em
+}
+UL.UnAnswered LI {
+	LIST-STYLE-IMAGE: url(/script/forums/images/msg_question.gif)
+}
+LI.UnAnswered {
+	LIST-STYLE-IMAGE: url(/script/forums/images/msg_question.gif)
+}
+LI.UnAnswered {
+	PADDING-LEFT: 5px; PADDING-BOTTOM: 5px
+}
+
+------=_NextPart_000_0151_01C87562.16AB9ED0
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.codeproject.com/Script/JS/oncopy.js
+
+// Hook-up to the document.body.oncopy event,
+// or in the <body>'s "oncopy" attribute.
+// Author: Heath Stewart
+function copyCode()
+{
+	try
+	{
+		var range = document.selection.createRange();
+		if (document.selection.type != "none")
+		{
+			var parent = range.parentElement();
+			var parentName = parent.tagName;
+			if (parentName != null)
+			{
+				if (parentName.toLowerCase() == "pre")
+				{
+					// Replace superfluous <br> tags in a <pre> block.
+					var re = /<br[^>]*>/gi;
+					var code = range.htmlText.replace(re, "\r\n");
+
+					// Replace non-breaking spaces.
+					re = /&nbsp;/gi;
+					code = code.replace(re, " ");
+
+					// Replace & characters.
+					re = /&amp;/gi;
+					code = code.replace(re, "&");
+
+					// Replace < characters.
+					re = /&lt;/gi;
+					code = code.replace(re, "<");
+
+					// Replace > characters.
+					re = /&gt;/gi;
+					code = code.replace(re, ">");
+					
+					// CJM: Remove colorization
+					re = /<\/?span([^>])*>/gi;
+					code = code.replace(re, "");
+
+					if (code != null)
+					{
+						window.event.returnValue = false;
+						window.clipboardData.setData("Text", code);
+					}
+				}
+			}
+		}
+	}
+	catch(e) {}
+}
+
+------=_NextPart_000_0151_01C87562.16AB9ED0--

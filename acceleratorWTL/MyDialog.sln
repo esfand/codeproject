@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual C++ Express 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyDialog", "MyDialog\MyDialog.vcproj", "{4AEF4E77-9F9B-4D64-9A5B-75E792ECAA08}"
 EndProject
 Global

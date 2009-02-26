@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="DialogX"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="..;BV"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		OutputFile="$(OutDir)\DialogX.exe"
+		GenerateManifest="false"
+		DelayLoadDLLs="uxtheme.dll;dwmapi.dll"
+	/>
+</VisualStudioPropertySheet>

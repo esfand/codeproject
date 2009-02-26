@@ -1,0 +1,908 @@
+From: <Saved by Windows Internet Explorer 8>
+Subject: CTrayNotifyIcon v1.61
+Date: Thu, 26 Feb 2009 22:41:44 +0200
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_009D_01C99863.66827620"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.5512
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_009D_01C99863.66827620
+Content-Type: text/html;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.naughter.com/ntray.html
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>CTrayNotifyIcon v1.61</TITLE>
+<META content=3D"text/html; charset=3Diso-8859-1" =
+http-equiv=3DContent-Type><LINK=20
+rel=3Dstylesheet type=3Dtext/css =
+href=3D"http://www.naughter.com/naughter.css">
+<META name=3DGENERATOR content=3D"MSHTML 8.00.6001.18372"></HEAD>
+<BODY>
+<H2 align=3Dcenter><IMG =
+src=3D"http://www.naughter.com/images/logo.gif"></H2>
+<H2><A =
+href=3D"http://www.naughter.com/download/ntray.zip">CTrayNotifyIcon=20
+v1.61</A> <I>An MFC/WTL class to manipulate tray icons</I></H2>
+<P>This class encapsulates the Shell_NotifyIcon SDK call. This API is =
+used to=20
+create those nifty little icons such as volume control you see in the =
+tray=20
+notification area on Windows. </P>
+<P><IMG alt=3D"CTrayNotifyIcon screen capture"=20
+src=3D"http://www.naughter.com/images/ntray.gif" width=3D413 =
+height=3D116></P>
+<P>The class hides a lot of the drudgery of calling the API directly and =
+
+provides a nice clean C++ interface to using it. Overloaded member =
+functions are=20
+provided to set and get the ToolTip text, icon and notification window. =
+The=20
+class also provides a default implementation to bring up a context menu =
+and=20
+provides a default menu item which is executed when you double click the =
+icon.=20
+The class also provides auto cleanup and resurrection of icons if the =
+shell=20
+unexpectedly crashes.</P>
+<P>&nbsp;</P>
+<P>The <A href=3D"http://www.naughter.com/download/ntray.zip">enclosed =
+zip=20
+file</A> contains the CTrayNotifyIcon source code and also includes a VC =
+2005=20
+workspace to build a small demonstration app in MFC as well as WTL. </P>
+<P>&nbsp;</P>
+<H2><B>Copyright</B></H2>
+<UL>
+  <LI>You are allowed to include the source code in any product =
+(commercial,=20
+  shareware, freeware or otherwise) when your product is released in =
+binary=20
+  form.=20
+  <LI>You are allowed to modify the source code in any way you want =
+except you=20
+  cannot modify the copyright details at the top of each module.=20
+  <LI>If you want to distribute source code with your application, then =
+you are=20
+  only allowed to distribute versions released by the author. This is to =
+
+  maintain a single distribution point for the source code. </LI></UL>
+<P>&nbsp;</P>
+<H2>Updates </H2>
+<P><STRONG>v1.0 (14 May 1997)</STRONG>=20
+<UL>
+  <LI>Initial Public release. </LI></UL>
+<P><STRONG>v1.1 (25 November 1997)</STRONG>=20
+<UL>
+  <LI>Addition of HideIcon(), ShowIcon() &amp; MoveToExtremeRight() =
+functions.=20
+  <LI>Support for animated tray icons </LI></UL>
+<P><STRONG>v1.2 (23 June 1998)</STRONG>=20
+<UL>
+  <LI>Class now supports the new Taskbar Creation Notification message =
+which=20
+  comes with IE 4. This allows the tray icon to be recreated whenever =
+the=20
+  explorer restarts (Crashes!!) </LI></UL>
+<P><STRONG>V1.3 (22 July 1998)</STRONG>=20
+<UL>
+  <LI>Code now compiles cleanly at warning level 4=20
+  <LI>Code is now UNICODE enabled + build configurations are provided=20
+  <LI>The documentation for the class has been completely revamped =
+</LI></UL>
+<P><STRONG>V1.31 (27 January 1999)</STRONG>=20
+<UL>
+  <LI>Code now correctly loads up 16*16 icons, previously it allowed =
+Windows to=20
+  rescale the icon from 32*32 resulting in slightly blurry images. This =
+has been=20
+  accomplished via the new LoadIconResource method. </LI></UL>
+<P><STRONG>V1.32 (28 January 1999)</STRONG>=20
+<UL>
+  <LI>Removed a number of level 4 warnings which were occurring =
+</LI></UL>
+<P><STRONG>V1.33 (9 May 1999)</STRONG>=20
+<UL>
+  <LI>Fixed a problem as documented in KB article "PRB: Menus for =
+Notification=20
+  Icons Do Not Work Correctly", Article ID: Q135788.=20
+  <LI>Also available is a port of the code to ATL which has been done by =
+Shaun=20
+  Wilde. This is available in <A=20
+  href=3D"http://www.naughter.com/download/atlntray.zip">this zip =
+file</A>.=20
+</LI></UL>
+<P><STRONG>10 May 1999</STRONG>=20
+<UL>
+  <LI>A new version of Shaun Wilde's <A=20
+  href=3D"http://www.naughter.com/download/atlntray.zip">port of=20
+  CTrayNotifyIcon</A> is now available. The class is now based on v1.33 =
+of my=20
+  MFC class </LI></UL>
+<P><STRONG>11 May 1999</STRONG>=20
+<UL>
+  <LI>Another update to the <A=20
+  href=3D"http://www.naughter.com/download/atlntray.zip">ATL port of=20
+  CTrayNotifyIcon</A> is now available. </LI></UL>
+<P><STRONG>V1.4 (16 May 1999)</STRONG>=20
+<UL>
+  <LI>Modified the sample program to ensure that 16*16 icons are used =
+when tray=20
+  icon animation is not being used.=20
+  <LI>Now uses the author's hookwnd class. This prevents the need to =
+create the=20
+  two hidden windows namely CTrayRessurectionWnd and CTrayTimerWnd to =
+handle=20
+  icon animation and tray creation messages.=20
+  <LI>Sample project now compiles at warning level 4.=20
+  <LI>General code tidy up and rearrangement.=20
+  <LI>Added numerous ASSERT's to improve the code's robustness.=20
+  <LI>Added functions to allow context menu to be customized </LI></UL>
+<P><STRONG>26 May 1999</STRONG>=20
+<UL>
+  <LI>A new version of Shaun Wilde's <A=20
+  href=3D"http://www.naughter.com/download/atlntray.zip">port of=20
+  CTrayNotifyIcon</A> is now available. The class is now based on v1.4 =
+of my MFC=20
+  class </LI></UL>
+<P><STRONG>21 May 2000</STRONG>=20
+<UL>
+  <LI>Minor update to the documentation. </LI></UL>
+<P><STRONG>V1.41 (1 January 2001)</STRONG>=20
+<UL>
+  <LI>Now includes copyright message in the source code and =
+documentation.&nbsp;=20
+
+  <LI>Fixed problem where the window does not get focus after double =
+clicking on=20
+  the tray icon.=20
+  <LI>Now fully supports the Windows 2000 balloon style tooltips.=20
+  <LI>Fixed a off by one problem in some of the ASSERT's.=20
+  <LI>Fixed problems with Unicode build configurations.=20
+  <LI>Provided Win2k specific build configurations. </LI></UL>
+<P><STRONG>V1.42 (10 February 2001)</STRONG>=20
+<UL>
+  <LI>Now fully supports creation of 2 tray icons at the same time. =
+</LI></UL>
+<P><STRONG>V1.43 (13 June 2001)</STRONG>=20
+<UL>
+  <LI>Now removes windows hook upon call to RemoveIcon. </LI></UL>
+<P><STRONG>V1.44 (26 August 2001)</STRONG>=20
+<UL>
+  <LI>Fixed memory leak in RemoveIcon.=20
+  <LI>Fixed GPF in RemoveIcon by removing call to Unhook </LI></UL>
+<P><STRONG>V1.45 (28 August 2001)</STRONG>=20
+<UL>
+  <LI>Added support for direct access to the System Tray's HDC. This =
+allows you=20
+  to generate an icon for the tray on the fly using GDI calls. The idea =
+came=20
+  from the article by Jeff Heaton in the April issue of WDJ. Also added =
+are=20
+  overriden Create methods to allow you to easily costruct a dynamic =
+tray icon=20
+  given a BITMAP instead of an ICON. </LI></UL>
+<P><STRONG>25 November 2002</STRONG></P>
+<UL>
+  <LI>Added a comment to the NTray.h header file about where to get the=20
+  HookWnd.h file if the code compile fails. </LI></UL>
+<P><STRONG>V1.46 (21 March 2003)</STRONG></P>
+<UL>
+  <LI>Fixed icon resource leaks in SetIcon(LPCTSTR lpIconName) and =
+SetIcon(UINT=20
+  nIDResource). Thanks to Egor Pervouninski for reporting this.=20
+  <LI>Fixed unhooking of the tray icon when the notification window is =
+being=20
+  closed. </LI></UL>
+<P><STRONG>V1.47 (31 March 2003)</STRONG></P>
+<UL>
+  <LI>Now uses V1.05 of my Hookwnd class </LI></UL>
+<P><STRONG>V1.48 (2 April 2003)</STRONG></P>
+<UL>
+  <LI>Now uses v1.06 of my Hookwnd class=20
+  <LI>Fixed a bug in the sample app for this class where the hooks =
+should have=20
+  been created as global instances rather than as member variables of =
+the=20
+  mainframe window. This ensures that the hooks remain valid even after =
+calling=20
+  DefWindowProc on the mainframe. </LI></UL>
+<P><STRONG>V1.49 (23 July 2004)</STRONG></P>
+<UL>
+  <LI>Minor update to remove unnecessary include of "resource.h" =
+</LI></UL>
+<P><STRONG>V1.50 (3 March 2006)</STRONG></P>
+<UL>
+  <LI>Updated copyright details.=20
+  <LI>Updated the documentation to use the same style as the web site.=20
+  <LI>Did a spell check of the documentation.=20
+  <LI>Fixed some issues when the code is compiled using /Wp64. Please =
+note that=20
+  to support this the code now requires a recentish Platform SDK to be =
+installed=20
+  if the code is compiled with Visual C++ 6.=20
+  <LI>Replaced all calls to ZeroMemory with memset.=20
+  <LI>Fixed an issue where SetBalloonDetails was not setting the cbSize=20
+  parameter. Thanks to Enrique Granda for reporting this issue.=20
+  <LI>Added support for NIIF_USER and NIIF_NONE flags.=20
+  <LI>Now includes support for NIM_NIMSETVERSION via SetVersion. In =
+addition=20
+  this is now automatically set in the Create() calls if the Win2k =
+boolean=20
+  parameter is set.=20
+  <LI>Removed derivation from CObject as it was not really needed.=20
+  <LI>Now includes support for NIM_SETFOCUS=20
+  <LI>Added support for NIS_HIDDEN via the ShowIcon and HideIcon =
+methods.=20
+  <LI>Added support for NIIF_NOSOUND </LI></UL>
+<P><STRONG>V1.51 (27 June 2006)</STRONG></P>
+<UL>
+  <LI>Code now uses new C++ style casts rather than old style C casts =
+where=20
+  necessary.=20
+  <LI>The class framework now requires the Platform SDK if compiled =
+using VC 6.=20
+  <LI>Updated the logic of the ASSERTs which validate the various string =
+
+  lengths.=20
+  <LI>Fixed a bug in CTrayNotifyIcon::SetFocus() where the cbSize value =
+was not=20
+  being set correctly.=20
+  <LI>CTrayIconHooker class now uses ATL's CWindowImpl class in =
+preference to=20
+  the author's CHookWnd class. This does mean that for MFC only client =
+projects,=20
+  you will need to add ATL support to your project.=20
+  <LI>Optimized CTrayIconHooker constructor code.=20
+  <LI>Updated code to compile cleanly using VC 2005. Thanks to "Itamar" =
+for=20
+  prompting this update.=20
+  <LI>Addition of a CTRAYNOTIFYICON_EXT_CLASS and =
+CTRAYNOTIFYICON_EXT_API macros=20
+  which makes the class easier to use in an extension dll.=20
+  <LI>Made CTrayNotifyIcon destructor virtual </LI></UL>
+<P><STRONG>V1.52 (3 July 2006)</STRONG></P>
+<UL>
+  <LI>Fixed a bug where the HideIcon functionality did not work on =
+Windows 2000.=20
+  This was related to how the cbSize member of the NOTIFYICONDATA =
+structure was=20
+  initialized. The code now dynamically determines the correct size to =
+set at=20
+  runtime according to the instructions provided by the MSDN =
+documentation for=20
+  this structure. As a result of this, all "bWin2k" parameters which =
+were=20
+  previously exposed via CTrayNotifyIcon have now been removed as there =
+is no=20
+  need for them. Thanks to Edwin Geng for reporting this important bug. =
+Client=20
+  code will still need to intelligently make decisions on what is =
+supported by=20
+  the OS. For example balloon tray icons are only supported on Shell v5=20
+  (nominally Windows 2000 or later). CTrayNotifyIcon will ASSERT if for =
+example=20
+  calls are made to it to create a balloon tray icon on operating =
+systems with=20
+  &lt; Shell v5. </LI></UL>
+<P><STRONG>V1.53 (5 July 2006)</STRONG></P>
+<UL>
+  <LI>Fixed a bug where the menu may pop up a second time after a menu =
+item is=20
+  chosen on Windows 2000. The problem was tracked down to the code in=20
+  CTrayNotifyIcon::OnTrayNotification. During testing of this bug, I was =
+unable=20
+  to get a workable solution using the new shell messages of =
+WM_CONTEXTMENU,=20
+  NIN_KEYSELECT &amp; NIN_SELECT on Windows 2000 and Windows XP. This =
+means that=20
+  the code in CTrayNotifyIcon::OnTrayNotification uses the old way of =
+handling=20
+  notifications (WM_RBUTTDOWN*). This does mean that by default, client =
+apps=20
+  which use the CTrayNotifyIcon class will not support the new keyboard =
+and=20
+  mouse semantics for tray icons (IMHO this is no big loss!). Client =
+code is of=20
+  course free to handle their own notifications. If you go down this =
+route then=20
+  I would advise you to thoroughly test your application on Windows 2000 =
+and=20
+  Windows XP as my testing has shown that there is significant =
+differences in=20
+  how tray icons handle their messaging on these 2 operating systems. =
+Thanks to=20
+  Edwin Geng for reporting this issue.=20
+  <LI>Class now displays the menu based on the current message's screen=20
+  coordinates, rather than the current cursor screen coordinates.=20
+  <LI>Fixed bug in sample app where if the about dialog is already up =
+and it is=20
+  reactivated from the tray menu, it did not bring itself into the =
+foreground=20
+  </LI></UL>
+<P><STRONG>V1.54 (6 July 2006)</STRONG></P>
+<UL>
+  <LI>Reverted the change made for v1.53 where the screen coordinates =
+used to=20
+  show the context menu use the current message's screen coordinates. =
+Instead=20
+  the pre v1.53 mechanism which uses the current cursor's screen =
+coordinates is=20
+  now used. Thanks to Itamar Syn-Hershko for reporting this issue. =
+</LI></UL>
+<P><STRONG>V1.55 (19 July 2006)</STRONG></P>
+<UL>
+  <LI>The default menu item can now be customized via SetDefaultMenuItem =
+and=20
+  GetDefaultMenuItem. Thanks to Mikhail Bykanov for suggesting this nice =
+update.=20
+
+  <LI>Optimized CTrayNotifyIcon constructor code </LI></UL>
+<P><STRONG>V1.56 (19 August 2006)</STRONG></P>
+<UL>
+  <LI>Updated the code to operate independent of MFC if so desired. This =
+
+  requires WTL which is an open source library extension for ATL to =
+provide UI=20
+  support along the lines of MFC. Thanks to zhiguo zhao for providing =
+this very=20
+  nice addition. </LI></UL>
+<P><STRONG>V1.57 (15 September 2006)</STRONG></P>
+<UL>
+  <LI>Fixed a bug where WM_DESTROY messages were not been handled =
+correctly for=20
+  the top level window which the CTrayIconHooker class subclasses in =
+order to=20
+  handle the tray resurrection message, the animation timers and auto =
+destroying=20
+  of the icons when the top level window is destroyed. Thanks to Edward=20
+  Livingston for reporting this bug.=20
+  <LI>Fixed a bug where the tray icons were not being recreated =
+correctly when=20
+  we receive the "TaskbarCreated" message when Explorer is restarted. =
+Thanks to=20
+  Nuno Esculcas for reporting this bug.=20
+  <LI>Split the functionality of hiding versus deleting and showing =
+versus=20
+  creating of the tray icon into 4 separate functions, namely Delete(),=20
+  Create(), Hide() and Show(). Note that Hide and Show functionality is =
+only=20
+  available on Shell v5 or later.=20
+  <LI>Fixed an issue with recreation of tray icons which use a dynamic =
+icon=20
+  created from a bitmap (through the use of BitmapToIcon).=20
+  <LI>CTrayNotifyIcon::LoadIconResource now loads up an icon as a shared =
+icon=20
+  resource using LoadImage. This should avoid resource leaks using this=20
+  function. </LI></UL>
+<P><STRONG>V1.58 (15 June 2007)</STRONG></P>
+<UL>
+  <LI>Updated copyright messages.=20
+  <LI>If the code detects that MFC is not included in the project, the =
+code uses=20
+  the standard preprocessor define "_CSTRING_NS" to declare the string =
+class to=20
+  use rather than explicitly using WTL::CString. Thanks to Krzysztof =
+Suszka for=20
+  reporting this issue.=20
+  <LI>Updated sample app to compile cleanly on VC 2005.=20
+  <LI>Addition of a "BOOL bShow" to all the Create methods. This allows =
+you to=20
+  create an icon without actually showing it. This avoids the flicker =
+which=20
+  previously occurred if you created the icon and then immediately hid =
+the icon.=20
+  Thanks to Krzysztof Suszka for providing this suggestion.=20
+  <LI>Demo app now initially creates the first icon as hidden for =
+demonstration=20
+  purposes.=20
+  <LI>Added support for NIIF_LARGE_ICON. This Vista only feature allows =
+you to=20
+  create a large balloon icon.=20
+  <LI>Added support for NIF_REALTIME. This Vista only flag allows you to =
+specify=20
+  not to bother showing the balloon if it is delayed due to the presence =
+of an=20
+  existing balloon.=20
+  <LI>Added support for NOTIFYICONDATA::hBalloonIcon. This Vista only =
+feature=20
+  allows you to create a user specified balloon icon which is different =
+to the=20
+  actual tray icon.=20
+  <LI>LoadIconResource method now includes support for loading large =
+icons and=20
+  has been renamed to simply LoadIcon. Also two overridden versions of =
+this=20
+  method have been provided which allow the hInstance resource ID to be=20
+  specified to load the icon from.=20
+  <LI>Reworked the internal code to CTrayNotifyIcon which detects the =
+shell=20
+  version.=20
+  <LI>Updated the tray icon text in the demo app to better demonstrate =
+the=20
+  features of the class.=20
+  <LI>Updated the WTL sample to be consistent with the MFC sample code=20
+  <LI>Updated comments in documentation about usage of the Platform SDK. =
+
+</LI></UL>
+<P><STRONG>V1.59 (13 October 2007)</STRONG></P>
+<UL>
+  <LI>Subclassing of the top level window is now not done internally by =
+the=20
+  CTrayNotifyIcon class using the CTrayIconHooker class. Instead now a =
+hidden=20
+  top level window is created for each tray icon you create and these =
+look after=20
+  handling the tray resurrection and animated icon timer messages. This=20
+  refactoring of the internals of the class now also fixes a bug where =
+an=20
+  application which creates multiples tray icons would only get one icon =
+
+  recreated when the tray resurrection message was received. Thanks to =
+Steven=20
+  Dwyer for prompting this update.=20
+  <LI>Updated the MFC sample app to correctly initialize ATL for VC 6 =
+</LI></UL>
+<P><STRONG>V1.60 (12 March 2008)</STRONG></P>
+<UL>
+  <LI>Updated copyright details=20
+  <LI>Fixed a bug in SetBalloonDetails where the code did not set the =
+flag=20
+  NIF_ICON if a user defined icon was being set. Thanks to "arni" for =
+reporting=20
+  this bug.=20
+  <LI>Updated the sample app to clean compile on VC 2008 </LI></UL>
+<P><STRONG>V1.61 (22 June 2008)</STRONG></P>
+<UL>
+  <LI>Code now compiles cleanly using Code Analysis (/analyze)=20
+  <LI>Updated code to compile correctly using =
+_ATL_CSTRING_EXPLICIT_CONSTRUCTORS=20
+  define=20
+  <LI>Removed VC 6 style AppWizard comments from the code.=20
+  <LI>The code now only supports VC 2005 or later. </LI></UL>
+<P>&nbsp;</P></BODY></HTML>
+
+------=_NextPart_000_009D_01C99863.66827620
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.naughter.com/images/logo.gif
+
+R0lGODlhowH+AIcAAACJhwCKiACMiQCNigCOiwKOiwKOjAWLiQeMigSPjAWQjQiRjgiSjwqSjwuS
+kAyTkA6UkRCVkhKVkhKWkxSWkxSWlBaXlReYlR2VlBiYlRiYlhqYlhualxyZlxyalx2bmB6bmB+c
+mSCWlCCbmCGcmSSdmiSemyedmyaenCienC6cmy6dnCignSmgniqgnSqgni2hnzagny+ioDCjoDGk
+oTKkoTKkojWlojempDimpDqlpDqmpDynpTuopjyopj6opj+qqEWmpUKpp0CqqEKrqUaqqUSsqUis
+qkiuq0qsq0iurEqurE2qqUyurEywrU2wrk6wrlSsrFCwr1KwrlSxr1KysFWxsFWysFa0sli0s1q2
+tF+xsV20s122tF+4tmK2tWa1tWC4tmK5t2W4t2O5uGS5uGS6uGa6uWm1tWy2tmq8um28umy9vG2+
+vG6+vXG4uHC+vHa6une+vXi7u3m8vH29vXLAvnTBwHbCwHnDwXrEwn3CwX7FxIC/v4LAwIHHxYbC
+wobFxYXIxobIyIfKyIjDw4nExI3FxYjKyIrJyIrKyYvLyozLyozMyo7My4/NzJDHx5HIyJHOzJbK
+ypTMy5bNzJjLy5rMzJzNzZXQzpjQ0JvS0Z3S0Z7U06DPz6LQ0KDU06LV1KXS0qbU06XW1ajT06jU
+06jU1K3W1qjY16rY2Kza2a3a2q7a2a7b2rDX17DY2LDb2rLY2LDc27Lc27Ld3LXa2rbc27Xe3bjb
+27nc3L3d3brg37vg4Lzh4L3i4b7h4L7i4cDf38Lh4cPk48Xh4cTk48Xk5Mjj48nk5M3l5cvo587o
+58zo6NDn59Do6NDq6dDq6tLo6NLq6tXq6tTs69Xs7Nft7Njr69js7Nju7dnu7trs7Nru7t3t7d7w
+8ODv7+Dw8OLw8OPy8ePy8uXx8eb08+b09Ojz8+j09Or09Or29ev29uz19ez29u729u/49/D39/D4
++PL4+PP6+fT5+fT6+vb6+vj7+/j8+/j8/Pr8/Pz9/fz+/fz+/v7+/iH5BAMAAP8ALAAAAACjAf4A
+AAj/AP8JHEiwoMGDCBMqXMiwocOHECNKnEixosWLGDNq3Mixo8ePIEOKHEmypMmTKCey8zChpcuX
+LV0dvAKz5gQ3KXOOXGLTpkydQIMKHXpxXQMCSJMqRSrlIJIBS6OaIUq1oo+oWAmkqsq1q1edRrMq
+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
+QnXUR7gJCAA7
+
+------=_NextPart_000_009D_01C99863.66827620
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.naughter.com/images/ntray.gif
+
+R0lGODlhnQF0APcAAAAYOQAhOQAhQggpQgApSggpSgApUggpUgApWggpWgAxUggxUhgxUgAxWgAx
+YxA5UgBKIQhKIQh7EA1oLAA5WhBCXhBOWghzTwh7ORCECBiMUgiUABCUCACcABCcEBilCABzYxBC
+YwAxawA5awBCawA5cwBCcwh7cwA5ewBCewhSexhSeyFjewBChAhahBhShCExhABCjABKjAhajABK
+lAhalAhjlAApnABKnAhanAhjnBApnBhjnAAppQghpQgppQAQuAAprRhCpQhKuhhKzhhSxiFSxiFS
+1gA58wBC9wBK7wBK9whC5whC7whC9xBK7yFS3gBS7whS7wBS9xBS9yFS9yFavQhaziFa1iFa3hha
+5xBa7wBa9yFjpSFj3iFj5whvrQBrzgh8tw59yAaK1xB73hCE1hSI0iFr7xCE3giE5wiI6xCE5xCM
+3hCM5xiM4hCU1gyU4hyU0hCU5wiM7wiM9wiU7xCM8wqZ7Bic3giU9xiU8RCc7xyc7wyj8hK99j9O
+SkWEOThScFZhcy1WpCtvpDlQpFZvmTOmJVzBLoTOCHfIGmGjUG3EVV+ekX+pistyDcRvVZbCIrCe
+g5SUrZykqK2trb+eqpTWKYjZXaHXQ7vdY43Wg57njbbqldbmlTFrxjlrzjFr1ilr3jFr3i2Qzimc
+5yG95zlzvUJrxkJ73l5rykeG0D+Z1lKI0mak1JGexYyvx6agx6WvzZO11q621KS91rHdzcPG0eXL
+0M/ize/ezsjxvdHy0+L73v/12DFr7zFz7zF75zGE5zGM7zmM7zmM90J770KM70KM90qE91aI71qM
+91qM/2uM72uM90qU5zmU70KU7zmU9zOd7Tmt7yHG9z3O/1Kc716k62uU72yh9Wu1/1q992PO/2ve
+/5yc54u6+K/I77/E7abi+730/Mbe68bi99TT7NbS+dDj+Nzh+sr1/9b3/97v9975/efn5+fn7+/k
++f/n5/D18en0///35/z0/Ov///f/7/f/9/f/////5///7///9////ywAAAAAnQF0AAAI/gBp4KAh
+kODAgggPKjTIMGHDhQ4jQpz4sKJEixQvaszIEaPHjR87ghwpsmTIkyRRmkypEVW5evhi4nOHbx++
+XejWNdrQoafPd+fKsQNQQqXRlAOTHl3JdKlTlk2hPo1KdapVqVirZrXahVw7mftq1UI3Dtc4Ths8
+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
+yJAiR5IsSbKIyZQoQ6680lJlSo8vX8b8GBAAOw==
+
+------=_NextPart_000_009D_01C99863.66827620
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.naughter.com/naughter.css
+
+BODY {
+	FONT: 68% verdana,arial,helvetica; COLOR: #000000
+}
+A:link {
+	COLOR: #003399; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #800080; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+H1 {
+	MARGIN: 0px 0px 5px; FONT: 165% verdana,arial,helvetica
+}
+H2 {
+	MARGIN-TOP: 1em; FONT: bold 125% verdana,arial,helvetica; =
+MARGIN-BOTTOM: 0.5em
+}
+H3 {
+	FONT: bold 115% verdana,arial,helvetica; MARGIN-BOTTOM: 0.5em
+}
+H4 {
+	FONT: bold 100% verdana,arial,helvetica; MARGIN-BOTTOM: 0.5em
+}
+H5 {
+	FONT: bold 100% verdana,arial,helvetica; MARGIN-BOTTOM: 0.5em
+}
+H6 {
+	FONT: bold 100% verdana,arial,helvetica; MARGIN-BOTTOM: 0.5em
+}
+OL {
+	MARGIN-TOP: 0.5em; MARGIN-BOTTOM: 0em; MARGIN-LEFT: 4em; FONT-SIZE: =
+100%
+}
+UL {
+	MARGIN-TOP: 0.5em; MARGIN-BOTTOM: 0em; FONT-SIZE: 100%
+}
+OL UL {
+	LIST-STYLE-TYPE: disc; MARGIN-TOP: 0.5em
+}
+UL UL {
+	LIST-STYLE-TYPE: disc; MARGIN-TOP: 0.5em
+}
+LI {
+	MARGIN-BOTTOM: 0.7em; MARGIN-LEFT: -2em
+}
+TD {
+	FONT-SIZE: 68%
+}
+TH {
+	FONT-SIZE: 68%
+}
+P {
+	LINE-HEIGHT: 1.5em; MARGIN-TOP: 0.5em; MARGIN-BOTTOM: 1em
+}
+
+------=_NextPart_000_009D_01C99863.66827620--

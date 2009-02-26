@@ -1,0 +1,4387 @@
+From: <Saved by Windows Internet Explorer 7>
+Subject: CodeProject: WTL Rolldown Control. Free source code and programming help
+Date: Fri, 22 Feb 2008 14:58:02 +0200
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0174_01C87563.52A3FCB0"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.3198
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: text/html;
+	charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=PrintAll
+
+=EF=BB=BF<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>CodeProject: WTL Rolldown Control. Free source code =
+and programming help</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Dutf-8">
+<META=20
+content=3D"A WTL Rolldown control as seen in 3DSMax; Author: Bjoern =
+Graf; Section: WTL; Chapter: Platforms, Frameworks &amp; Libraries"=20
+name=3DDescription>
+<META=20
+content=3D"VC6, NT4, Win2K, VS6, WTL, Dev, Intermediate,WTL,Platforms, =
+Frameworks &amp; Libraries,Free source code, tutorials"=20
+name=3DKeywords>
+<META content=3D"The Code Project" name=3DAuthor>
+<META content=3DGeneral name=3DRating>
+<META content=3D"index, follow" name=3DRobots>
+<META content=3D"1 days" name=3DRevisit-After><LINK=20
+title=3D"CodeProject Lounge Postings"=20
+href=3D"http://www.codeproject.com/webservices/LoungeRSS.aspx"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - All topics"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D1"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - MFC / C++"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D2"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - C#"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D3"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - ASP.NET"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D4"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - .NET"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D5"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK=20
+title=3D"CodeProject Latest articles - VB.NET"=20
+href=3D"http://www.codeproject.com/webservices/articlerss.aspx?cat=3D6"=20
+type=3Dapplication/rss+xml rel=3Dalternate><LINK title=3DCodeProject=20
+href=3D"http://www.codeproject.com/info/OpenSearch.xml"=20
+type=3Dapplication/opensearchdescription+xml rel=3Dsearch><LINK=20
+href=3D"http://www.codeproject.com/App_Themes/NetCommunity/CodeProject.cs=
+s"=20
+type=3Dtext/css rel=3Dstylesheet><LINK=20
+href=3D"http://www.codeproject.com/App_Themes/NetCommunity/ForumClassic.c=
+ss"=20
+type=3Dtext/css rel=3Dstylesheet>
+<SCRIPT type=3Dtext/javascript>
+  var gaJsHost =3D (("https:" =3D=3D document.location.protocol) ? =
+"https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src=3D'" + gaJsHost + =
+"google-analytics.com/ga.js' =
+type=3D'text/javascript'%3E%3C/script%3E"));
+</SCRIPT>
+
+<SCRIPT type=3Dtext/javascript>
+   var pageTracker =3D _gat._getTracker("UA-1735123-1");
+   pageTracker._setDomainName("codeproject.com");
+   pageTracker._setSessionTimeout("1200"); // 20 mins
+   pageTracker._initData();
+   pageTracker._trackPageview();
+</SCRIPT>
+
+<SCRIPT language=3DJavascript =
+src=3D"http://www.codeproject.com/Script/JS/oncopy.js"=20
+type=3Dtext/javascript></SCRIPT>
+
+<SCRIPT language=3DJavascript type=3Dtext/javascript><!--=0A=
+function ToggleMenu(itemName)=0A=
+{=0A=
+	var elm =3D document.getElementById(itemName);=0A=
+	var i,others =3D document.getElementById('SectionMenu');=0A=
+	for(i=3D0; i < others.childNodes.length; i++)=0A=
+	{=0A=
+		var other =3D others.childNodes[i];=0A=
+		if ((other.className =3D=3D 'MenuSectionBlock') && (other !=3D elm))=0A=
+			other.style.display=3D'none';=0A=
+	}=0A=
+	if (elm.style.display =3D=3D 'block') elm.style.display=3D'none';=0A=
+	else elm.style.display=3D'block';=0A=
+	return false;=0A=
+}=0A=
+=0A=
+--></SCRIPT>
+
+<SCRIPT language=3DJavascript type=3Dtext/javascript><!--=0A=
+function MsgVoteForm(MemberID, MsgID) {=0A=
+ document.write("Rate this message: ");=0A=
+ document.write(unescape("%3Ca href=3D\"#xx" + MsgID.toString() + "xx\" =
+onclick=3D\"RateMsg(" + MemberID.toString() + ", " + MsgID.toString() + =
+",1)\"%3E"));=0A=
+ document.write(unescape("%3Cimg height=3D\"14\" width=3D\"14\" =
+src=3D\"/script/Forums/Images/thumbs_down.gif\" alt=3D\"vote 1\" =
+border=3D\"0\" align=3D\"absmiddle\" /%3E%3C/a%3E "));=0A=
+ for (var i=3D1; i<=3D5;i++)=0A=
+  document.write(unescape("%3Ca class=3D\"Frm_MHL\" href=3D\"#xx" + =
+MsgID.toString() + "xx\" title=3D\"give this message a vote of " + =
+i.toString() + "\" onclick=3D\"RateMsg(" + MemberID.toString() + ", " + =
+MsgID.toString() + ", " + i.toString() + ")\"%3E%3Cb%3E" + i.toString() =
++ "%3C/b%3E%3C/a%3E "));=0A=
+ document.write(unescape("%3Ca href=3D\"#xx" + MsgID.toString() + "xx\" =
+onclick=3D\"RateMsg(" + MemberID.toString() + ", " + MsgID.toString() + =
+",5)\"%3E"));=0A=
+ document.write(unescape("%3Cimg height=3D\"14\" width=3D\"14\" =
+src=3D\"/script/Forums/Images/thumbs_up.gif\" alt=3D\"vote 5\" =
+border=3D\"0\" align=3D\"absmiddle\" /%3E%3C/a%3E "));=0A=
+}=0A=
+=0A=
+function ReportMsg(userid, msgid, score) {=0A=
+ if (confirm("Are you sure you want to report this message?") =3D=3D =
+true)=0A=
+  return RateMsg(userid, msgid, score);=0A=
+ else return false;=0A=
+}=0A=
+function RateMsg(memberid, msgid, score) {=0A=
+ var req =3D new ActiveXObject("MSXML2.XMLHTTP");=0A=
+ req.onreadystatechange =3D function() {=0A=
+  if (req.readyState =3D=3D 4) {=0A=
+   if ( req.status =3D=3D 200 ) {=0A=
+    var respText =3D req.responseText;=0A=
+    var re =3D new RegExp(unescape("\%3Cdiv\%3E([^\%3C]*)\%3C/div\%3E"), =
+"g");=0A=
+    var match =3D re.exec(respText);=0A=
+    voteStatus.innerHTML =3D unescape("%3Cb%3E") + (match)?match[1]:"An =
+error occured" + unescape("%3C/b%3E");=0A=
+   }=0A=
+   else=0A=
+   {=0A=
+    voteStatus.innerHTML =3D unescape("%3Cb =
+style=3D'color:red'%3EFailed!") + req.statusText + unescape("%3C/b%3E");=0A=
+   }=0A=
+  }=0A=
+ }=0A=
+ var voteStatus =3D document.getElementById("MVF" + msgid);=0A=
+ if (!voteStatus) return;=0A=
+ voteStatus.innerHTML =3D unescape("%3Cb =
+style=3D'color:green'%3EVoting...%3C/b%3E");=0A=
+ var strAction =3D =
+"/script/Forums/Vote.aspx?js=3D1&fmid=3D"+memberid.toString()+"&select=3D=
+"+msgid.toString()+"&score=3D"+score.toString();=0A=
+ req.open("GET", strAction, true);=0A=
+ req.send(null);=0A=
+  return false;=0A=
+}=0A=
+--></SCRIPT>
+<LINK href=3D"/favicon.ico" type=3Dimage/ico rel=3Dicon><LINK =
+href=3D"/favicon.ico"=20
+type=3Dimage/ico rel=3D"shortcut icon">
+<SCRIPT type=3Dtext/javascript>
+	function SetAsAvailable() {
+	   var aid =3D document.getElementById("ArticleId");
+	   if(aid)
+		   window.location.href =3D =
+"/script/Articles/UpdateArticleStatus.aspx?aid=3D" + articleId.value + =
+"&rp=3D" + location.href;
+	}
+	</SCRIPT>
+
+<META content=3D"MSHTML 6.00.6000.16587" name=3DGENERATOR></HEAD>
+<BODY>
+<TABLE id=3Dctl00_AT cellSpacing=3D0 cellPadding=3D0 border=3D0>
+  <TBODY>
+  <TR vAlign=3Dtop>
+    <TD colSpan=3D2>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D0>
+        <TBODY>
+        <TR>
+          <TD class=3DHeaderLogo><A =
+href=3D"http://www.codeproject.com/"><IMG=20
+            height=3D90 alt=3DHome=20
+            =
+src=3D"http://www.codeproject.com/Images/Standard/codeproject225x90.gif" =
+
+            width=3D225 border=3D0></A></TD>
+          <TD class=3DHeaderBanner align=3Dright =
+width=3D"100%"></TD></TR>
+        <TR>
+          <TD colSpan=3D2></TD></TR>
+        <TR>
+          <TD colSpan=3D2></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD vAlign=3Dtop colSpan=3D2><A name=3D_top></A>
+      <TABLE class=3DArticleHeader =
+id=3Dctl00_ArticleTopHeader_HeaderTable=20
+      cellSpacing=3D0 cellPadding=3D3 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD class=3DSmallText><A =
+id=3Dctl00_ArticleTopHeader_ChapterLink=20
+            =
+href=3D"http://www.codeproject.com/script/Content/Chapter.aspx?chptId=3D8=
+">Platforms,=20
+            Frameworks &amp; Libraries</A> =C2=BB <A=20
+            id=3Dctl00_ArticleTopHeader_SectionLink=20
+            href=3D"http://www.codeproject.com/KB/wtl/">WTL</A> =C2=BB =
+<A=20
+            id=3Dctl00_ArticleTopHeader_SubsectionLink=20
+            href=3D"http://www.codeproject.com/KB/wtl/index.aspx?#WTL - =
+General">General</A>=20
+            <SPAN class=3DArticleIntermediate=20
+            id=3Dctl00_ArticleTopHeader_SkillLevel>&nbsp;&nbsp;&nbsp;=20
+            Intermediate</SPAN> <SPAN=20
+            id=3Dctl00_ArticleTopHeader_LicenceTerms></SPAN><BR><BR>
+            <H1><SPAN class=3DArticleTopTitle=20
+            id=3Dctl00_ArticleTopHeader_ArticleTitle>WTL Rolldown=20
+            Control</SPAN></H1><B>By <A=20
+            =
+href=3D"http://www.codeproject.com/script/Articles/MemberArticles.aspx?am=
+id=3D14252">Bjoern=20
+            Graf</A></B><BR><BR><SPAN class=3DArticleTopDescr=20
+            id=3Dctl00_ArticleTopHeader_ArticleDescr>A WTL Rolldown =
+control as=20
+            seen in 3DSMax</SPAN> </TD>
+          <TD class=3DSmallText style=3D"WIDTH: 210px"><SPAN=20
+            id=3Dctl00_ArticleTopHeader_ArticleAttributes>C++, VC6, =
+Windows, NT4,=20
+            Win2K, VS, WTL, VS6, Dev</SPAN><BR><BR><SPAN=20
+            style=3D"PADDING-RIGHT: 2ex">Posted</SPAN>: <B>3 Sep =
+2001</B><BR><SPAN=20
+            style=3D"PADDING-RIGHT: 0.5ex">Updated</SPAN>: <B>4 Mar =
+2002</B>=20
+            <BR><SPAN style=3D"PADDING-RIGHT: 3.2ex">Views</SPAN>:=20
+            <B>61,527</B><BR></TD></TR>
+        <TR>
+          <TD colSpan=3D2>
+            <TABLE width=3D"100%">
+              <TBODY>
+              <TR>
+                <TD></TD>
+                <TD class=3DSmallText style=3D"WHITE-SPACE: nowrap"=20
+              =
+align=3Dright></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></=
+TR>
+  <TR vAlign=3Dtop>
+    <TD class=3DArticlePane vAlign=3Dtop><SPAN =
+id=3Dctl00_ResultMessage></SPAN>
+      <DIV id=3Dctl00_ArtDiv>
+      <TABLE cellSpacing=3D0 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD vAlign=3Dtop>
+            <TABLE>
+              <TBODY></TBODY></TABLE></TD>
+          <TD align=3Dright>
+            <TABLE>
+              <TBODY>
+              <TR>
+                <TD class=3DSmallText style=3D"WHITE-SPACE: nowrap"=20
+                  align=3Dright><SPAN =
+id=3Dctl00_ArticleRating_VoteLabel>27 votes=20
+                  for this Article.</SPAN> </TD>
+                <TD>
+                  <TABLE cellSpacing=3D0 cellPadding=3D0 border=3D1>
+                    <TBODY>
+                    <TR>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD width=3D20 bgColor=3Dwhite height=3D5><IMG =
+height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D20 border=3D0></TD>
+                      <TD noWrap width=3D20 bgColor=3Dwhite =
+height=3D5><IMG height=3D5=20
+                        =
+src=3D"http://www.codeproject.com/script/Ratings/Images/red.gif"=20
+                        width=3D6 =
+border=3D0></TD></TR></TBODY></TABLE></TD></TR>
+              <TR id=3Dctl00_ArticleRating_PopularityRow>
+                <TD class=3DSmallText align=3Dright colSpan=3D2><A=20
+                  id=3Dctl00_ArticleRating_PopularityLnk=20
+                  title=3D"Calculated as rating x Log10(# votes)"=20
+                  =
+href=3D"http://www.codeproject.com/script/Articles/TopArticles.aspx?ta_so=
+=3D1">Popularity:=20
+                  6.15</A><SPAN =
+id=3Dctl00_ArticleRating_PopularityLbl></SPAN>=20
+                  Rating: <B>4.30</B> out of 5=20
+      </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><SPAN =
+id=3DintelliTXT>
+      <DIV id=3Dcontentdiv><!-- Main Page Contents Start --><!-- Article =
+Starts --><!-- Download Links -->
+      <UL class=3Ddownload>
+        <LI class=3Ddownload><A=20
+        =
+href=3D"http://www.codeproject.com/KB/wtl/WtlRolldownCtrl/WtlRolldownCtrl=
+_src.zip">Download=20
+        source files - 7 Kb</A>=20
+        <LI class=3Ddownload><A=20
+        =
+href=3D"http://www.codeproject.com/KB/wtl/WtlRolldownCtrl/WtlRolldownCtrl=
+_demo.zip">Download=20
+        demo project - 52 Kb</A> </LI></UL><!-- Article image -->
+      <P><IMG height=3D545 alt=3D"Sample Image - WtlRolldownCtrl.gif"=20
+      =
+src=3D"http://www.codeproject.com/KB/wtl/WtlRolldownCtrl/WtlRolldownCtrl.=
+gif"=20
+      width=3D258></P>
+      <H2>Introduction</H2>
+      <P>Even thought this implementation seems to be a port of the MFC =
+<A=20
+      href=3D"http://www.codeproject.com/miscctrl/rollupctrl.asp">Rollup =
+
+      Control</A> by Johann Nadalutti, I started to develop it some days =
+before=20
+      the first post of the above-mentioned article. Nevertheless, I =
+need to=20
+      thank Johann Nadalutti for his great work that gave me the =
+opportunity to=20
+      improve my implementation. </P>
+      <P>This implementation consists of two classes: =
+<CODE>CRolldownCtrl<SPAN=20
+      class=3Dcode-keyword>&lt;</SPAN>TChild<SPAN=20
+      class=3Dcode-keyword>&gt;</SPAN></CODE> implements the actual =
+Rolldown=20
+      control while <CODE>CRolldownContainer</CODE> implements a =
+manager, which=20
+      provides the visual area for the Rolldown controls.<BR>The class=20
+      definitions and implementations are in the file=20
+      <CODE>AtlRolldownCtrl.h</CODE>, which are included in the demo=20
+project.</P>
+      <H2>Requirements</H2>
+      <P>You will require the WTL Libraries; these can be downloaded =
+from the=20
+      Microsoft site. If the WTL Libraries have no meaning to you, see =
+<A=20
+      href=3D"http://www.codeproject.com/wtl/wtlintro1.asp">Introduction =
+to WTL -=20
+      Part 1</A>. </P>
+      <H2>How to use the control in your WTL App</H2>
+      <P>To use this control in your application, add the header file=20
+      <CODE>AtlRolldownCtrl.h</CODE> to your project and then add=20
+      <CODE>CRolloutContainer m_RolloutContainer;</CODE> to the class =
+definition=20
+      that will be using the control. </P>
+      <OL>
+        <LI>Create a dialog box in the resource editor with the=20
+        <CODE>WS_CHILD</CODE> style and its WTL dialog class as usual =
+(e.g.=20
+        <CODE>CDlg1</CODE>).<BR><B>Note:</B> Trap <CODE>IDOK</CODE> and=20
+        <CODE>IDCANCEL</CODE> else the dialog will be destroyed if the =
+user=20
+        presses either RETURN or ESC.=20
+        <LI>Add <CODE>CRolloutCtrl<SPAN =
+class=3Dcode-keyword>&lt;</SPAN>CDlg1<SPAN=20
+        class=3Dcode-keyword>&gt;</SPAN> m_dlg1;</CODE> to the class =
+declaration=20
+        that will be using the control.=20
+        <LI>Create the control in the <CODE>OnCreate</CODE> function and =
+add it=20
+        to the container, e.g.: =
+<PRE>m_dlg1.Create(m_RolloutContainer.m_hWnd, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>My Rollout =
+Control"</SPAN>));
+m_RolloutContainer.AddRollout(m_dlg1);
+</PRE></LI></OL>
+      <P>Repeat these steps for additional Rolldown controls.</P>
+      <P>The final <CODE>OnCreate</CODE> function may look like =
+this:</P><PRE>LRESULT OnCreate(UINT <SPAN =
+class=3Dcode-comment>/*</SPAN><SPAN class=3Dcode-comment>uMsg*/</SPAN>, =
+WPARAM <SPAN class=3Dcode-comment>/*</SPAN><SPAN =
+class=3Dcode-comment>wParam*/</SPAN>, LPARAM <SPAN =
+class=3Dcode-comment>/*</SPAN><SPAN =
+class=3Dcode-comment>lParam*/</SPAN>, BOOL&amp; <SPAN =
+class=3Dcode-comment>/*</SPAN><SPAN =
+class=3Dcode-comment>bHandled*/</SPAN>)
+{
+  ...
+  m_RolloutContainer.Create(m_hWnd);
+  ...
+  m_dlg1.Create(m_RolloutContainer.m_hWnd, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>Rollout Control =
+1"</SPAN>));
+  m_RolloutContainer.AddRollout(m_dlg1);
+  m_dlg2.Create(m_RolloutContainer.m_hWnd, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>Rollout Control =
+2"</SPAN>));
+  m_RolloutContainer.AddRollout(m_dlg2);
+  m_dlg3.Create(m_RolloutContainer.m_hWnd, _T(<SPAN =
+class=3Dcode-string>"</SPAN><SPAN class=3Dcode-string>Rollout Control =
+3"</SPAN>));
+  m_RolloutContainer.AddRollout(m_dlg3);
+  ...
+}
+</PRE>
+      <H2><CODE>CRolloutCtrl</CODE> User Methods:</H2>
+      <H3>Creation</H3><PRE>HWND Create(HWND hWndParent, LPCTSTR =
+szWindowName, _U_RECT rect =3D NULL,
+            DWORD dwStyle =3D <SPAN class=3Dcode-digit>0</SPAN>, DWORD =
+dwExStyle =3D <SPAN class=3Dcode-digit>0</SPAN>, DWORD dwExRcStyle =3D =
+<SPAN class=3Dcode-digit>0</SPAN>,
+            UINT nID =3D 0U, LPVOID lpCreateParam =3D NULL);
+BOOL SubclassWindow(HWND hWnd);
+</PRE>
+      <H3>Attributes</H3><PRE><SPAN class=3Dcode-keyword>bool</SPAN> =
+IsExpanded();
+</PRE>
+      <P>Returns <CODE><SPAN class=3Dcode-keyword>true</SPAN></CODE> if =
+the=20
+      control is expanded or <CODE><SPAN =
+class=3Dcode-keyword>false</SPAN></CODE>=20
+      otherwise.</P>
+      <H3>Operations</H3><PRE><SPAN class=3Dcode-keyword>void</SPAN> =
+GetRect(<SPAN class=3Dcode-keyword>bool</SPAN> fExpanded, RECT* pRect);
+</PRE>
+      <P>Returns the bounding rectangle of the expanded (<CODE>fExpanded =
+=3D <SPAN=20
+      class=3Dcode-keyword>true</SPAN></CODE>) or collapsed =
+(<CODE>fExpanded =3D=20
+      <SPAN class=3Dcode-keyword>false</SPAN></CODE>) =
+control.</P><PRE><SPAN class=3Dcode-keyword>void</SPAN> Expand(<SPAN =
+class=3Dcode-keyword>bool</SPAN> fExpand =3D <SPAN =
+class=3Dcode-keyword>true</SPAN>);
+<SPAN class=3Dcode-keyword>void</SPAN> ToggleExpandCollapse();
+</PRE>
+      <P>Expands (<CODE>fExpand =3D <SPAN =
+class=3Dcode-keyword>true</SPAN></CODE>)=20
+      or collapses (<CODE>fExpand =3D <SPAN=20
+      class=3Dcode-keyword>false</SPAN></CODE>) the control.</P>
+      <H2><CODE>CRolloutContainer</CODE> User Methods:</H2>
+      <H3>Creation</H3><PRE>HWND Create(HWND hWndParent, LPCTSTR =
+lpstrTitle =3D NULL, DWORD dwStyle =3D <SPAN =
+class=3Dcode-digit>0</SPAN>,
+            DWORD dwExStyle =3D <SPAN class=3Dcode-digit>0</SPAN>, UINT =
+nID =3D <SPAN class=3Dcode-digit>0</SPAN>, LPVOID lpCreateParam =3D =
+NULL);
+HWND Create(HWND hWndParent, UINT uTitleID, DWORD dwStyle =3D <SPAN =
+class=3Dcode-digit>0</SPAN>,
+            DWORD dwExStyle =3D <SPAN class=3Dcode-digit>0</SPAN>, UINT =
+nID =3D <SPAN class=3Dcode-digit>0</SPAN>, LPVOID lpCreateParam =3D =
+NULL);
+</PRE>
+      <P></P>
+      <H3>Operations</H3><PRE><SPAN class=3Dcode-keyword>void</SPAN> =
+GetClientSize(SIZE* pClientSize);
+</PRE>
+      <P>Returns the size the container needs to display all Rolldown=20
+      controls.</P><PRE><SPAN class=3Dcode-keyword>int</SPAN> =
+GetSpacing();
+<SPAN class=3Dcode-keyword>void</SPAN> SetSpacing(<SPAN =
+class=3Dcode-keyword>int</SPAN> nSpacing);
+</PRE>
+      <P>Gets and sets the inter Rolldown spacing.</P><PRE><SPAN =
+class=3Dcode-keyword>int</SPAN> AddRollout(HWND hWndRollout);
+</PRE>
+      <P>Adds a Rolldown control to the container. If the return value =
+is=20
+      greater than or equal to 0, it is the zero-based index to the =
+Rolldown=20
+      control in the container. The return value is -1 if an error =
+occurs.</P><PRE><SPAN class=3Dcode-keyword>bool</SPAN> =
+RemoveRollout(HWND hWndRollout);
+<SPAN class=3Dcode-keyword>bool</SPAN> RemoveRollout(<SPAN =
+class=3Dcode-keyword>int</SPAN> nIndex);
+<SPAN class=3Dcode-keyword>bool</SPAN> RemoveAllRollouts();
+</PRE>
+      <P>Removes one or all Rolldown controls from the =
+container.</P><PRE><SPAN class=3Dcode-keyword>int</SPAN> =
+GetRolloutCount();
+</PRE>
+      <P>Retrieves the count of contained Rolldown =
+controls.</P><PRE>HWND GetRollout(<SPAN class=3Dcode-keyword>int</SPAN> =
+nIndex);
+</PRE>
+      <P>Retrieves the window handle of a Rolldown =
+control.</P><PRE><SPAN class=3Dcode-keyword>void</SPAN> =
+ExpandRollout(HWND hWndRollout, <SPAN class=3Dcode-keyword>bool</SPAN> =
+fExpand =3D <SPAN class=3Dcode-keyword>true</SPAN>, <SPAN =
+class=3Dcode-keyword>bool</SPAN> fUpdate =3D <SPAN =
+class=3Dcode-keyword>true</SPAN>);
+<SPAN class=3Dcode-keyword>void</SPAN> ExpandRollout(<SPAN =
+class=3Dcode-keyword>int</SPAN> nIndex, <SPAN =
+class=3Dcode-keyword>bool</SPAN> fExpand =3D <SPAN =
+class=3Dcode-keyword>true</SPAN>, <SPAN class=3Dcode-keyword>bool</SPAN> =
+fUpdate =3D <SPAN class=3Dcode-keyword>true</SPAN>);
+<SPAN class=3Dcode-keyword>void</SPAN> ExpandAllRollouts(<SPAN =
+class=3Dcode-keyword>bool</SPAN> fExpand =3D <SPAN =
+class=3Dcode-keyword>true</SPAN>);
+</PRE>
+      <P>Expands (<CODE>fExpand =3D <SPAN =
+class=3Dcode-keyword>true</SPAN></CODE>)=20
+      or collapses (<CODE>fExpand =3D <SPAN=20
+      class=3Dcode-keyword>false</SPAN></CODE>) one or all Rollout =
+controls. If=20
+      <CODE>fUpdate</CODE> is set to <CODE><SPAN=20
+      class=3Dcode-keyword>true</SPAN></CODE>, the layout will be=20
+recalculated.</P><PRE><SPAN class=3Dcode-keyword>bool</SPAN> =
+IsRolloutExpanded(HWND hWndRollout);
+<SPAN class=3Dcode-keyword>bool</SPAN> IsRolloutExpanded(<SPAN =
+class=3Dcode-keyword>int</SPAN> nIndex);
+</PRE>
+      <P>Returns <CODE><SPAN class=3Dcode-keyword>true</SPAN></CODE> if =
+the=20
+      control is expanded or <CODE><SPAN =
+class=3Dcode-keyword>false</SPAN></CODE>=20
+      otherwise.</P><PRE><SPAN class=3Dcode-keyword>void</SPAN> =
+RolloutEnabled(HWND hWndRollout, <SPAN class=3Dcode-keyword>bool</SPAN> =
+fEnable);
+<SPAN class=3Dcode-keyword>void</SPAN> RolloutEnabled(<SPAN =
+class=3Dcode-keyword>int</SPAN> nIndex, <SPAN =
+class=3Dcode-keyword>bool</SPAN> fEnable);
+</PRE>
+      <P>Enables (<CODE>fEnable =3D <SPAN =
+class=3Dcode-keyword>true</SPAN></CODE>)=20
+      or disables (<CODE>fEnable =3D <SPAN =
+class=3Dcode-keyword>false</SPAN></CODE>)=20
+      the specified rollout control. </P><PRE><SPAN =
+class=3Dcode-keyword>bool</SPAN> IsRolloutEnabled(HWND hWndRollout);
+<SPAN class=3Dcode-keyword>bool</SPAN> IsRolloutEnabled(<SPAN =
+class=3Dcode-keyword>int</SPAN> nIndex);
+</PRE>
+      <P>Returns <CODE><SPAN class=3Dcode-keyword>true</SPAN></CODE> if =
+the=20
+      control is enabled or <CODE><SPAN =
+class=3Dcode-keyword>false</SPAN></CODE>=20
+      otherwise.</P><PRE><SPAN class=3Dcode-keyword>void</SPAN> =
+ScrollToRollout(HWND hWndRollout);
+<SPAN class=3Dcode-keyword>void</SPAN> ScrollToRollout(<SPAN =
+class=3Dcode-keyword>int</SPAN> nIndex);
+</PRE>
+      <P>Scrolls the specified Rolldown control into view.</P>
+      <H2>Updates</H2>
+      <H4>04 Sep 2001</H4>
+      <DL>
+        <DD>Initial public release.</DD></DL>
+      <H4>28 Sep 2001</H4>
+      <DL>
+        <DD>Added Copyright/Disclaimer header.=20
+        <DD>Added flag to update the layout to =
+<CODE>ExpandRollout()</CODE>.=20
+        <DD>Changed the context menu. The Close Rollout item will be =
+grayed out=20
+        if the cursor is not over a rollout.=20
+        <DD>Changed rollout container message names from =
+<CODE>RCM_*</CODE> to=20
+        <CODE>RCCM_*</CODE>.=20
+        <DD>Fixed page dragging.=20
+        <DD>Fixed focus drawing. </DD></DL>
+      <H4>4 Dec 2001</H4>
+      <DL>
+        <DD>Added <CODE>CRolloutCtrlButton</CODE> to support tabing.=20
+        <DD>Added <CODE>EnableRollout()</CODE> to=20
+        <CODE>CRolloutContainer</CODE>.=20
+        <DD>Fixed tabbing. </DD></DL>
+      <H4>05 Mar 2002</H4>
+      <DL>
+        <DD>Grayed context menu items of disabled rollout controls.=20
+        <CODE>CRolloutContainer::ExpandRollout</CODE> and=20
+        <CODE>CRolloutCtrl::Expand</CODE> still expand disabled rollout=20
+        controls. </DD></DL>
+      <H2>Known Limitations/Bugs</H2>
+      <UL>
+        <LI>Inconsistent naming of the control within this article. =
+</LI></UL><!-- Article Ends --><!-- Main Page Contents End =
+--></DIV></SPAN>
+      <H2>License</H2>
+      <P>This article has no explicit license attached to it but may =
+contain=20
+      usage terms in the article text or the download files themselves. =
+If in=20
+      doubt please contact the author via the discussion board =
+below.</P>
+      <P>A list of licenses authors might use can be found <A=20
+      =
+href=3D"http://www.codeproject.com/info/Licenses.aspx">here</A></P>
+      <H2>About the Author</H2>
+      <TABLE cellSpacing=3D5 cellPadding=3D0 width=3D"100%" border=3D0>
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberPhotoTable=20
+          style=3D"WIDTH: 155px" vAlign=3Dtop><B><A=20
+            =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberProfileLink=20
+            =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+14252">Bjoern=20
+            Graf</A></B><BR><BR>
+            <CENTER></CENTER><BR><SPAN class=3DSmallText=20
+            =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberType></SPAN></TD>
+          <TD><BR>
+            <TABLE>
+              <TBODY>
+              <TR =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_jobTitleRow>
+                <TD class=3DSmallText noWrap>Occupation: </TD>
+                <TD width=3D"100%"><SPAN class=3DSmallText=20
+                  =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberJobTitle>Web=20
+                  Developer</SPAN></TD></TR>
+              <TR =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_locationRow>
+                <TD class=3DSmallText>Location: </TD>
+                <TD width=3D"100%"><SPAN class=3DSmallText=20
+                  =
+id=3Dctl00_AboutAuthorRptr_ctl00_AboutAuthor_memberLocation><IMG=20
+                  height=3D11 alt=3DGermany=20
+                  =
+src=3D"http://www.codeproject.com/script/Geo/Images/DE.gif"=20
+                  width=3D16>=20
+      =
+Germany</SPAN></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE><BR>
+      <DIV=20
+      style=3D"PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: =
+10px; OVERFLOW: hidden; PADDING-TOP: 10px; WHITE-SPACE: nowrap; =
+TEXT-ALIGN: center"></DIV><A=20
+      name=3D_comments></A><!-- Forum Start -->
+      <TABLE class=3DFrm_MainTable id=3DForumTable cellSpacing=3D0 =
+cellPadding=3D0>
+        <TBODY>
+        <TR>
+          <TD><A name=3Dxx0xx></A>
+            <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%" =
+border=3D0>
+              <TBODY>
+              <TR class=3DFrm_NavigationBar>
+                <TD>&nbsp;</TD>
+                <TD>Msgs 1 to 19 of 19 (Total in Forum: 19) (<A=20
+                  =
+href=3D"http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=3D=
+PrintAll&amp;fid=3D2572">Refresh</A>)</TD>
+                <TD style=3D"WHITE-SPACE: nowrap; TEXT-ALIGN: =
+right"><SPAN=20
+                  class=3DFrm_HL>First</SPAN><SPAN =
+class=3DFrm_HL>Prev</SPAN><SPAN=20
+                  =
+class=3DFrm_HL>Next</SPAN></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD><!-- Column Headers -->
+            <TABLE class=3DFrm_MsgTable cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+            border=3D0>
+              <TBODY>
+              <TR class=3DFrm_ColumnHeaders>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%" =
+border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD>Subject&nbsp;</TD>
+                      <TD class=3DFrm_MsgAuthor>&nbsp;Author&nbsp;</TD>
+                      <TD=20
+              =
+class=3DFrm_MsgDate>Date&nbsp;</TD></TR></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD><IMG height=3D5=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx2276251xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_question.gif" =
+
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>one question =
+[modified]</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+1821677">bobtnt</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">6:40 17=20
+                        Oct '07 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Help))) How made this =
+panel on the=20
+                                left? not on the right by=20
+                                default?<BR>Thanks!!!<BR><BR><BR>-- =
+modified at=20
+                                11:23 Wednesday 17th October, =
+2007<BR>oh) I made=20
+                                it) big Thanks to all))=20
+                              =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx1973684xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Here's how to get this=20
+                        compiling in VS 2005...</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+105499">Pallium</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">17:09 3=20
+                        Apr '07 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>You'll need to make two =
+small=20
+                                changes.<BR><BR>First, at line 656, =
+change the=20
+                                declaration of CRolloutCtrl=20
+                                from:<BR><BR><CODE>template &lt;class=20
+                                TChild&gt;<BR>class CRolloutCtrl : =
+public=20
+                                CRolloutCtrlImpl&lt;CRolloutCtrl,=20
+                                =
+TChild&gt;<BR>{<BR>public:<BR>DECLARE_WND_SUPERCLASS(_T("WTL_RolloutCtrl"=
+),=20
+                                GetWndClassName())<BR><BR>CRolloutCtrl() =
+:=20
+                                CRolloutCtrlImpl&lt;CRolloutCtrl,=20
+                                TChild&gt;()<BR>{=20
+                                =
+}<BR>};</CODE><BR><BR>to<BR><BR><CODE>template=20
+                                &lt;class TChild&gt;<BR>class =
+CRolloutCtrl :=20
+                                public =
+CRolloutCtrlImpl&lt;CRolloutCtrl<SPAN=20
+                                style=3D"COLOR: =
+#0000ff">&lt;TChild&gt;</SPAN>,=20
+                                =
+TChild&gt;<BR>{<BR>public:<BR>DECLARE_WND_SUPERCLASS(_T("WTL_RolloutCtrl"=
+),=20
+                                GetWndClassName())<BR><BR>CRolloutCtrl() =
+:=20
+                                CRolloutCtrlImpl&lt;CRolloutCtrl<SPAN=20
+                                style=3D"COLOR: =
+#0000ff">&lt;TChild&gt;</SPAN>,=20
+                                TChild&gt;()<BR>{ =
+}<BR>};</CODE><BR><BR>Second,=20
+                                at line 586, change the PostMessage call =
+
+                                =
+from:<BR><BR><CODE>::PostMessage(GetParent(),=20
+                                uMsg, (WPARAM)GetParent(),=20
+                                =
+lParam);</CODE><BR><BR>to<BR><BR><CODE>::PostMessage(GetParent(),=20
+                                uMsg, (WPARAM)<SPAN=20
+                                style=3D"COLOR: =
+#0000ff">(HWND)</SPAN>GetParent(),=20
+                                lParam);</CODE><BR><BR>At least in the =
+demo=20
+                                source, both <B>Xuewu Liu</B>'s and =
+<B>Paul=20
+                                Bludov</B>'s comments appear unfixed, so =
+you=20
+                                might want to address those=20
+                                =
+too.<BR><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR=
+></TBODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx1005154xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Use in Dialog</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+55451">http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D5=
+5451</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">13:12=20
+                        29 Dec '04 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Anyone have a sample on =
+how to get=20
+                                this working in a dialog? I just can't =
+seem to=20
+                                get it going.<BR><BR>Peter=20
+                              =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx717023xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Unable to use =
+Controls</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+526648">Mephisto187</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">2:55 19=20
+                        Jan '04 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Hey there,<BR>I=C2=B4m =
+loading various=20
+                                vb and mfc written Controls in this =
+container.=20
+                                The problem is, every time I hit a =
+button in a=20
+                                control the application crashes =
+completely. The=20
+                                strange thing is that sliders, radio =
+buttons=20
+                                etc. work properly. I only have this =
+problem=20
+                                with buttons in mfc as well as in =
+vb.<BR>I would=20
+                                be very grateful about any helping =
+idea...=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx704774xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>A little bug :P</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        height=3D15=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/usersuss.gif"=20
+                        width=3D14></TD>
+                      <TD class=3DFrm_MsgAuthor>Xuewu Liu</TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">19:08 4=20
+                        Jan '04 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Hi, thanks for your =
+work. <IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_wink.gif"=20
+                                align=3DabsMiddle><BR>I found a small =
+bug. When=20
+                                you drag the bottom edge of window to =
+enlarge it=20
+                                until it's height larger than the =
+Rollout=20
+                                container.The control will flicker up =
+and=20
+                                dowm.<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_eek.gif"=20
+                                align=3DabsMiddle><BR>I change the code =
+in=20
+                                <B>CRolloutContainerImpl::OnSize()</B> =
+from=20
+                                <BR><CODE><BR>LRESULT OnSize(UINT =
+/*uMsg*/,=20
+                                WPARAM /*wParam*/, LPARAM lParam, =
+BOOL&amp;=20
+                                bHandled)<BR>{<BR>m_sizePage.cx =3D=20
+                                LOWORD(lParam);<BR>m_sizePage.cy =3D=20
+                                HIWORD(lParam);<BR>if((m_sizePage.cy +=20
+                                m_nCtrlsOffsetY) &gt; m_sizeCtrls.cy=20
+                                )<BR>m_nCtrlsOffsetY =3D m_sizeCtrls.cy =
+-=20
+                                =
+m_sizePage.cy;<BR>UpdateSliderRect();<BR>InvalidateSlider();<BR>UpdateLay=
+out();<BR>bHandled=20
+                                =3D FALSE;<BR>return=20
+                                =
+1;<BR>}<BR></CODE><BR>to<BR><CODE><BR>LRESULT=20
+                                OnSize(UINT /*uMsg*/, WPARAM /*wParam*/, =
+LPARAM=20
+                                lParam, BOOL&amp;=20
+                                bHandled)<BR>{<BR>m_sizePage.cx =3D=20
+                                LOWORD(lParam);<BR>m_sizePage.cy =3D=20
+                                HIWORD(lParam);<BR>if((m_sizePage.cy +=20
+                                m_nCtrlsOffsetY) &gt; m_sizeCtrls.cy=20
+                                )<BR><B>{<BR>m_nCtrlsOffsetY =3D =
+m_sizeCtrls.cy -=20
+                                m_sizePage.cy;<BR>m_nCtrlsOffsetY =3D=20
+                                m_nCtrlsOffsetY&gt;0?m_nCtrlsOffsetY<IMG =
+
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_redface.gif=
+"=20
+                                =
+align=3DabsMiddle>;<BR>}</B><BR><STRIKE><BR>//=20
+                                UpdateSliderRect();<BR>//=20
+                                =
+InvalidateSlider();<BR></STRIKE><BR>UpdateLayout();<BR>bHandled=20
+                                =3D FALSE;<BR>return =
+1;<BR>}<BR></CODE><BR>I don't=20
+                                know why call UpdateSliderRect() and=20
+                                InvalidateSlider() since you call they =
+called in=20
+                                UpdateLayout(),so I comment this,it =
+seems to=20
+                                work well,too<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_tongue.gif"=
+=20
+                                align=3DabsMiddle><BR>And in=20
+                                =
+<B>CRolloutContainerImpl::UpdateLayout()</B><BR><CODE><BR>...<BR>...<BR>i=
+f(pT-&gt;m_nCtrlsOffsetY=20
+                                !=3D 0 &amp;&amp; pT-&gt;m_sizeCtrls.cy =
+&lt;=20
+                                pT-&gt;m_sizePage.cy)<BR>{ // All =
+controls fit=20
+                                into the visible area, so show them=20
+                                all<BR>pT-&gt;m_nCtrlsOffsetY =3D=20
+                                0;<BR>UpdateLayout();<BR><B>return;</B> =
+//can be=20
+                                more =
+faster<BR>}<BR>...<BR>...<BR></CODE><BR>Now=20
+                                it works correctly. I hope you can agree =
+with=20
+                                me.<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_smile.gif" =
+
+                                align=3DabsMiddle><BR>Thank you again=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd LoVote Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx704773xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>A little bug :P</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        height=3D15=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/usersuss.gif"=20
+                        width=3D14></TD>
+                      <TD class=3DFrm_MsgAuthor>Xuewu Liu</TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">19:07 4=20
+                        Jan '04 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Hi, thanks for your =
+work. <IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_wink.gif"=20
+                                align=3DabsMiddle><BR>I found a small =
+bug. When=20
+                                you drag the bottom edge of window to =
+enlarge it=20
+                                until it's height larger than the =
+Rollout=20
+                                container.The control will flicker up =
+and=20
+                                dowm.<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_eek.gif"=20
+                                align=3DabsMiddle><BR>I change the code =
+in=20
+                                <B>CRolloutContainerImpl::OnSize()</B> =
+from=20
+                                <BR><CODE><BR>LRESULT OnSize(UINT =
+/*uMsg*/,=20
+                                WPARAM /*wParam*/, LPARAM lParam, =
+BOOL&amp;=20
+                                bHandled)<BR>{<BR>m_sizePage.cx =3D=20
+                                LOWORD(lParam);<BR>m_sizePage.cy =3D=20
+                                HIWORD(lParam);<BR>if((m_sizePage.cy +=20
+                                m_nCtrlsOffsetY) &gt; m_sizeCtrls.cy=20
+                                )<BR>m_nCtrlsOffsetY =3D m_sizeCtrls.cy =
+-=20
+                                =
+m_sizePage.cy;<BR>UpdateSliderRect();<BR>InvalidateSlider();<BR>UpdateLay=
+out();<BR>bHandled=20
+                                =3D FALSE;<BR>return=20
+                                =
+1;<BR>}<BR></CODE><BR>to<BR><CODE><BR>LRESULT=20
+                                OnSize(UINT /*uMsg*/, WPARAM /*wParam*/, =
+LPARAM=20
+                                lParam, BOOL&amp;=20
+                                bHandled)<BR>{<BR>m_sizePage.cx =3D=20
+                                LOWORD(lParam);<BR>m_sizePage.cy =3D=20
+                                HIWORD(lParam);<BR>if((m_sizePage.cy +=20
+                                m_nCtrlsOffsetY) &gt; m_sizeCtrls.cy=20
+                                )<BR><B>{<BR>m_nCtrlsOffsetY =3D =
+m_sizeCtrls.cy -=20
+                                m_sizePage.cy;<BR>m_nCtrlsOffsetY =3D=20
+                                m_nCtrlsOffsetY&gt;0?m_nCtrlsOffsetY<IMG =
+
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_redface.gif=
+"=20
+                                =
+align=3DabsMiddle>;<BR>}</B><BR><STRIKE><BR>//=20
+                                UpdateSliderRect();<BR>//=20
+                                =
+InvalidateSlider();<BR></STRIKE><BR>UpdateLayout();<BR>bHandled=20
+                                =3D FALSE;<BR>return =
+1;<BR>}<BR></CODE><BR>I don't=20
+                                know why call UpdateSliderRect() and=20
+                                InvalidateSlider() since you call they =
+called in=20
+                                UpdateLayout(),so I comment this,it =
+seems to=20
+                                work well,too<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_tongue.gif"=
+=20
+                                align=3DabsMiddle><BR>And in=20
+                                =
+<B>CRolloutContainerImpl::UpdateLayout()</B><BR><CODE><BR>...<BR>...<BR>i=
+f(pT-&gt;m_nCtrlsOffsetY=20
+                                !=3D 0 &amp;&amp; pT-&gt;m_sizeCtrls.cy =
+&lt;=20
+                                pT-&gt;m_sizePage.cy)<BR>{ // All =
+controls fit=20
+                                into the visible area, so show them=20
+                                all<BR>pT-&gt;m_nCtrlsOffsetY =3D=20
+                                0;<BR>UpdateLayout();<BR><B>return;</B> =
+//can be=20
+                                more =
+faster<BR>}<BR>...<BR>...<BR></CODE><BR>Now=20
+                                it works correctly. I hope you can agree =
+with=20
+                                me.<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_smile.gif" =
+
+                                align=3DabsMiddle>=20
+                          =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx675763xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Also Patented</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+49251">compiler</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">15:25=20
+                        25 Nov '03 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>USPTO 5,986,657=20
+                                =
+<BR><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></T=
+BODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx835165xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=3D=
+PrintAll&amp;fid=3D2572&amp;select=3D835165#xx835165xx"=20
+                        name=3D835165>Re: Also Patented</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+45035">Jubjub</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">17:04=20
+                        27 May '04 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Isn't your name =
+patented?<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_tongue.gif"=
+=20
+                                =
+align=3DabsMiddle><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE=
+></TD></TR></TBODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx895090xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=3D=
+PrintAll&amp;fid=3D2572&amp;select=3D895090#xx895090xx"=20
+                        name=3D895090>Re: Also Patented</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+983045">decompiler</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">16:46=20
+                        10 Aug '04 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>It's too bad they let =
+this one=20
+                                slip by. It's so generic, that it may =
+prevent=20
+                                better designs form coming out.<BR><BR>A =
+list of=20
+                                the inventers is listed=20
+                                =
+below.<BR><BR>-----------------------------------------------------------=
+---------------------<BR>Inventors:=20
+                                Berteig; Rolf Walter (Seattle, WA); =
+Silva;=20
+                                Daniel David (San Rafael, CA); Brittain; =
+Donald=20
+                                Lee (Santa Barbara, CA); Hudson; Thomas =
+Dene=20
+                                (Port Washington, WI); Yost; Gary S. =
+(San=20
+                                Francisco, CA) <BR>Assignee: Autodesk, =
+Inc. (San=20
+                                Rafael, CA)=20
+                          =
+<BR><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></T=
+BODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx637110xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Background Color of =
+Controls</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+526648">Mephisto187</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">3:53 13=20
+                        Oct '03 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>I=C2=B4m loading ActiveX =
+Controls in=20
+                                the Container. With those written in VB =
+I don=C2=B4t=20
+                                have any problems. But my Controls =
+written in=20
+                                C++ appear allways with a black=20
+                                background.<BR>While searching for the =
+reason=20
+                                I=C2=B4ve found out that this happens =
+only when I=20
+                                load them in a WTL App. Using MFC the =
+Background=20
+                                is grey as it should be.<BR><BR>Dows =
+anybody=20
+                                know something about this ???=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx488684xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Dialog box =
+implementation</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+91822">Modar</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">11:02 4=20
+                        May '03 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Hi,<BR><BR>is there any =
+way to=20
+                                make it work in dialogs i tried so much =
+but the=20
+                                result was something strange another =
+window=20
+                                appears contain the control<IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_cry.gif"=20
+                                align=3DabsMiddle><IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_confused.gi=
+f"=20
+                                align=3DabsMiddle>=20
+                          =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx583961xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=3D=
+PrintAll&amp;fid=3D2572&amp;select=3D583961#xx583961xx"=20
+                        name=3D583961>Re: Dialog box =
+implementation</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+526648">GrbFhg</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">0:59 18=20
+                        Aug '03 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>That=C2=B4s because your =
+class, which=20
+                                is using the control, is derived from a =
+window=20
+                                class and not from a dialog class. You =
+have to=20
+                                replace =
+CFrameWindowImpl&lt;CWhatEver&gt;=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx126305xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>lots of flicker</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+13155">Todd=20
+                        Smith</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">15:57 5=20
+                        Mar '02 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>There seems to be a lot =
+of excess=20
+                                drawing going on when you are resizing =
+the main=20
+                                window. <BR><BR><B><BR>
+                                <P>Todd Smith</P><BR>
+                                <P>CPUA 0x007 ... shaken not=20
+                                =
+stirred</P><BR></B><BR><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></=
+TABLE></TD></TR></TBODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx112543xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Context menu bug</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+170">Paul=20
+                        Bludov</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">2:17 11=20
+                        Feb '02 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>The context menu allows =
+to open=20
+                                the disabled parts.<BR><BR>Is it a bug =
+or a=20
+                                feature?=20
+                          =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx124250xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=3D=
+PrintAll&amp;fid=3D2572&amp;select=3D124250#xx124250xx"=20
+                        name=3D124250>Re: Context menu bug</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+14252">Bjoern=20
+                        Graf</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">14:23 1=20
+                        Mar '02 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Hm, if I were MS, it =
+would be a=20
+                                feature <IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_wink.gif"=20
+                                align=3DabsMiddle> Ok, bug fixed and =
+I'll update=20
+                                the code ASAP.<BR><BR>Bj=C3=B8rn.=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx1973689xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=3D=
+PrintAll&amp;fid=3D2572&amp;select=3D1973689#xx1973689xx"=20
+                        name=3D1973689>Re: Context menu bug</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+105499">Pallium</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">17:23 3=20
+                        Apr '07 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>It's probably a bug. And =
+an easily=20
+                                remedied one too.<BR><BR>Change=20
+                                CRolloutCtrlImpl::OnExpand and=20
+                                CRolloutCtrlImpl::OnCollapse=20
+                                from:<BR><BR><CODE>LRESULT OnExpand(UINT =
+
+                                /*uMsg*/, WPARAM /*wParam*/, LPARAM =
+/*lParam*/,=20
+                                BOOL&amp;=20
+                                =
+/*bHandled*/)<BR>{<BR>&nbsp;&nbsp;Expand(true);<BR>&nbsp;&nbsp;return=20
+                                0;<BR>}<BR><BR>LRESULT OnCollapse(UINT =
+/*uMsg*/,=20
+                                WPARAM /*wParam*/, LPARAM /*lParam*/, =
+BOOL&amp;=20
+                                =
+/*bHandled*/)<BR>{<BR>&nbsp;&nbsp;Expand(false);<BR>&nbsp;&nbsp;return=20
+                                =
+0;<BR>}</CODE><BR><BR>to<BR><BR><CODE>LRESULT=20
+                                OnExpand(UINT /*uMsg*/, WPARAM =
+/*wParam*/,=20
+                                LPARAM /*lParam*/, BOOL&amp;=20
+                                /*bHandled*/)<BR>{<BR>&nbsp;&nbsp;<SPAN=20
+                                style=3D"COLOR: =
+#0000ff">if(m_fEnabled)</SPAN><BR>&nbsp;&nbsp;&nbsp;&nbsp;Expand(true);<B=
+R>&nbsp;&nbsp;return=20
+                                0;<BR>}<BR><BR>LRESULT OnCollapse(UINT =
+/*uMsg*/,=20
+                                WPARAM /*wParam*/, LPARAM /*lParam*/, =
+BOOL&amp;=20
+                                /*bHandled*/)<BR>{<BR>&nbsp;&nbsp;<SPAN=20
+                                style=3D"COLOR: =
+#0000ff">if(m_fEnabled)</SPAN><BR>&nbsp;&nbsp;&nbsp;&nbsp;Expand(false);<=
+BR>&nbsp;&nbsp;return=20
+                                0;<BR>}</CODE>=20
+                          =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx57380xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>ok</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+189">Ramon=20
+                        Smits</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">14:47=20
+                        14 Sep '01 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2><BR><BR>Just had a test =
+run on my=20
+                                XP machine. Works ok but the mousewheel =
+does not=20
+                                work and if I 'drag' it down (mouseup) =
+and the=20
+                                mouse pointer get too far right it goes =
+up.=20
+                                Seems to be something with the=20
+                                scrollbar.<BR><BR>Nevertheless a cool =
+port <IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_smile.gif" =
+
+                                =
+align=3DabsMiddle><BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE=
+></TD></TR></TBODY></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd HiVote HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D34><A=20
+                        name=3Dxx62190xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject><A id=3DDynMessLink=20
+                        =
+href=3D"http://www.codeproject.com/KB/wtl/wtlrolldownctrl.aspx?display=3D=
+PrintAll&amp;fid=3D2572&amp;select=3D62190#xx62190xx"=20
+                        name=3D62190>Re: ok</A></TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+14252">Bjoern=20
+                        Graf</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">6:52 1=20
+                        Oct '01 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+34px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Yup, I've noticed the =
+scrollbar=20
+                                bug while fidling with the tab thing. =
+I'll=20
+                                upload the fixed version ASAP. The =
+mousewheel=20
+                                works on my w2k machine, but I'll try to =
+fix it,=20
+                                too <IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_smile.gif" =
+
+                                align=3DabsMiddle><BR><BR>Bj=C3=B8rn.=20
+                                =
+<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY=
+></TABLE></TD></TR>
+              <TR class=3DExpanded>
+                <TD class=3DFrm_MsgRtDivide><IMG height=3D1=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 border=3D0></TD></TR><!-- Start Message head =
+-->
+              <TR class=3D"MsgHd Rt HdUnSel ">
+                <TD width=3D"100%">
+                  <TABLE class=3DExpandedHd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent width=3D16><A=20
+                        name=3Dxx53497xx></A><IMG height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+                        width=3D16 valign=3D"absmiddle"></TD>
+                      <TD class=3DFrm_MsgSubject>Great time =
+saving...</TD>
+                      <TD style=3D"WIDTH: 20px; WHITE-SPACE: =
+nowrap"><IMG=20
+                        title=3Dmember height=3D16=20
+                        =
+src=3D"http://www.codeproject.com/script/Membership/Images/member_sm.gif"=
+=20
+                        border=3D0></TD>
+                      <TD class=3DFrm_MsgAuthor><A=20
+                        =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+172">Paul=20
+                        Selormey</A></TD>
+                      <TD class=3DFrm_MsgDate=20
+                      style=3D"VERTICAL-ALIGN: top; WHITE-SPACE: =
+nowrap">21:35 3=20
+                        Sep '01 =
+&nbsp;</TD></TR></TBODY></TABLE></TD></TR><!-- End Message head -->
+              <TR>
+                <TD style=3D"WIDTH: 100%">
+                  <TABLE class=3DExpandedBd cellSpacing=3D0 =
+cellPadding=3D0=20
+                  width=3D"100%" border=3D0>
+                    <TBODY>
+                    <TR>
+                      <TD class=3DFrm_MsgIndent style=3D"WIDTH: =
+16px"></TD>
+                      <TD class=3D"MsgBd BdUnSel ">
+                        <TABLE cellSpacing=3D5 cellPadding=3D0 =
+width=3D"100%"=20
+border=3D0>
+                          <TBODY>
+                          <TR>
+                            <TD>
+                              <TABLE cellSpacing=3D0 cellPadding=3D0 =
+width=3D"100%"=20
+                              border=3D0>
+                                <TBODY>
+                                <TR>
+                                <TD colSpan=3D2>Thanks for this =
+contribution. I=20
+                                have on my schedule to port the MFC =
+version for=20
+                                a ATL/WTL project. You have saved me a =
+lot of=20
+                                times, I only have to test and debug it =
+for my=20
+                                own use <IMG=20
+                                =
+src=3D"http://www.codeproject.com/script/Forums/Images/smiley_smile.gif" =
+
+                                align=3DabsMiddle><BR><BR>Best=20
+                                regards,<BR>Paul.<BR><BR>Paul Selormey, =
+Bsc=20
+                                (Elect Eng), MSc (Mobile Communication) =
+is=20
+                                currently Windows open source developer =
+in=20
+                                Japan, and open for programming contract =
+
+                                =
+anywhere!<BR></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></T=
+R></TBODY></TABLE></TD></TR>
+              <TR>
+                <TD><IMG height=3D5=20
+                  =
+src=3D"http://www.codeproject.com/script/Forums/Images/t.gif"=20
+                  width=3D1 =
+border=3D0></TD></TR></TBODY></TABLE></TD></TR>
+        <TR>
+          <TD>
+            <TABLE cellSpacing=3D0 cellPadding=3D2 width=3D"100%">
+              <TBODY>
+              <TR class=3DFrm_Footer>
+                <TD>Last Visit: Friday, February 22, 2008 1:16 AM &nbsp; =
+
+                  &nbsp; Page last updated: Friday, February 22, 2008 =
+4:57 AM</TD>
+                <TD=20
+              style=3D"WHITE-SPACE: nowrap; TEXT-ALIGN: =
+right"></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+      <P class=3DSmallText><IMG height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_general.gif"=20
+      width=3D16 align=3DabsMiddle> General &nbsp;&nbsp; <IMG =
+height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_news.gif"=20
+      width=3D16 align=3DabsMiddle> News &nbsp;&nbsp; <IMG height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_question.gif" =
+
+      width=3D16 align=3DabsMiddle> Question &nbsp;&nbsp; <IMG =
+height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_answer.gif"=20
+      width=3D16 align=3DabsMiddle> Answer &nbsp;&nbsp; <IMG height=3D16 =
+
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_joke.gif"=20
+      width=3D16 align=3DabsMiddle> Joke &nbsp;&nbsp; <IMG height=3D16=20
+      =
+src=3D"http://www.codeproject.com/script/Forums/Images/msg_admin.gif"=20
+      width=3D16 align=3DabsMiddle> Admin &nbsp;&nbsp; </P><!-- Forum =
+End --></DIV>
+      <TABLE width=3D"100%">
+        <TBODY>
+        <TR vAlign=3Dtop>
+          <TD class=3DTinyText align=3Dleft><A id=3Dctl00_PermaLink=20
+            =
+href=3D"http://www.codeproject.com/script/Articles/Article.aspx?aid=3D135=
+1">PermaLink</A>=20
+            | <A id=3Dctl00_PrivacyLink=20
+            =
+href=3D"http://www.codeproject.com/info/privacy.aspx">Privacy </A>| <A=20
+            id=3Dctl00_TermsOfUseLink=20
+            =
+href=3D"http://www.codeproject.com/info/TermsOfUse.aspx">Terms of=20
+            Use</A> <BR>Last Updated: 4 Mar 2002<BR>Editor: <A=20
+            id=3Dctl00_ArticleEditor=20
+            =
+href=3D"http://www.codeproject.com/script/Membership/Profiles.aspx?mid=3D=
+1">Chris=20
+            Maunder</A><BR></TD>
+          <TD class=3DTinyText vAlign=3Dtop align=3Dright>Copyright 2001 =
+by Bjoern=20
+            Graf<BR>Everything else Copyright =C2=A9 <A=20
+            href=3D"mailto:webmaster@codeproject.com">CodeProject</A>,=20
+            1999-2008<BR>Web12 | <A id=3Dctl00_AdvertiseLink=20
+            =
+href=3D"http://www.codeproject.com/info/MediaKit.aspx">Advertise on=20
+            the Code Project </A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD align=3Dmiddle colSpan=3D2></TD></TR></TBODY></TABLE>
+<SCRIPT language=3DJavascript type=3Dtext/javascript><!--=0A=
+if (document.all) try {window.attachEvent("oncopy",copyCode);}catch(e){};=0A=
+--></SCRIPT>
+</BODY></HTML>
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/Images/Standard/codeproject225x90.gif
+
+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
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Ratings/Images/red.gif
+
+R0lGODlhAQABALMAAP8zAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAACwAAAAAAQABAAAEAhBEADs=
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/KB/wtl/WtlRolldownCtrl/WtlRolldownCtrl.gif
+
+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
+jJysvMzMmwAAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Geo/Images/DE.gif
+
+R0lGODlhEAALANUAAPDcbqU/L/x1dfnrl6h9L7W1q6iGL/NHR5mLffWmVvayaZSUh6SkmWloaUpI
+OnhMS+0pKfblh518fHh4ePpmZvyyqfE8PJ13L/tsbPjlZfXhV0pKR+rTLO+SNu7YOoxlZfLcSPPg
+evKbRLOKL1hYWOuJJ/lgYLakL2k5OT8/OvZSUu8zM7q6sfdZWb1BMZuEL/zVpMq4r/KAcINbW+bN
+HeoeHmZJPOiCHe/gba2to5VycoCBgfvxopyckOjPIj8/LyH5BAAAAAAALAAAAAAQAAsAAAaHwI1j
+6Ej9jsikg8UsFHJQBqPXWyx+y91uMml4SaTNJoX42WISiU73+cwecBSq7KoIBBiKqaU6HCwrEDIB
+dXh6fH6AEIKEFXl7fX+BEDWDBDAKCgmbIiIdHSUlNwoBJzwZGRoaICAeHhwcPjQ4LycDtwMRuiG8
+AL4AFyPCIwQEBscvBBfKFxdBADs=
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/t.gif
+
+R0lGODlhAQABAIAAAP//////zCH5BAUUAAAALAAAAAABAAEAAAICRAEAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_question.gif
+
+R0lGODlhEAAQAPe0AP8A/7jG5cHM6b/L6brH5uDm8/Lz+Pv8/vz+//v7/PLz+tfg8unt9////8/j
+96DH75nC7ZO76pK46sXZ9OPp9LHB4uru+JjC7ZLA69np+PL3/O/2/M/g9nKe4YSr4+Ln88rU6tfg
+8J/F7oKy6fP3/Jy76pi66fL2/Pf6/kp703+g3sDM6fr6/ODu+k+O3LfR8v7//3ej4TBrziVex3KZ
+3Yqp4hxNwM7Z7u/w87bE4pzA60F+1UyD11SH2DtyzzFnyyZaxZm15nma3Aw7t3aW1//688zX7nWj
+4Tl00Dty0DNpyy5jySlcxpy25tXg9CxaxBJBulB4zPjz7brF4c7X7m2X3C1myjFmyitexyNUwZ+3
+57fJ6ytZwhlJvBdHvE11yu3m4bbC3cLO6oen4iNXxClaxR5Pvy9dxvT4/uXr+CVUwRZGux9PvxZF
+vWuJy93Y1a+83LLB4/z8/tHe9CRVwh1MvxxKvShXwoCf3meL1xpKvR5OvxxMv6axysTEyam63dnh
+8Hqa2hFBuhtLvR9Ov46q4oGf3hxMvRVFv2WDxcG9v6y1zK294e/w9v//+mmL0xZGvBpKv8nY87XH
+7hZGvRhJv15+wbe0t6aquOnt8Pz48LG/3ll+y0pzyUlyx1N2wo6cwLGvsaCktKSy0bC/4dDX5ubl
+4+bg3MfHzr+9xMC8vK2vt52kuLLA3rK/2rG81ay30Ka00QAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAAJ3V7P//AewAAAGd1QAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd5h//QAAAAAAAAACAKAAAAIaAB0sIP//AAAAAAAA
+AB0sIAAFACAAAAAS2+SacTODdyF39HfkkgABxNtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAj+AAEIFBgggIABBAgMXAiAQAEDBxAcSKBgwQKGBBg0cPAAQgQJExpQqDCQgIUGFzBk0LCBQwcP
+DT6AEBiigYgRDUiUMHECRQoVDWauYNHCxQsYMWTMoNGgho0bOHKsaKBjB48ePn4ACdJAyBAiRXIY
+aXAESRIlS5g0aeDkCZQoUqZQaVDFyhUsWbQ02MKli5cvYMKIaTCGTBkzZ9CkUbOGTRs3b+DEkTOH
+Th07d/Dk0bOHD5s+fv4AANQgkKBBhAoZOnQIUSJFiwQyauToEaRIkiZRqmTpEibRAuNk0rSJUydP
+n0CFEjWKIalSpk6hSqVqFSvgDAG0cvUKVizsAgMBAgAh/gA7
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Membership/Images/member_sm.gif
+
+R0lGODlhDgAPAKIAAP///+zi3NTGtLOahYRmTGxaRCQeFAAAACH5BAUUAAAALAAAAAAOAA8AAANK
+CKrVtRA0IcZosVDbTDmQxgWkATJVQwaCEQqFsQaEuxSXTFLtfcWsiil0CVpsIVllUIsoZIYoEkIg
+BAZTalWaBVS/tWjkQC6bFwkAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_general.gif
+
+R0lGODlhEAAQAPcZAP8A/7Ozs+Tk5L+/v9LS0uXl5ff39+jo6N3d3erq6q6uruzs7Lu7u7q6urm5
+ue7u7tHR0fDw8PLy8vT09Pb29vj4+Pr6+vz8/ABfADYAMQBfAC4AZABnAGYAaQAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABLagAAAAJcAAHf0fB4NWGfhAHh39AAVE/Rn+QAAd+UAAHf0ZgAA
+AEB0AIwBtgEoCgAAYdoMAAIAEgAAAAoACK6QAAJ3+AAAALwAuuwAAGh//QF5BBLanAAAABoAAAAA
+AgAAAAC6ALwAAAAS1xLbaA1gACgAHgAAAhLXsAWOAEwDUwAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAAKcwtP//AbQAAAGnMAAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd7p//QAAAAAAAAACAMIAAAIaAB4NYP//AAAAAAAA
+AB4NYAAFACAAAAAS2+SacTODdyF39HfkkgABlNtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAh1AAEIBBCgoMGCAxMSFMCQ4QACARQKDFCgYsUBBiBKDHCgY0eMBhBETBgggcmTClIqGDlxgcuX
+DBg0cMCS4IObOCHohFAzQISfQIP2lEC0qNGeE5IqXdqTgtOnUHtWmEq1ak8LWLNq7Xmhq9evXL+K
+7XmwbMGAACH+ADs=
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/usersuss.gif
+
+R0lGODlhDgAPAID/AMDAwGZmZiH5BAEAAAAALAAAAAAOAA8AQAIfhB0Zx+rZnmNALlotRHrH+VmY
+RnVXRh7myUkjWKZGAQA7IhBIGWqYGNh9MefeZ03iSJYdhaZrqpXZ+8WymYG0GKM3L0UAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/smiley_wink.gif
+
+R0lGODlhEAAQANUAAAAAAB4WCC4fCDomAkoyAk46Flo6Ak5KPmFJH2pKEm1QHnZOAnZSEmdWN25h
+S3VrXoBVB4ZaBpJfBYZiGopqNqJqAq51Cqp2HIB4ZYh/bcJ6AqaCQqqadsmFCNaKAt6PAsKONsaS
+OtKWKuyZAu6iGu6qNu6uMsycRtmpUsqqduayXvK2SvK/ZOrCevXKepiUjKWhnK6qprCurLa2sr6+
+utq6gtrCltrKqvbSkvrersrKxvrmwvrx3f727v///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQF
+fQAAACwAAAAAEAAQAAAGuECAcKij0XTD5BCGaSAQDUxMKcwgIBcUygJBYJSYBIjH2+VwrE7iK3wp
+Tr3y2cVadRQvoUNCPnBwLhsFJiQSDgAxb2UZKXQhEyQjdzIvDC03NoB1hB8aHwwvlS0PDnQrJZEV
+AyOgMAwoNQEqK4QjIwQRHgowNA0WLhQCIpEfBgIjFg00ABgQJSsXAgIDAQu2EGwzDRIkkbbfEg0z
+Sw0RHd+SEQ0wSjIOVxISXQ4yVEIyGQ8PGVNJQQAAIfkEBTIAAAAsCAAFAAUAAgAABgpAwG8IyJhM
+AEIQADsh+QQFMgA/ACwIAAUABQACAAAIDQBdABhIIoMJEyQIBAQAIf5ASmFtaWUgRHVycmFudCAt
+IExpb25oZWFkIFN0dWRpb3MgTHRkDQp3d3cubGlvbmhlYWQuY28udWsBVVNTUENNVAA7
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/smiley_eek.gif
+
+R0lGODlhEAAQAOZ8AAEBABERGCkpHyQkIS8vTTAwUjMzXzk5Uz4+XDo6YUZGO05OQkFBVV1dU0hI
+cFFRYlpaZF1deGdnV2RkZHl5b3p6ek5OjVBQglFRil9fjlVVklpalV9fnEFBpEVFqEpKrU1NsE5O
+sU9PsllZqVFRtFdXullZvGRko2Njs2trsm9vv3NzvHx8vm1t0G9v0nh4w3l5yX19znNz1nl4235+
+4YeHeYqKfo+PhZSUlKWln7a2rLa2toKC0ouL25KS34GB5ImJ5ImJ7IyL7o2N7pCQ5pSU4pGR7ZmZ
+6ZGQ85KS85SU95WW+JiY+ZmZ+5qZ+5qa/5yc+Z2d/Z+f/p6h+qKi8qOk9aen96Cg/6Sj+aam+KSk
+/6am/6qq96qq/66u/7Cw+rS0+7S0/7a2/7S4+ru7+bu7/7y8/r29/8TEusbGw9TU1NnZ0cfG/s3O
+9snI/s7N/9HR/9PR/tPT/t7e/+Hh4urq6uTj/ubm//Pz9PHx//j4/////////wAAAAAAAP///yH/
+C05FVFNDQVBFMi4wAwEAAAAh+QQFDAB8ACwAAAAAEAAQAAAH2IB8goJnZ2JihYOKgkUtIB0dICpU
+Z4t8Mh0fMlpaLh8dKpWDLR5BeXl3c3BnPx4qgz0eS3qoqmxnYa09fGclJnlGKTFwbDEpRlcmI2dU
+H0t5LwAHtwcAL0s/H1Q9H3d2RBEsuCwRRFdCHz3cbXFyb7hdV1FXV0rpRx9Vbm5sX11TUKJIuTLE
+wxExIVyQATNmBQECK65ISTIjRKUWH7ZwycIBAAAOUZj8INFCkBUQJqBg2eBxgxMkJkAsAkHiB5Ik
+TJTQICHTUokOIkyYENGhhCVFMFCggGEpEAAh+QQFDAB8ACwEAAEACAANAAAHMYBHfIOEhYaHiIR5
+Cg+DDwoZAGoSBgYSagAFAAEsLAGZfBcrXXwrF0uJqaqJTKiDgQAAIfkEBQwAfAAsAwABAAsACwAA
+B0uAfIKDg2aEh4iJhz4+DAIbZYN7aAgIaHsNJ4J7OHQ2NnQ4ewBaDjYVNxERNxU2DlF8CBQQKysQ
+FAiEFjBlZTAWiC+CL12KglqDgQAAIfkEBQwAfAAsAwABAAsADgAAB2CAfIKDgkeEh4c8hUcHA4p8
+MHx7OgkJOnsLkZKSOTl7kg2SdXxpe3tpfHV7Pzd4EztpaTsTeDdCfDV7awgIa3s1fF2CCw9ERA8L
+iBgHBxhXh10ngidRh16IiEnY2CSCgQAAIfkEBQwAfAAsAgABAAwADgAAB3WAfHxFgoWGh4cahUGC
+d3NwZz+FS3x5dz4+DAIbZYV5fGgICGh8DScJlXt8dDY2dHx7S1pRDjYVNxERNxU2DlFdTQgUECsr
+EBQITXxiUkoWMGVlMBZKUoJbUl0vBAQvXXxbhU9aHIIcWk+HWIjsTEzs7CWCgQAAIfkEBQwAfAAs
+AgABAAwADQAAB2qAfIKDg1RnhIiCKomDAzyIezpzcDp7CzCDe3x7OTmaew0mm3V8aXt7aXx1ez8X
+N3gTO2lpOxN4NxdtCTV7awgIa3s1CXxVbg4LD0REDwsOV4JkYCcYBwcYJ3xJg1xZ2XwnUUyM5IhL
+iIEAACH5BAUMAHwALAIAAQAMAA4AAAdqgHx8R4KFgmaGiYphQEBXV41hfBp8ZXx5dz4+bGcbP4V5
+fGhwbGh8DVeCeXt8dJx0fHsAfHcONhU3ERE3FTYOQnxxCBQQKysQFAhXSoJuFjBlZTAWUoljLwQE
+L6mKHILeiuHiTOEk4nyBAAAh+QQFDAB8ACwDAAEACwAOAAAHY4B8RXyEhYaHiDx5eXdzcGc/fCow
+fHs6jjp7C5SVlTk5e5UNlXV8aXt7aXx1oTd4EztpaTsTeDcXCTV7awgIa3s1CYQOCw9ERA8LDk2F
+JxgHBxgnS4ZdJ4TXh16I3Nwl3XyBAAAh+QQFDAB8ACwDAAMACwALAAAHXYB8QXyEhYVLfHl3hAwC
+YT+EeXxoCAhofA1XiXt8dDY2dHx7AHwONhU3ERE3FTYOQnEIFBArKxAUCJp8bhYwZWUwFlK6fGMv
+BAQvXVKGWRyEHFqGfFjT1nxJiIaBAAAh+QQFDAB8ACwCAAEACwALAAAHSYB8fEeChYaHiImIKoVs
+KkuFGQoPcGwPChl8YnwAahIGBhJqAEtbdgUAASxhAQAFV4JyFythXSsXsI1fXVNQUYgrgiu5ir98
+gQAAIfkEBQwAfAAsAgAEAAoACgAABzaAfIJ5goJnYYMpMVdXMSldS3wvAAdeXgcAL3d8RBEsjCwR
+RIVvZ4JXUYWqq6ytrq+qTEyFgQAAO2xxDAxxbAuFEX8ZHykmJikfGYU8fyIOIZUhDiKIfi2EDAWL
+tba3uIOGHh64hbqBADs=
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/smiley_redface.gif
+
+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
+B4YsnoQOpobAj9LTgx3UhYEAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/smiley_tongue.gif
+
+R0lGODlhEAAQAOZDAB4SAh4aDi4fCDomAlsADEoyAk46Flo6Ak5KPmFJH2pKEm1QHnZRD39UB2dW
+N25hS3VrXn52YqUAF4ZaBpJfBYZiGopqNqJqAq51Cqp2HIN7bIp+Yv8AAMR+AoaCeqaCQqqadsqG
+CNuNAt6SAsKONsaSOtKWKuuZAu6iG+aqPu+tMsycRtmpUsqqduayXvK2SvK+YurEfvLCbvbKeZiU
+jKWhnK+sqba2sr6+utq6gtrCltrKqvbSkvrersrKxvrmwvrx3f727v///////wAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///yH/
+C05FVFNDQVBFMi4wAwEAAAAh+QQFKABDACwAAAAAEAAQAAAHyoBDgoM+ODg+g4mDNREOCQkOETaK
+ghoJDRksLBgNCRqKGgokQEA/PTwyIQqfgjQLK0GlpzMwLyELNIIPFKQIIDwzHwYqKBQPQzavpRst
+tCUVKCcdCzY0DDE7OsC1xCIdIww01jEQD7QvxCcXAyfhNQssOQEu6NEnBRMiCzU4DhgzFgSYiCbi
+gIATGBzgGBKhQYoXGQQIGACAwYkTDSIIuuGAAgp7Fy9ScHBjkYMJIUKeCDHBQQ1FNh5cokCh04NJ
+lJB5gADBA85BgQAAIfkEBVAAQwAsBgAJAAUABgAABxuAGYIZQwSGBEMcHBISiYoSDIkSCZFDCQlD
+gQAAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/smiley_smile.gif
+
+R0lGODlhEAAQAPcAAB4SAh4aDi4fCDomAkoyAk46Flo6Ak5KPmFJH2pKEm1QHnZRD39UB2dWN25h
+S3VrXn52YoZaBpJfBYZiGopqNqJqAq51Cqp2HIR7asR+AoaCeqaCQqqadsqGCNuNAt6SAsKONsaS
+OtKWKuuZAu6iG+aqPu+tMsycRtmpUsqqduayXvK2SvK+YurEfvLCbvbKeZiUjKWhnK+sqba2sr6+
+utq6gtrCltrKqvbSkvrersrKxvrmwvrx3f727v///x4SAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAD4ALAAAAAAQABAA
+AAjaAH0IHKiDBg0dAxMOjAGhAQIEDSDIUCgQAwIGF1CgsMAAAQaFGBKA4MFjRw4cLjok+CgQhoIT
+PUqefMFiRQcFMAQ6kEDyAAccLzYUMEFCggMfMl6WxJCCZogJJEZkUCADxoIWN2wArUnUQ4YPC2BY
+bfHAAc0VREdUGDAibAwFKGoEUIE26ggCETwoiEGjgYUXFASIiOrBgIARFhrQ8AGBQYkVFwQIGABg
+wYgRDCAInNFAAgm7ly9LaDBjYYMIHUKP6BChQQyFMhxclCCho4OJFJFqePBAA+6BAQEAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/smiley_cry.gif
+
+R0lGODlhEAAQANU+AAICAgY+Vg5CVg5KYAVaeh9XayJOXjZeakZaYkZuelpyfgJihg5ymhFnhxpq
+igh0oChthip2klp6iGZ6gj6OrjaStgKSyQqWygOa0hKWygSg3A6m3hio4DKi0iOt4D625kqaulqW
+rmaKmnKGikqy2lSkwle/6mjF6XnO7oKSmoqWmoamspSgpKavr662uLi8voK6yovV7pTQ55fY8qje
+8q/h8bbi8t7e3sDm9Mnq9tPu+er4+vb29v////7+/v7+/iH/C05FVFNDQVBFMi4wAwEAAAAh+QQF
+ZAA+ACwAAAAAEAAQAAAGrkCfcOh7vYhIYUtxKBQOilbSNymAarqcrFKYICcN3G6nw9Fkp4ZXqGrk
+dohVbRYymD6NlDAh2+VEMDEoJREfHhgJPi0ONmYzKCd3HhwaGg0tKQw0MzElBQIDAQ+VGgwqKQ+C
+FAMdHhsYBASVDyksDCckBJOkGgsWpSwvEB8cF7yVFhgaEEcSGcfHFhJCLhDK0BoYEC5DLNbQ2ixI
+LQkNvxoWDQlSUy0jCgoj7ENBAAAh+QQFGQA+ACwCAAMACAAFAAAGDkCfcOirEY9IHwCAXCKDACH5
+BAUZAD4ALAEACQAPAAMAAAYPQADARywai8Kj0rhZGm9BACH5BAUZAD4ALAEADQACAAIAAAYFQIAQ
+EAQAOyH5BAUZAD8ALAEACQAPAAMAAAgnAAEAIEHAAwcNCDUssKCBAQuBHC4kTGgBgwYILyRk2DCx
+owUJNwICACH5BAUZAD8ALAEADAAPAAMAAAgnAF1AwKChoMGCGCC44AEAwMCDCCGw6NGjYYsEDSwU
+tNAgQQuKPQICACH+QEphbWllIER1cnJhbnQgLSBMaW9uaGVhZCBTdHVkaW9zIEx0ZA0Kd3d3Lmxp
+b25oZWFkLmNvLnVrAVVTU1BDTVQAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/smiley_confused.gif
+
+R0lGODlhEAAWAPcAAJnN/ZrO/prN/ZrO/ZnM/JjM+5jL+q+tAVJRAr6+ur+7Aa+sAa6rAauoAcO/
+Ar64AriyAlRSAU9MAU9NAWRgAWFdAVdTAfzbAPnZAPPUAPHSAOfJAN3BANa6ANG2AMasAMGqAL6m
+ALykALujALaeALKbAKyWAJyIAJiEAJOAAHxsAHtrAHJjAG5gAGxeAGlcAGhbAGJVAF1RAFtPAElA
+APTUAfHUAfDSAd3BAdG2Ac2zAcqwAciuAceuAcWrAbOcAayWAenLAunNAuDEAnJjAW1fAWhbAVZL
+AfLTA+fJA+3RBa2XBJaDA+3RBsOqBW9hA7KdBX5uBN3BCL+nCK2YB35vBufNDNK5DMmxDMSsDOLH
+D9rBENnAENi/EM+4EM62EOjPE9C4EcmxEMKtEcCrE//qYP/vhf/2usesAKWPAJaCAGNWAmRXA8Gp
+EP/iJv/62mNdTX52Y4B4ZYl+ZlZJL4aCepiUjGpXNGZWOG5hS3RrYKWhnK6qprKwrgAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAEALAAAAAAQABYA
+QAj8AAMI9CNwYMEABA/OkQEDRYcOamDIkFMwwR01SsA4sDBBQgQFZKAwOXKwpEmBfF58OGPmRIcL
+Gkao8IDGxAs+B/PIaLFiRQsZeU4iPJjQ4MkECYTaifHhDcsybmAmocLGTgA7MIIIsVHjxgYOOXiA
+MCEChtU+eKJc8bKlS5gxbbJUoUN06NCEBIvaNcq3r169AvekcCFDhosUOEvKiUHizFM3GpYggFMw
+zwrHM0JETUMDh4cVQbFmwIAkqoavHkaUIGF2z4sOQ5pY0cLlixgsTkj8WLMngBwjUh5QYHBgQYMK
+EKY8iXMQDxEgPXTs8GGCRRGhAero0VPHZEAAADs=
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_news.gif
+
+R0lGODlhEAAQAPdEAP8A/3ObyYeo3P///2NokwBmy3KYxnCUwm6PvT6Z3/r//2yJtwCZALXi//v9
+/vX6/u/3/fL5/u37/2mDsf/MAACZ/+/3/N3z/mZ+quLy+9vu+tPq+Nbs+c7r/GN4pP7//+/4/On0
+/OLy+trv+tPr+Mvn98Pi9sXk973l+mFxnvT//6/e+F5smePx+8Tj9rzg9bTd9K3Z86jW8qnX8qPY
+9Vxnk9Xx/5vU9FpjkMTk9rzk+rPh+qvd96Pa95/X9pzW9prV9p7b+llgjHR4pAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAABLagAAAAJcAAHf0fCDSKGfhAHh39AAVE/Rn+QAAd+UAAHf0ZgAA
+AFsIAIwCCwEoCgAAVtoMAAIAEgAAAAoACK6QAAJ3+AAAAKYApOwAAEF//QF1BBLanAAAABoAAAAA
+AgAAAACkALwAAAAS1xLbaNIwACgAIAAAAhLXsAOGAEwkqwAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAALGNQP//AUAAAAGxjQAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd6R//QAAAAAAAAACAKwAAAIaACDSMP//AAAAAAAA
+ACDSMAAFACAAAAAS2+SacTODdyF39HfkkgAB0NtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAiYAAEIHEiw4MAAAhIqXCiAYIABECNKJOBwQIGLGC8OoDjQgMWMGDcSPCCxpMiBCD5qTMBSAUeB
+CywyaFDAwQMIESS8BDDBIoUKBSywTHBhJwaVBTJo2MChw04PH0CEEDGCRAkTJ1DsTKFiqNcEK3ay
+aLGhhIsXMGLImEFjZw0bX4fe2Ikjh44dPHr4+AEESJCdQoYIHkyYY0AAIf4AOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_answer.gif
+
+R0lGODlhEAAQAPcAAAAAAAEBAQICAgMDAwQEBAUFBQYGBgcHBwgICAkJCQoKCgsLCwwMDA0NDQ4O
+Dg8PDxAQEBERERISEhMTExQUFBUVFRYWFhcXFxgYGBkZGRoaGhsbGxwcHB0dHR4eHh8fHyAgICEh
+ISIiIiMjIyQkJCUlJSYmJicnJygoKCkpKSoqKisrKywsLC0tLS4uLi8vLzAwMDExMTIyMjMzMzQ0
+NDU1NTY2Njc3Nzg4ODk5OTo6Ojs7Ozw8PD09PT4+Pj8/P0BAQEFBQUJCQkNDQ0REREVFRUZGRkdH
+R0hISElJSUpKSktLS0xMTE1NTU5OTk9PT1BQUFFRUVJSUlNTU1RUVFVVVVZWVldXV1hYWFlZWVpa
+WltbW1xcXF1dXV5eXl9fX2BgYGFhYWJiYmNjY2RkZGVlZWZmZmdnZ2hoaGlpaWpqamtra2xsbG1t
+bW5vcnByeGp5dWR+cV+AblqCalOFZEqIWkCLUDiORjCQPSmRNiOTLx6UKBqVIxSWHBCWFg2XEgqX
+DgiXCwaYCQWYBwSYBgOYBAKYBAKYAwGYAgGYAQOYCgeYFwyYKBOYQR2ZYyOZeiqZki+ZozOZszaZ
+wTqZyjyZzz6Z00CZ2EGZ2kOa2Eab1Eqb0E+dylSexFifv1yguV6gtmGhsmShrmaiqmehqWigp2qe
+pmudpW2apm6Yp3GUqXSRrHaOrniMr3mKsXqJsnqJsnqJs3uIs3uJs3uJs3uKtHuLtnyNuX6Tvn6T
+wn6Wx3+Zy4CbzoCc0IGe0oGf04Ge0oKd0YSb0IeW0JGL1J952q9l4cdH69su8vAS+vsE/f4A/v4A
+/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/v4A/vwJ/vgX/e8y/Nxo
++dCL+Man9r2+9bfL9LPS87HW87PY8rXa87bb87jd87re87zf9L7g9MHh9MTj9cnl9czm9s7n9tDo
+99Lp99Xr+Njs+Nzu+eHw+uXy++j0++v1++72/PH3/PL4/PT5/PP5/CH5BAkAANMALAAAAAAQABAA
+AAiYAKcJHEiw4MBfCBMqTHjQn0OH/frly4cP36yGECNOrFjvosBf/jCJHDmSnsdpwPxFlEixXj16
+JgfuWkkRn0uY707OJMnT3clcE1vCjPfOHbufLW+2S5SI3bqTtyomkicPF9N169BBdZnITpxEc7Ki
+M3dy1kt5TBOJNVfupCx6RN2pRYeunN2TruI6pcv27kBXswILHhx4WkAAOw==
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_joke.gif
+
+R0lGODlhEAAQAOYAAP////b4+fH4/er0/vfy4Obv/ODs++bq7f/ksffjwdfn/M/n/9vj7eLd2e7c
+tsvi+//blNbc5dbe3vTWndXW29XW1sDa+MrW57vZ/v7OcL/U7+XMoMrP2v/FUKTS/6bO/dPEpfHC
+ZrLI5vK/aLnGzOW/epnM/+69Sr2/xN25eeW7UdK9efW3OK282v2zKI/C/+O0YZ2597W2vaG55KW4
+2P6tDauwvJG13na6//imBqiqrd2lK6alm4Og/p+hqZOjtuCZCNCaJZudpWyk4ZmZmY2crdWSGdWS
+Ct+PAaaUdtWQAE+i/1+b4ICNvtWEAM2GAYiLlkCb/5GIesWBAauCOIuGfzOZ/1WN4o6DcXOAtKN9
+OGeBw6F5MW57mnx4cWB7p4B1ZqtxCC2C9aduA6BsDpJqIpVnE41nJ5lmAHVnUnhnRollI1VklnRh
+O3JeQ2teS3lcJ31ZH4RWAXBWMG5XMnFRH29OF3hOAAdY31pLOWhFCWA7AFQ3CEIsBf///wAAACH5
+BAUUAH4ALAAAAAAQABAAAAfwgH4FGBYWIiItLTM0DQAAfpAGjgACAgMDD1dfFY+QDJWXBqIaYnhd
+B5B+DAWhCq4LMT1sKKkMBgMBAwUKKDw8JF0yqREFH1FLTGBwa2twXjbDDBYmN3RaGwgQKmRuEZAR
+DCZWaVQEFQkTKyxjYN8RGD9xCBxpJTB1QTlxtBERJlhcHIBIMeJEkCdI0EjxQ+HCByxUkrzJ0MFF
+jTtywixsaIJImRB5zuwAgqbPEzM8GHJ4MaSNkRN69uzhc8SJGgkMNXjAUcTOkRpKlORQUkcHJA5b
+smRpAmUOmilT0LQRkioACSE+svqokiZNFRuo/AQCADs=
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://www.codeproject.com/script/Forums/Images/msg_admin.gif
+
+R0lGODlhEAAQAPeIAP8A/5aq2Kq64Jeq2M/Z7v///+Dm85Gm19DZ7tPq+sbg9t7l9Jmt2NDa7rvc
+9o/F8Hmw6pO869ri8JOn19Td7rbX9kqS4Nrq+tDg9yhkyYKk4f///tfc6Zeq19Xd77LU80WK3D5+
+1VWJ2Eh50CFUwBhHu3+a1//+8MnP4Nnh8qfL7zt91TFvzkZ707/U8p+65xlFuA83sAktqm2IyuXh
+2ra8z5On1cve9jZ20y9pzChdxiJUwNjj9s7a8hA3rw0yrAkuq4eXwsC7uJijwcXZ8yddxhxKuxdB
+ts/c88nV8A80rQ81rQcsrWp/tKGen4uVsdrh8oim4RA7tA81sA82r8zY8sfU8A4zrQ0xrAgtrUBe
+sJyYoISImYuex93i8nKP1QYqpxA2rdzl9tfh9AgtrENisaGeo4eKntnh72qHzhpBtYKf3YGe3RpC
+uKOeoYeLnoudxtne6v/+8l19xgMlpwMmqkhlsaOfo5qv2M7R4eHd2n6RwnCDtJ2aoIiOoIyex7u/
+zsC7t6CcnoaMn5iq1ZijvYuWtI6eyQAAAJcAAHf0fB0sGGfhAHh39AAVE/Rn+QAAd+UAAHf0ZgAA
+AGycAIwBoAEoCgAAUdoMAAIAEgAAAAoACK6QAAJ3+AAAAJwAmuwAAHV//QF1BBLanAAAABoAAAAA
+AgAAAACaALwAAAAS1xLbaCwgACgAHQAAAhLXsAMsAEwADAAS2/RaNK5wd/93+P////SwUrHGdwF3
+9AAAABLaYNrkAAAAEgAAABUAAOwAAEV//QAAAAGYENnMAIAAEsAQABLbTFo0AFh39Hf4lP///2f5
+/wB39AAAAPRm5ZhgdwB35AAAADfrZP//AWQAAAE36wAAGAAAAOQAAAAS2gAAQAAAAMgAAAAS2gAA
+AAAAAAAAAAAAAAAAAAAMAAIAAAAAAPQBAewAd5p//QAAAAAAAAACAKIAAAIaAB0sIP//AAAAAAAA
+AB0sIAAFACAAAAAS2+SacTODdyF39HfkkgABxNtEAEwAEgAS2wAACCH5BAkAAAAALAAAAAAQABAA
+AAjWAAEIHBhAgIAAAxMmHECgQAEDAxQmPICgQAIFBRYwkAhgQIMCDh5AiFBAQsSEEygUqGDhAoYM
+GjZw6DBwgIcCH0CEEDGCRAkTJ1BEDJCigIoVLFq4eAEjhowZNGrYEFDgBo4cOnbw6OHjxw8gQYQM
+oUqkyA4jR5AkUfJjCZMmTp4EgFIgipQpVKpYuYIli5YtXLp09FLgC5gwYsaEIVPGzJmTHdFsSKNm
+DZs2Wty8gaNwQBw5c+jUsXPnMUc8efTs4dPHzx+OAgcACiRoEGTYhAoZOiQxIAAh/gA7
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.codeproject.com/App_Themes/NetCommunity/CodeProject.css
+
+HTML {
+	FONT-SIZE: 100.01%
+}
+BODY {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+P {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H1 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H2 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H3 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H4 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H5 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+H6 {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+LI {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+TR {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+TD {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+TH {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+DD {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+DT {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Helvetica, Arial, =
+sans-serif
+}
+BODY {
+	MARGIN: 0pt; BACKGROUND-COLOR: #ffffff
+}
+H1 {
+	FONT-WEIGHT: bold
+}
+H2 {
+	FONT-WEIGHT: bold
+}
+H3 {
+	FONT-WEIGHT: bold
+}
+H4 {
+	FONT-WEIGHT: bold
+}
+H5 {
+	FONT-WEIGHT: bold
+}
+TH {
+	FONT-WEIGHT: bold
+}
+H1 {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px
+}
+H2 {
+	COLOR: #ff9900
+}
+H3 {
+	COLOR: #ff9900
+}
+H5 {
+	COLOR: #ff9900
+}
+H1 {
+	FONT-SIZE: 16pt
+}
+H2 {
+	FONT-SIZE: 13pt
+}
+H3 {
+	FONT-SIZE: 12pt; LETTER-SPACING: -1px
+}
+H4 {
+	MARGIN-TOP: 2px; FONT-SIZE: 10pt; MARGIN-BOTTOM: 0px
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; MARGIN-BOTTOM: 2px
+}
+H6 {
+	FONT-WEIGHT: normal; FONT-SIZE: 65%; COLOR: #666666
+}
+PRE {
+	PADDING-RIGHT: 7pt; PADDING-LEFT: 7pt; PADDING-BOTTOM: 7pt; FONT: 9pt =
+"Courier New", Courier, mono; OVERFLOW: auto; PADDING-TOP: 7pt; =
+WHITE-SPACE: pre; BACKGROUND-COLOR: #fbedbb
+}
+CODE {
+	FONT-SIZE: 11pt; COLOR: #990000; FONT-FAMILY: "Courier New" , Courier, =
+mono
+}
+A:link {
+	TEXT-DECORATION: none
+}
+A:visited {
+	TEXT-DECORATION: none
+}
+A:active {
+	TEXT-DECORATION: underline
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A:focus {
+	outline: none
+}
+TT.equation {
+	FONT-SIZE: 10pt; FONT-STYLE: italic; FONT-FAMILY: 'Times New Roman', =
+serif; WHITE-SPACE: pre
+}
+.FormInput {
+	WIDTH: 500px
+}
+.FormInputLong {
+	WIDTH: 800px
+}
+.MenuCat {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 5px; =
+FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; =
+BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 2px; MARGIN: 0px; =
+TEXT-TRANSFORM: uppercase; WIDTH: 160px; COLOR: #ffffff; PADDING-TOP: =
+2px; FONT-FAMILY: Arial,Verdana; BACKGROUND-COLOR: #333; =
+BORDER-RIGHT-WIDTH: 0px
+}
+.MenuSectionBlock {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; =
+FONT-WEIGHT: normal; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 160px; PADDING-TOP: 0px; =
+FONT-FAMILY: Tahoma, Arial, sans-serif; POSITION: relative; TOP: 0px; =
+BACKGROUND-COLOR: #ffcc66; BORDER-RIGHT-WIDTH: 0px
+}
+.MenuChapter {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ff9900 0px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+11px; PADDING-BOTTOM: 1px; MARGIN: 0px; BORDER-LEFT: #ff9900 1px solid; =
+WIDTH: 160px; COLOR: #000000; PADDING-TOP: 1px; BORDER-BOTTOM: #ff9900 =
+1px solid; FONT-FAMILY: Arial; BACKGROUND-COLOR: #ffcc66
+}
+.MenuChapter A {
+	COLOR: #000000
+}
+.MI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MI A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MIS {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MIS A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 3px; FONT-WEIGHT: normal; FONT-SIZE: =
+8pt; PADDING-BOTTOM: 1px; WIDTH: 155px! important; COLOR: black; =
+PADDING-TOP: 1px; FONT-FAMILY: Verdana, Arial, sans-serif; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.MI A:hover {
+	BACKGROUND-COLOR: #ffefdb; TEXT-DECORATION: none
+}
+.MIS {
+	BACKGROUND-COLOR: #ffefdb; TEXT-DECORATION: none
+}
+.MIS A {
+	BACKGROUND-COLOR: #ffefdb; TEXT-DECORATION: none
+}
+.HeaderLogo {
+	BACKGROUND-COLOR: #ff9900
+}
+.HeaderBanner {
+	VERTICAL-ALIGN: middle; WIDTH: 100%; BACKGROUND-COLOR: #ff9900; =
+TEXT-ALIGN: right
+}
+.MainBlockHeader {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; PADDING-BOTTOM: 2px; TEXT-TRANSFORM: uppercase; BORDER-LEFT: =
+#cccccc 1px solid; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: =
+#cccccc 1px; FONT-FAMILY: Arial,Verdana; WHITE-SPACE: nowrap; =
+BACKGROUND-COLOR: #ededed
+}
+.TitleHeader {
+	FONT-SIZE: 13px
+}
+.MainBlockContent {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; MARGIN-BOTTOM: =
+10px; PADDING-BOTTOM: 5px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: =
+5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.MainBlockContent SPAN {
+	FONT-SIZE: 8pt
+}
+.MainBlockContent TD {
+	FONT-SIZE: 8pt
+}
+.FeatureBlockHeader {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; PADDING-BOTTOM: 2px; TEXT-TRANSFORM: uppercase; BORDER-LEFT: =
+#ff9900 1px solid; COLOR: #990000; PADDING-TOP: 2px; BORDER-BOTTOM: =
+#ff9900 1px; FONT-FAMILY: Arial,Verdana; WHITE-SPACE: nowrap; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.FeatureBlockHeader A {
+	COLOR: #990000
+}
+.FeatureBlockContent {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; MARGIN-BOTTOM: =
+10px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; BORDER-LEFT: #ff9900 1px =
+solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ff9900 1px solid; =
+TEXT-OVERFLOW: ellipsis; BACKGROUND-COLOR: #fffaf0
+}
+.FeatureBlockContent LI {
+	FONT-SIZE: 8pt
+}
+.FeatureBlockContent TD {
+	FONT-SIZE: 8pt
+}
+.FeatureBlockContent P {
+	FONT-SIZE: 8pt
+}
+.FeatureBox {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: black =
+1px solid; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; BORDER-LEFT: black =
+1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: black 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.FeatureTable {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; =
+BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: white
+}
+.FeatureTable TD {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+5px; MARGIN: 0px; BORDER-LEFT: #cccccc 1px solid; PADDING-TOP: 5px; =
+BORDER-BOTTOM: #cccccc 1px solid
+}
+.AwdObj {
+	WIDTH: 90%
+}
+.AwdObj #cname {
+	WIDTH: 20%
+}
+.FeatureHeader {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ffcc66
+}
+.FeatureTable THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ffcc66
+}
+.FeatureTable TR.AltItem {
+	BACKGROUND-COLOR: #fbedbb
+}
+.BlockExtraText {
+	PADDING-LEFT: 20px; TEXT-TRANSFORM: none
+}
+.TitleBar {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 1.6em; FLOAT: left; =
+MARGIN-BOTTOM: 5px; COLOR: #488e00; FONT-FAMILY: Verdana,Arial, =
+Helvetica, sans-serif; LETTER-SPACING: -1px; TEXT-ALIGN: left
+}
+.TitleBarSideText {
+	MARGIN-TOP: 20px; FONT-WEIGHT: normal; FONT-SIZE: 0.85em; FLOAT: right; =
+TEXT-ALIGN: right
+}
+.Divider {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: =
+0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; COLOR: #ff9900; =
+PADDING-TOP: 0px; BORDER-BOTTOM: 0px; HEIGHT: 1px; BACKGROUND-COLOR: =
+#ff9900
+}
+.DividerFaint {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: =
+0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; COLOR: #ccc; =
+PADDING-TOP: 0px; BORDER-BOTTOM: 0px; HEIGHT: 1px; BACKGROUND-COLOR: =
+#ccc
+}
+.JoinHeader {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: black =
+1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 17px; =
+PADDING-BOTTOM: 4px; MARGIN: 4px; VERTICAL-ALIGN: middle; BORDER-LEFT: =
+black 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: black 1px solid; =
+WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ffcc66
+}
+.JoinHeader A {
+	COLOR: #990000; HEIGHT: 20px
+}
+.ShopHeader {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: black =
+1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 17px; =
+PADDING-BOTTOM: 4px; MARGIN: 4px; VERTICAL-ALIGN: middle; BORDER-LEFT: =
+black 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: black 1px solid; =
+WHITE-SPACE: nowrap; BACKGROUND-COLOR: #76ab40
+}
+.ShopHeader A {
+	FILTER: Shadow(color=3D#000000,strength=3D1,direction=3D135); COLOR: =
+white; HEIGHT: 20px
+}
+.MemberNavBar {
+	BORDER-BOTTOM: black 1px solid; BACKGROUND-COLOR: #ffcc66
+}
+.MemberNavBarText {
+	FONT-SIZE: 0.9em; COLOR: black; FONT-FAMILY: verdana,Sans-Serif; =
+LETTER-SPACING: -1px
+}
+.MemberNavBarText A {
+	FONT-SIZE: 0.9em; COLOR: black; FONT-FAMILY: verdana,Sans-Serif; =
+LETTER-SPACING: -1px
+}
+.SiteNavBar TD {
+	BORDER-RIGHT: #488e00 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#488e00 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; MARGIN: 0px; =
+BORDER-LEFT: #488e00 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #488e00 =
+1px solid; POSITION: relative; BACKGROUND-COLOR: #488e00
+}
+.SiteNavBar A {
+	BORDER-RIGHT: #488e00 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: =
+#488e00 1px solid; PADDING-LEFT: 1px; FONT-WEIGHT: bold; FONT-SIZE: =
+12px; PADDING-BOTTOM: 1px; BORDER-LEFT: #488e00 1px solid; COLOR: white; =
+PADDING-TOP: 1px; BORDER-BOTTOM: #488e00 1px solid; HEIGHT: 16px
+}
+.SiteNavBar A:hover {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; COLOR: =
+black; PADDING-TOP: 1px; BACKGROUND-COLOR: #c3de6c; TEXT-DECORATION: =
+none
+}
+TD.SelCat {
+	BORDER-LEFT-COLOR: #488e00; BORDER-BOTTOM-COLOR: #488e00; =
+BORDER-TOP-COLOR: #488e00; BACKGROUND-COLOR: #c3de6c; =
+BORDER-RIGHT-COLOR: #488e00
+}
+TD.SelCat A {
+	BORDER-LEFT-COLOR: #c3de6c; BORDER-BOTTOM-COLOR: #c3de6c; COLOR: black; =
+BORDER-TOP-COLOR: #c3de6c; BACKGROUND-COLOR: #c3de6c; =
+BORDER-RIGHT-COLOR: #c3de6c
+}
+.SearchHeaderBar {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: =
+0px; PADDING-TOP: 3px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #ededed
+}
+.LHNavBar {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; =
+VERTICAL-ALIGN: top; WIDTH: 160px; PADDING-TOP: 3px; BACKGROUND-COLOR: =
+#ff9900
+}
+.ContentPane {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; MIN-HEIGHT: 300px; =
+VERTICAL-ALIGN: top; ; WIDTH: expression(document.body.clientWidth < =
+973? "813px" : document.body.clientWidth-160); PADDING-TOP: 3px; =
+POSITION: relative; ; HEIGHT: expression(this.height < 300? "300px" : =
+"auto")
+}
+.ArticlePane {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; MIN-HEIGHT: 300px; =
+VERTICAL-ALIGN: top; ; WIDTH: expression(document.body.clientWidth < =
+973? "813px" : document.body.clientWidth-160); PADDING-TOP: 3px; =
+POSITION: relative; ; HEIGHT: expression(this.height < 300? "300px" : =
+"auto")
+}
+.RHFeatureBar {
+	MAX-WIDTH: 160px; VERTICAL-ALIGN: top; OVERFLOW: hidden; WIDTH: 160px
+}
+.precollapse {
+	DISPLAY: inline; FONT-WEIGHT: bold; FONT-SIZE: 7pt; BORDER-BOTTOM: =
+#cccccc 1px solid; BACKGROUND-COLOR: #fbedbb
+}
+* HTML .no-vmads {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: =
+0px; OVERFLOW: auto; WIDTH: 100%; PADDING-TOP: 0px
+}
+.FormButton {
+	FONT-WEIGHT: 700; FONT-SIZE: 90%; BORDER-LEFT-COLOR: #ffefdb; =
+BORDER-BOTTOM-COLOR: #ffefdb; COLOR: white; BORDER-TOP-COLOR: #ffefdb; =
+BACKGROUND-COLOR: #e08900; BORDER-RIGHT-COLOR: #ffefdb
+}
+.TextButton {
+	BORDER-TOP-WIDTH: 0px; FONT-WEIGHT: 500; BORDER-LEFT-WIDTH: 0px; =
+BORDER-BOTTOM-WIDTH: 0px; CURSOR: pointer; COLOR: blue; =
+BACKGROUND-COLOR: white; TEXT-ALIGN: left; BORDER-RIGHT-WIDTH: 0px
+}
+.LargeText {
+	FONT-WEIGHT: bold; FONT-SIZE: 13pt
+}
+.SmallText {
+	FONT-SIZE: 8pt
+}
+.TinyText {
+	FONT-SIZE: 7pt
+}
+.SeparatorBottom {
+	VERTICAL-ALIGN: top; COLOR: #ff9900; TEXT-DECORATION: none; =
+text-shadow: none
+}
+.SeparatorTop {
+	VERTICAL-ALIGN: bottom; COLOR: #ff9900; TEXT-DECORATION: none; =
+text-shadow: none
+}
+.SiteError {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 9pt; =
+PADDING-BOTTOM: 10px; MARGIN-LEFT: 20px; WIDTH: 80%; PADDING-TOP: 10px
+}
+.Caption {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-STYLE: italic
+}
+.Filename {
+	FONT-STYLE: italic
+}
+.Command {
+	FONT-WEIGHT: bold
+}
+.Warning {
+	BORDER-RIGHT: red 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: red 1px =
+solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 20px; =
+BORDER-LEFT: red 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: red 1px =
+solid; BACKGROUND-COLOR: #ffe3e0
+}
+.Error {
+	COLOR: red
+}
+.Error LI {
+	COLOR: red
+}
+.Success {
+	FONT-WEIGHT: bold; COLOR: green
+}
+.Failure {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.Callout {
+	BORDER-RIGHT: blue 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: blue 1px =
+solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; MARGIN: 20px; =
+BORDER-LEFT: blue 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: blue 1px =
+solid; BACKGROUND-COLOR: #ffffcc
+}
+.highlight {
+	BACKGROUND-COLOR: yellow
+}
+.bold {
+	FONT-WEIGHT: bold
+}
+.emphasis {
+	COLOR: red
+}
+.subdue {
+	COLOR: #666
+}
+.AddTo {
+	FONT-SIZE: 8pt; MARGIN: 4px; CURSOR: pointer
+}
+.ArticleTable {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse
+}
+.ArticleTableNoBorder {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse
+}
+.ArticleTableNoBorder {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; BORDER-BOTTOM-STYLE: none
+}
+.ArticleTable TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTableNoBorder TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTable TH {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; =
+BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticleTable THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTableNoBorder THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTable TFOOT {
+	FONT-WEIGHT: bold
+}
+.ArticleTableNoBorder TFOOT {
+	FONT-WEIGHT: bold
+}
+.ArticleTable TR.ArticleTableRow {
+	BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTableNoBorder TR.ArticleTableRow {
+	BACKGROUND-COLOR: #ebf6ff
+}
+.ArticleTable TR.ArticleTableAltRow {
+	BACKGROUND-COLOR: #ddf0fe
+}
+.ArticleTableNoBorder TR.ArticleTableAltRow {
+	BACKGROUND-COLOR: #ddf0fe
+}
+.ArticleTable TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTableNoBorder TD {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.ArticleTable TD {
+	BORDER-RIGHT: #cccccc 1px solid; BORDER-TOP: #cccccc 1px solid; =
+BORDER-LEFT: #cccccc 1px solid; BORDER-BOTTOM: #cccccc 1px solid
+}
+.EditorReportTable {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid; =
+BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: #dadada
+}
+.EditorReportTable TH {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.EditorReportTable THEAD {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ff9900
+}
+.EditorReportTable TFOOT {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #85bc4c
+}
+.EditorReportTable TR.EditorReportRow {
+	BACKGROUND-COLOR: #fafafa
+}
+.EditorReportTable TD {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#cccccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #cccccc 1px solid
+}
+.EditorComment {
+	BORDER-RIGHT: #ff9900 thin solid; PADDING-RIGHT: 5px; BORDER-TOP: =
+#ff9900 thin solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: =
+#ff9900 thin solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ff9900 thin solid; =
+BACKGROUND-COLOR: yellow
+}
+UL.InfoList {
+	MARGIN-TOP: 5px; PADDING-LEFT: 15px; MARGIN-BOTTOM: 5px; MARGIN-LEFT: =
+0px
+}
+UL.InfoList LI {
+	PADDING-BOTTOM: 5px
+}
+UL.download {
+	MARGIN-LEFT: 1.5em
+}
+UL.download LI {
+	PADDING-LEFT: 0.5em; LIST-STYLE-IMAGE: url(/images/download.gif); =
+FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+LI.download {
+	PADDING-LEFT: 0.5em; LIST-STYLE-IMAGE: url(/images/download.gif); =
+FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif
+}
+UL.delegate LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/delegate.gif)
+}
+LI.delegate {
+	LIST-STYLE-IMAGE: url(/images/symbols/delegate.gif)
+}
+UL.enum LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/Enum.GIF)
+}
+LI.enum {
+	LIST-STYLE-IMAGE: url(/images/symbols/Enum.GIF)
+}
+UL.event LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/event.GIF)
+}
+LI.event {
+	LIST-STYLE-IMAGE: url(/images/symbols/event.GIF)
+}
+UL.interface LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/interface.GIF)
+}
+LI.interface {
+	LIST-STYLE-IMAGE: url(/images/symbols/interface.GIF)
+}
+UL.literal LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/literal.GIF)
+}
+LI.literal {
+	LIST-STYLE-IMAGE: url(/images/symbols/literal.GIF)
+}
+UL.method LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/method.GIF)
+}
+LI.method {
+	LIST-STYLE-IMAGE: url(/images/symbols/method.GIF)
+}
+UL.namespace LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/namespace.GIF)
+}
+LI.namespace {
+	LIST-STYLE-IMAGE: url(/images/symbols/namespace.GIF)
+}
+UL.property LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/property.GIF)
+}
+LI.property {
+	LIST-STYLE-IMAGE: url(/images/symbols/property.GIF)
+}
+UL.struct LI {
+	LIST-STYLE-IMAGE: url(/images/symbols/struct.GIF)
+}
+LI.struct {
+	LIST-STYLE-IMAGE: url(/images/symbols/struct.GIF)
+}
+UL.compactlist LI {
+	FONT-SIZE: 8pt; LIST-STYLE-IMAGE: url(/images/smallarrow.gif); =
+MARGIN-BOTTOM: 0px; MARGIN-LEFT: -1em; FONT-FAMILY: Verdana, Arial, =
+Helvetica, sans-serif
+}
+LI.compactlist {
+	FONT-SIZE: 8pt; LIST-STYLE-IMAGE: url(/images/smallarrow.gif); =
+MARGIN-BOTTOM: 0px; MARGIN-LEFT: -1em; FONT-FAMILY: Verdana, Arial, =
+Helvetica, sans-serif
+}
+UL.compactlist {
+	MARGIN-TOP: 5px; MARGIN-BOTTOM: 5px
+}
+LI.horizontal {
+	PADDING-RIGHT: 1em; DISPLAY: inline; PADDING-LEFT: 1em; FLOAT: left; =
+PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em
+}
+UL.horizontal {
+	WHITE-SPACE: nowrap; LIST-STYLE-TYPE: circle
+}
+.SpacedList LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; =
+PADDING-TOP: 5px
+}
+.MenuGroup {
+	FONT-WEIGHT: bold; COLOR: gray; FONT-STYLE: italic
+}
+.OptionInGroup {
+	PADDING-LEFT: 10px
+}
+DT {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; MARGIN-BOTTOM: 6px
+}
+DD {
+	MARGIN-BOTTOM: 6px; MARGIN-LEFT: 25px
+}
+.code-comment {
+	COLOR: #008000; FONT-STYLE: italic
+}
+.code-SummaryComment {
+	COLOR: #808080
+}
+.code-keyword {
+	COLOR: blue
+}
+.code-SDKkeyword {
+	COLOR: #339999
+}
+.code-preprocessor {
+	COLOR: navy
+}
+.code-string {
+	COLOR: purple
+}
+.code-literal {
+	COLOR: navy
+}
+.code-pagedirective {
+	BACKGROUND-COLOR: yellow
+}
+.code-attribute {
+	COLOR: red
+}
+.code-tag {
+	COLOR: #800000
+}
+.code-leadattribute {
+	COLOR: #800000
+}
+.code-digit {
+	COLOR: navy
+}
+.code-none {
+	COLOR: #000
+}
+.RatingBar {
+	BORDER-RIGHT: #ff9900 1px solid; BORDER-TOP: #ff9900 1px solid; =
+BORDER-LEFT: #ff9900 1px solid; BORDER-BOTTOM: #ff9900 1px solid; =
+BACKGROUND-COLOR: #fbedbb
+}
+.RatingBar TR {
+	FONT-SIZE: 8pt
+}
+.ArticleHeader {
+	BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticleUneditedHeader {
+	BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticlePurgatoryHeader {
+	BORDER-BOTTOM: #cccccc 1px solid
+}
+.ArticleHeader {
+	BACKGROUND-COLOR: #fbedbb
+}
+.ArticleUneditedHeader {
+	BACKGROUND-COLOR: #e6e6fa
+}
+.ArticlePurgatoryHeader {
+	BACKGROUND-COLOR: #e3e3e3
+}
+.ArticleReady {
+	COLOR: green
+}
+.ArticleLocked {
+	COLOR: red
+}
+.ArticlePending {
+	COLOR: #333
+}
+.SectionTOC {
+=09
+}
+.SectionTOCHeader {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.SectionTOCHeader TD {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.SectionTOCRow {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.SectionTOCRow TD {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.SectionTOCUneditedRow {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: #c0cbee
+}
+.SectionTOCUneditedRow TD {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: #c0cbee
+}
+.ArticleAttributes {
+	MARGIN-TOP: 3px; COLOR: #666666
+}
+.ArticleDescription {
+	FONT-SIZE: 8pt; COLOR: #666666
+}
+.ArticleBeginner {
+	FONT-WEIGHT: bold; COLOR: green
+}
+.ArticleIntermediate {
+	DISPLAY: none
+}
+.ArticleAdvanced {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.ImagePreview {
+	BORDER-RIGHT: #333 1px solid; BORDER-TOP: #333 1px solid; BORDER-LEFT: =
+#333 1px solid; BORDER-BOTTOM: #333 1px solid
+}
+.QueueArticle {
+=09
+}
+.QueueArticleComment {
+=09
+}
+.QueueArticleOnHold {
+=09
+}
+.QueueArticleCommentOnHold {
+=09
+}
+.QueueArticleQueued {
+=09
+}
+.QueueArticleCommentQueued {
+=09
+}
+.QueueArticlePosting {
+	COLOR: green
+}
+.QueueArticleCommentPosting {
+	COLOR: green
+}
+.QueueArticlePosted {
+	COLOR: green
+}
+.QueueArticleCommentPosted {
+	COLOR: gray
+}
+.QueueArticleNeedAssistance {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.QueueArticleCommentNeedAssistance {
+	COLOR: red
+}
+.QueueArticleNeedAttention {
+	FONT-WEIGHT: bold; COLOR: red
+}
+.QueueArticleCommentNeedAttention {
+	COLOR: red
+}
+.MemberBronze {
+	BACKGROUND-COLOR: #cc9966
+}
+.MemberSilver {
+	BACKGROUND-COLOR: silver
+}
+.MemberGold {
+	BACKGROUND-COLOR: #ffcc00
+}
+.MemberPlatinum {
+	BACKGROUND-COLOR: #99ccff
+}
+.IndustryHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt
+}
+.SurveyBriefHeader {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+13px; PADDING-BOTTOM: 2px; BORDER-LEFT: #ff9900 1px solid; COLOR: =
+#990000; PADDING-TOP: 2px; BORDER-BOTTOM: #ff9900 1px solid; =
+FONT-FAMILY: Arial,Verdana; BACKGROUND-COLOR: #ffe0b3
+}
+.SurveyBlockContent {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#ff9900 1px; PADDING-LEFT: 3px; FONT-SIZE: 8pt; PADDING-BOTTOM: 3px; =
+OVERFLOW: hidden; BORDER-LEFT: #ff9900 1px solid; PADDING-TOP: 5px; =
+BORDER-BOTTOM: #ff9900 1px solid; TEXT-OVERFLOW: ellipsis; =
+BACKGROUND-COLOR: #fffaf0
+}
+.SurveySubline {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; COLOR: black
+}
+.SurveyQPrmpt {
+	FONT-SIZE: 8pt
+}
+.SurveyError {
+	COLOR: red; FONT-STYLE: italic; TEXT-ALIGN: center
+}
+.SurveyVoteBar {
+	BORDER-RIGHT: #cccccc 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#cccccc 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: =
+10pt; PADDING-BOTTOM: 2px; MARGIN: 5px 0px 0px; BORDER-LEFT: #cccccc 1px =
+solid; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #cccccc 1px solid; =
+FONT-FAMILY: Arial,Verdana; BACKGROUND-COLOR: #ededed
+}
+.SurveyTable {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; =
+BORDER-LEFT: #ededed 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ededed =
+1px solid; BACKGROUND-COLOR: #fafafa
+}
+.SurveyVoteTable {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; =
+PADDING-TOP: 20px; BACKGROUND-COLOR: #fffaf0
+}
+.SurveyVoteCell {
+	FONT-SIZE: 8pt
+}
+.SurveyCell {
+	BORDER-RIGHT: #ededed 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#ededed 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+1px; PADDING-TOP: 1px
+}
+.SurveyHeader {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ff9900
+}
+.SurveyBody {
+	BACKGROUND-COLOR: #ffffff
+}
+.SurveyFooter {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #488e00
+}
+.SurveyHeaderCell {
+	COLOR: white
+}
+.AttrBarMainHover {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; OVERFLOW: hidden; FONT-FAMILY: =
+verdana; WHITE-SPACE: nowrap; TEXT-OVERFLOW: clip
+}
+.AttrBarMain {
+	FONT-SIZE: 8pt; FONT-FAMILY: verdana
+}
+.AttrBarSubHover {
+	BORDER-RIGHT: #ff9900 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: =
+#ff9900 1px solid; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 8pt; =
+PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: hidden; BORDER-LEFT: #ff9900 =
+1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ff9900 1px solid; =
+FONT-FAMILY: verdana; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #ffe0b3
+}
+.AttrBarSub {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: verdana; HEIGHT: 18px; =
+BACKGROUND-COLOR: white
+}
+.AttrBarCont {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; =
+BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; =
+BACKGROUND-COLOR: white
+}
+.AttrScrollBox {
+	BORDER-RIGHT: gray 1px solid; BORDER-TOP: gray 1px solid; =
+SCROLLBAR-FACE-COLOR: #ff9900; FONT-SIZE: 8pt; OVERFLOW: auto; =
+BORDER-LEFT: gray 1px solid; WIDTH: 120px; SCROLLBAR-ARROW-COLOR: white; =
+BORDER-BOTTOM: gray 1px solid; HEIGHT: 150px
+}
+.ASBVers {
+	PADDING-LEFT: 10px; FONT-SIZE: 7pt; OVERFLOW: hidden; WHITE-SPACE: =
+nowrap
+}
+.NavBarMainHover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #c3de6c
+}
+.NavBarMain {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #488e00
+}
+.NavBarSubHover {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: black; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #c3de6c
+}
+.NavBarSub {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: white; FONT-FAMILY: verdana; =
+BACKGROUND-COLOR: #488e00
+}
+.NavBarCont {
+	BACKGROUND-COLOR: #488e00
+}
+.AdminMessageTable {
+=09
+}
+.AdminMessageCell {
+=09
+}
+.AdminMessageDiv {
+=09
+}
+.AdminMessageList {
+=09
+}
+.AdminTrace {
+	BORDER-RIGHT: red 1px dashed; PADDING-RIGHT: 5px; BORDER-TOP: red 1px =
+dashed; PADDING-LEFT: 5px; FONT-SIZE: 7pt; PADDING-BOTTOM: 5px; MARGIN: =
+10px 20px 5px; BORDER-LEFT: red 1px dashed; PADDING-TOP: 5px; =
+BORDER-BOTTOM: red 1px dashed; FONT-FAMILY: verdana; BACKGROUND-COLOR: =
+#ededed
+}
+.Archive {
+=09
+}
+.ArchiveHeader {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.ArchiveHeader TD {
+	BORDER-TOP: #ffcc66 1px solid; BORDER-BOTTOM: #ffcc66 1px solid; =
+BACKGROUND-COLOR: #ffe0b3
+}
+.ArchiveRow {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.ArchiveRow TD {
+	PADDING-BOTTOM: 15px; BORDER-BOTTOM: #cccccc 1px solid; =
+BACKGROUND-COLOR: #fffaf0
+}
+.ZoneBlockHeader {
+	FONT-WEIGHT: bold; FONT-SIZE: 13px; MARGIN-LEFT: 0px; BORDER-BOTTOM: =
+#efefef 5px dotted; FONT-FAMILY: Arial,Verdana; WHITE-SPACE: nowrap
+}
+.ZoneSponsor {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666
+}
+.ZoneSponsor A {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #666666
+}
+.ZoneList {
+	MARGIN-TOP: 7px
+}
+.ZoneBlockHeader A {
+	COLOR: #000
+}
+.ZoneBlockContent {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; MARGIN-BOTTOM: =
+10px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; PADDING-TOP: 5px; =
+TEXT-OVERFLOW: ellipsis
+}
+.Gradient {
+	BACKGROUND-POSITION: 50% top; BACKGROUND-IMAGE: =
+url(/script/jobs/images/gradient.png); BACKGROUND-REPEAT: repeat-x
+}
+.AdTextLinks {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+0px; MARGIN: 0px; OVERFLOW: hidden; WIDTH: 300px; LINE-HEIGHT: 1.5em; =
+PADDING-TOP: 0px; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.WinnersCompetitionNameCell {
+	WIDTH: 150px; WHITE-SPACE: nowrap
+}
+.SmallParagraph {
+	PADDING-TOP: 7px
+}
+.CompetitionTable {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; =
+BORDER-LEFT: #ededed 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ededed =
+1px solid
+}
+.CompetitionCell {
+	BORDER-RIGHT: #ededed 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: =
+#ededed 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+1px; PADDING-TOP: 1px
+}
+.CompetitionHeader {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #ff9900
+}
+.CompetitionHeaderCell {
+	COLOR: white
+}
+.CompetitionAlternativeRow {
+	BACKGROUND-COLOR: #fffaf0
+}
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: text/css;
+	charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://www.codeproject.com/App_Themes/NetCommunity/ForumClassic.css
+
+.Frm_MainTable {
+	BORDER-RIGHT: #ff9900 1px solid; BORDER-TOP: #ff9900 1px solid; =
+BORDER-LEFT: #ff9900 1px solid; WIDTH: 100%; BORDER-BOTTOM: #ff9900 1px =
+solid; BACKGROUND-COLOR: transparent
+}
+.Frm_MsgTable {
+	TABLE-LAYOUT: fixed; BORDER-TOP: #ff9900 1px solid; BORDER-BOTTOM: =
+#ff9900 1px solid; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: =
+transparent
+}
+.Frm_MsgAlert {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+2px; COLOR: #000000; PADDING-TOP: 2px; BACKGROUND-COLOR: yellow
+}
+.Frm_MsgAlert TD {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+2px; COLOR: #000000; PADDING-TOP: 2px; BACKGROUND-COLOR: yellow
+}
+.Frm_HeaderRow1 {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #fbedbb
+}
+.Frm_HeaderRow1 TD {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #fbedbb
+}
+.Frm_HeaderRow2 {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #ff9900
+}
+.Frm_HeaderRow2 TD {
+	FONT-SIZE: 8pt; VERTICAL-ALIGN: middle; COLOR: #000000; =
+BACKGROUND-COLOR: #ff9900
+}
+.Frm_Footer {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_Footer TD {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_NavigationBar {
+	FONT-SIZE: 8pt; COLOR: #000000; PADDING-TOP: 5px; BACKGROUND-COLOR: =
+#fbedbb
+}
+.Frm_NavigationBar TD {
+	FONT-SIZE: 8pt; COLOR: #000000; PADDING-TOP: 5px; BACKGROUND-COLOR: =
+#fbedbb
+}
+.Frm_ColumnHeaders {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_ColumnHeaders TD {
+	FONT-SIZE: 8pt; COLOR: #000000; BACKGROUND-COLOR: #fbedbb
+}
+.Frm_MsgRtDivide {
+	BORDER-BOTTOM: #ff9900 1px dotted; HEIGHT: 7px; BACKGROUND-COLOR: white
+}
+.Topic .Frm_MsgRtDivide {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: =
+none; HEIGHT: 35px; BORDER-BOTTOM-STYLE: none
+}
+.Frm_MsgDivide {
+	HEIGHT: 6px; BACKGROUND-COLOR: white
+}
+.ForumSig {
+	BORDER-TOP: #cccccc 1px solid; MARGIN-TOP: 10px; OVERFLOW: auto; =
+MAX-HEIGHT: 150px; PADDING-TOP: 0px
+}
+.ForumMod {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt; PADDING-BOTTOM: =
+0px; MARGIN: 0px; COLOR: #333; PADDING-TOP: 0px; FONT-STYLE: italic
+}
+.ForumMod:unknown {
+	content: "-- "
+}
+.Frm_MsgFt {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt! important; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 15px; BACKGROUND-COLOR: #d5eaff
+}
+.Frm_MsgFt TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 8pt! important; =
+PADDING-BOTTOM: 3px; PADDING-TOP: 15px; BACKGROUND-COLOR: #d5eaff
+}
+.MsgHd {
+	FONT-SIZE: 8pt
+}
+.MsgHd TD {
+	FONT-SIZE: 8pt
+}
+.MsgBd {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 1.25em
+}
+.MsgBd TD {
+	FONT-SIZE: 9pt; LINE-HEIGHT: 1.25em
+}
+.HdSel {
+	BACKGROUND-COLOR: #99ccff
+}
+.HdSel TD {
+	BACKGROUND-COLOR: #99ccff
+}
+.HdUnSel {
+	BACKGROUND-COLOR: #fefaed
+}
+.HdUnSel TD {
+	BACKGROUND-COLOR: #fefaed
+}
+.BdSel {
+	BACKGROUND-COLOR: #d5eaff
+}
+.BdSel TD {
+	BACKGROUND-COLOR: #d5eaff
+}
+.BdUnSel {
+	BORDER-RIGHT: #fbedbb 1px solid; BORDER-TOP: #fbedbb 1px solid; =
+BORDER-LEFT: #fbedbb 1px solid; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: white
+}
+.BdUnSel TD {
+	BORDER-RIGHT: #fbedbb 1px solid; BORDER-TOP: #fbedbb 1px solid; =
+BORDER-LEFT: #fbedbb 1px solid; BORDER-BOTTOM: #fbedbb 1px solid; =
+BACKGROUND-COLOR: white
+}
+.Rt {
+	FONT-WEIGHT: bold
+}
+.Rt TD {
+	FONT-WEIGHT: bold
+}
+.Chld {
+=09
+}
+.Chld TD {
+=09
+}
+.LoVote {
+	COLOR: gray! important
+}
+.LoVote TD A {
+	COLOR: gray! important
+}
+.HiVote {
+	COLOR: maroon! important
+}
+.HiVote TD A {
+	COLOR: maroon! important
+}
+.ExpandedBd TD.BdUnSel TD {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; =
+BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.TopicBd TD.BdUnSel TD {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; =
+BORDER-LEFT-STYLE: none! important; BORDER-BOTTOM-STYLE: none! important
+}
+.ThreadBd TD {
+	BORDER-RIGHT: #fbedbb 1px solid; BORDER-TOP: #fbedbb 1px solid; =
+BORDER-LEFT: #fbedbb 1px solid; BORDER-BOTTOM: #fbedbb 1px solid
+}
+.ThreadBd TD.BdSel TD {
+	BORDER-TOP-STYLE: none! important; BORDER-RIGHT-STYLE: none! important; =
+BORDER-LEFT-STYLE: none! important; BACKGROUND-COLOR: #f0f7ff; =
+BORDER-BOTTOM-STYLE: none! important
+}
+.ThreadHd TD {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt
+}
+.Rt .ThreadHd TD {
+	FONT-WEIGHT: normal; FONT-SIZE: 8pt; BACKGROUND-COLOR: #fefaed
+}
+.HdSel .ThreadHd TD {
+	BACKGROUND-COLOR: #99ccff! important
+}
+.ThreadHd .BlgHdr {
+	FONT-WEIGHT: bold! important; FONT-SIZE: 9pt! important
+}
+.ExpandedHd TD {
+	BACKGROUND-COLOR: #fbedbb
+}
+.ThreadHd TD {
+	BACKGROUND-COLOR: #fbedbb
+}
+.TopicHd TD {
+	BACKGROUND-COLOR: #f0f7ff
+}
+.Rt .TopicHd TD {
+	BACKGROUND-COLOR: #fbedbb
+}
+.TopicBd TD {
+	BACKGROUND-COLOR: white
+}
+.ThreadBd TD {
+	BACKGROUND-COLOR: white
+}
+.Rt .TopicBd TD {
+	BACKGROUND-COLOR: white
+}
+.PreviewBd TD.BdUnSel {
+	FONT-SIZE: 10px; COLOR: #666666; BORDER-TOP-STYLE: none; =
+BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: =
+none
+}
+.MsgCnt {
+=09
+}
+.Frm_MsgIndent {
+	BACKGROUND-COLOR: white! important; TEXT-ALIGN: right
+}
+TD.Frm_MsgIndent {
+	BACKGROUND-COLOR: white! important; TEXT-ALIGN: right
+}
+.Frm_MsgSubject {
+	PADDING-LEFT: 5px
+}
+.Frm_MsgAuthor {
+	PADDING-LEFT: 2px; WIDTH: 140px; TEXT-ALIGN: left
+}
+.Frm_MsgAuthor A {
+	PADDING-BOTTOM: 3px; VERTICAL-ALIGN: text-top; OVERFLOW: hidden; WIDTH: =
+140px; TEXT-OVERFLOW: ellipsis
+}
+.Frm_MsgDate {
+	WIDTH: 130px! important; TEXT-ALIGN: right
+}
+.Frm_MsgCount {
+	WIDTH: 30px! important; TEXT-ALIGN: right
+}
+.Frm_HL {
+	BORDER-RIGHT: #fbedbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#fbedbb 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: =
+#fbedbb 1px solid; COLOR: gray; PADDING-TOP: 1px; BORDER-BOTTOM: #fbedbb =
+1px solid; TEXT-DECORATION: none
+}
+.Frm_MHL {
+	BORDER-RIGHT: #fbedbb 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: =
+#fbedbb 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 1px; BORDER-LEFT: =
+#fbedbb 1px solid; COLOR: gray; PADDING-TOP: 1px; BORDER-BOTTOM: #fbedbb =
+1px solid; TEXT-DECORATION: none
+}
+.Frm_MHL {
+	BORDER-RIGHT: transparent 1px solid; BORDER-TOP: transparent 1px solid; =
+BORDER-LEFT: transparent 1px solid; BORDER-BOTTOM: transparent 1px solid
+}
+A.Frm_HL {
+	CURSOR: pointer; COLOR: blue; TEXT-DECORATION: none
+}
+A.Frm_MHL {
+	CURSOR: pointer; COLOR: blue; TEXT-DECORATION: none
+}
+A.Frm_HL:hover {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #ff9900; BORDER-RIGHT-STYLE: =
+solid; BORDER-LEFT-STYLE: solid; BACKGROUND-COLOR: #ffcc99; =
+BORDER-RIGHT-COLOR: #ff9900; BORDER-BOTTOM-STYLE: solid
+}
+A.Frm_MHL:hover {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-STYLE: solid; BORDER-TOP-COLOR: #ff9900; BORDER-RIGHT-STYLE: =
+solid; BORDER-LEFT-STYLE: solid; BACKGROUND-COLOR: #ffcc99; =
+BORDER-RIGHT-COLOR: #ff9900; BORDER-BOTTOM-STYLE: solid
+}
+A.Frm_HL:active {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-COLOR: #ff9900; BACKGROUND-COLOR: #ffc082; =
+BORDER-RIGHT-COLOR: #ff9900
+}
+A.Frm_MHL:active {
+	BORDER-LEFT-COLOR: #ff9900; BORDER-BOTTOM-COLOR: #ff9900; =
+BORDER-TOP-COLOR: #ff9900; BACKGROUND-COLOR: #ffc082; =
+BORDER-RIGHT-COLOR: #ff9900
+}
+.BlgHdr {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt! important; PADDING-BOTTOM: 10px; =
+PADDING-TOP: 10px
+}
+.Frm_DropDown {
+	FONT-SIZE: 95%; MARGIN-LEFT: 5px; BACKGROUND-COLOR: #fef9e7
+}
+.Frm_Button {
+	FONT-WEIGHT: 700; FONT-SIZE: 100%; BORDER-LEFT-COLOR: #fbedbb; =
+BORDER-BOTTOM-COLOR: #fbedbb; COLOR: white; BORDER-TOP-COLOR: #fbedbb; =
+BACKGROUND-COLOR: #e08900; BORDER-RIGHT-COLOR: #fbedbb
+}
+.toolbar {
+	BORDER-RIGHT: white 1px solid; BORDER-TOP: white 1px solid; =
+BORDER-LEFT: white 1px solid; BORDER-BOTTOM: white 1px solid; =
+BACKGROUND-COLOR: white
+}
+.toolbarHover {
+	BORDER-RIGHT: #ff9900 1px outset; BORDER-TOP: #ff9900 1px outset; =
+BORDER-LEFT: #ff9900 1px outset; BORDER-BOTTOM: #ff9900 1px outset; =
+BACKGROUND-COLOR: #ffcc99
+}
+.toolbarDown {
+	BORDER-RIGHT: #ff9900 1px outset; BORDER-TOP: #ff9900 1px outset; =
+BORDER-LEFT: #ff9900 1px outset; BORDER-BOTTOM: #ff9900 1px outset; =
+BACKGROUND-COLOR: #ffcc99
+}
+.toolbarUp {
+	BORDER-RIGHT: #ff9900 1px outset; BORDER-TOP: #ff9900 1px outset; =
+BORDER-LEFT: #ff9900 1px outset; BORDER-BOTTOM: #ff9900 1px outset; =
+BACKGROUND-COLOR: #ffcc99
+}
+.ForumTitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; COLOR: black
+}
+.FQ {
+	PADDING-LEFT: 0.6em; MARGIN-BOTTOM: -1em; MARGIN-LEFT: 0.25em; =
+BORDER-LEFT: gray 0.2em solid; COLOR: #556655; MARGIN-RIGHT: 1em
+}
+.FQA {
+	FONT-WEIGHT: bold; FONT-SIZE: 7pt; MARGIN-LEFT: -0.25em
+}
+UL.UnAnswered LI {
+	LIST-STYLE-IMAGE: url(/script/forums/images/msg_question.gif)
+}
+LI.UnAnswered {
+	LIST-STYLE-IMAGE: url(/script/forums/images/msg_question.gif)
+}
+LI.UnAnswered {
+	PADDING-LEFT: 5px; PADDING-BOTTOM: 5px
+}
+
+------=_NextPart_000_0174_01C87563.52A3FCB0
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: 7bit
+Content-Location: http://www.codeproject.com/Script/JS/oncopy.js
+
+// Hook-up to the document.body.oncopy event,
+// or in the <body>'s "oncopy" attribute.
+// Author: Heath Stewart
+function copyCode()
+{
+	try
+	{
+		var range = document.selection.createRange();
+		if (document.selection.type != "none")
+		{
+			var parent = range.parentElement();
+			var parentName = parent.tagName;
+			if (parentName != null)
+			{
+				if (parentName.toLowerCase() == "pre")
+				{
+					// Replace superfluous <br> tags in a <pre> block.
+					var re = /<br[^>]*>/gi;
+					var code = range.htmlText.replace(re, "\r\n");
+
+					// Replace non-breaking spaces.
+					re = /&nbsp;/gi;
+					code = code.replace(re, " ");
+
+					// Replace & characters.
+					re = /&amp;/gi;
+					code = code.replace(re, "&");
+
+					// Replace < characters.
+					re = /&lt;/gi;
+					code = code.replace(re, "<");
+
+					// Replace > characters.
+					re = /&gt;/gi;
+					code = code.replace(re, ">");
+					
+					// CJM: Remove colorization
+					re = /<\/?span([^>])*>/gi;
+					code = code.replace(re, "");
+
+					if (code != null)
+					{
+						window.event.returnValue = false;
+						window.clipboardData.setData("Text", code);
+					}
+				}
+			}
+		}
+	}
+	catch(e) {}
+}
+
+------=_NextPart_000_0174_01C87563.52A3FCB0--

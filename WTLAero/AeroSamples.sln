@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AeroFrame", "AeroFrame\AeroFrame.vcproj", "{800F43C7-BEB8-4670-B459-3C74F8250696}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AeroView", "AeroView\AeroView.vcproj", "{FFDDC004-F74C-4822-B2D9-72E77A3AB6A7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AeroTab", "AeroTab\AeroTab.vcproj", "{3F60739D-568E-4AE2-B9B1-BDC72536CF8A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AeroDialog", "AeroDialog\AeroDialog.vcproj", "{14510CC3-40F1-43B1-BD91-145BBD364947}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BmpView", "BmpView\BmpView.vcproj", "{0FE97755-8E1D-464D-A002-8092AB34917C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AeroSplit", "AeroSplit\AeroSplit.vcproj", "{58EBD286-A3FB-4952-94AB-ADF22E8DAC62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{800F43C7-BEB8-4670-B459-3C74F8250696}.Debug|Win32.ActiveCfg = Debug|Win32
+		{800F43C7-BEB8-4670-B459-3C74F8250696}.Debug|Win32.Build.0 = Debug|Win32
+		{800F43C7-BEB8-4670-B459-3C74F8250696}.Release|Win32.ActiveCfg = Release|Win32
+		{800F43C7-BEB8-4670-B459-3C74F8250696}.Release|Win32.Build.0 = Release|Win32
+		{FFDDC004-F74C-4822-B2D9-72E77A3AB6A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FFDDC004-F74C-4822-B2D9-72E77A3AB6A7}.Debug|Win32.Build.0 = Debug|Win32
+		{FFDDC004-F74C-4822-B2D9-72E77A3AB6A7}.Release|Win32.ActiveCfg = Release|Win32
+		{FFDDC004-F74C-4822-B2D9-72E77A3AB6A7}.Release|Win32.Build.0 = Release|Win32
+		{3F60739D-568E-4AE2-B9B1-BDC72536CF8A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3F60739D-568E-4AE2-B9B1-BDC72536CF8A}.Debug|Win32.Build.0 = Debug|Win32
+		{3F60739D-568E-4AE2-B9B1-BDC72536CF8A}.Release|Win32.ActiveCfg = Release|Win32
+		{3F60739D-568E-4AE2-B9B1-BDC72536CF8A}.Release|Win32.Build.0 = Release|Win32
+		{14510CC3-40F1-43B1-BD91-145BBD364947}.Debug|Win32.ActiveCfg = Debug|Win32
+		{14510CC3-40F1-43B1-BD91-145BBD364947}.Debug|Win32.Build.0 = Debug|Win32
+		{14510CC3-40F1-43B1-BD91-145BBD364947}.Release|Win32.ActiveCfg = Release|Win32
+		{14510CC3-40F1-43B1-BD91-145BBD364947}.Release|Win32.Build.0 = Release|Win32
+		{0FE97755-8E1D-464D-A002-8092AB34917C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0FE97755-8E1D-464D-A002-8092AB34917C}.Debug|Win32.Build.0 = Debug|Win32
+		{0FE97755-8E1D-464D-A002-8092AB34917C}.Release|Win32.ActiveCfg = Release|Win32
+		{0FE97755-8E1D-464D-A002-8092AB34917C}.Release|Win32.Build.0 = Release|Win32
+		{58EBD286-A3FB-4952-94AB-ADF22E8DAC62}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58EBD286-A3FB-4952-94AB-ADF22E8DAC62}.Debug|Win32.Build.0 = Debug|Win32
+		{58EBD286-A3FB-4952-94AB-ADF22E8DAC62}.Release|Win32.ActiveCfg = Release|Win32
+		{58EBD286-A3FB-4952-94AB-ADF22E8DAC62}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
